@@ -1,11 +1,14 @@
 const puppeteer = require("puppeteer");
 const prompts = require("./extract_prompt.js");
-const chat = require("../../utils/LLM/parseReply2Json.js");
+const chat = require("../../../utils/LLM/parseReply2Json.js");
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
-const ExtractProcessor = require("../../utils/crawler/ExtractProcessor.js");
-const processor = new ExtractProcessor(require("../../assets/basicRule.json"));
+const uniqueObjects = require("../../../utils/uniqueObjects.js");
+const ExtractProcessor = require("../../../utils/crawler/ExtractProcessor.js");
+const processor = new ExtractProcessor(
+  require("../../../assets/basicRule.json")
+);
 
 const informParent = {
   ready(msg = "ready") {

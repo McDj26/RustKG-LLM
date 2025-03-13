@@ -2,9 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const parallelize = require("../../../utils/parallelize");
 const TaskManager = require("../../../utils/TaskManager");
-const { exec, stop } = parallelize(
-  require.resolve("../../../routes/llm_extraction/extract_process.js")
-);
+const { exec, stop } = parallelize(require.resolve("./extract_process.js"));
 const controller = new TaskManager(16);
 
 const examIds = [
