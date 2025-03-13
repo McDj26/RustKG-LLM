@@ -1,0 +1,1 @@
+{"stability":{"unstable":"🔬 This is a nightly-only experimental API.  (gen_future #50547)"},"apiName":"std::future::poll_in_task_cx","apiType":"function","apiDocumentation":{"apiDescription":["Polls a future in the current thread-local task context."]}}

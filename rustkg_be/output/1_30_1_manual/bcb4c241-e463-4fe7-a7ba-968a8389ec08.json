@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.27.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::process::parent_id","apiType":"function","apiDocumentation":{"apiDescription":["Returns the OS-assigned process identifier associated with this process's parent."]}}

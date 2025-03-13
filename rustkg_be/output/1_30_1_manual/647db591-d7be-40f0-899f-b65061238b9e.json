@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Linux only."]},"apiName":"std::os::linux::fs","apiType":"module","apiDocumentation":{"apiDescription":[]},"children":"std::os::linux::fs::MetadataExt"}

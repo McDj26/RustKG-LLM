@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.27.0","others":["This is supported on x86-64 only."]},"apiName":"std::arch::x86_64","apiType":"module","apiDocumentation":{"apiDescription":["Platform-specific intrinsics for the x86_64 platform.","The documentation with the full listing of x86_64 intrinsics is available in libcore, but the module is re-exported here in std as well."]}}

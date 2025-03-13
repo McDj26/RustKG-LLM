@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::isize","apiType":"module","apiDocumentation":{"apiDescription":["The pointer-sized signed integer type.","See also the isize primitive type."]},"children":["std::isize::MAX","std::isize::MIN"]}

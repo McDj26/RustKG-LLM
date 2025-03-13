@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::f64::MIN_EXP","apiType":"constant","apiDocumentation":{"apiDescription":["One greater than the minimum possible normal power of 2 exponent."]}}

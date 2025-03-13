@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::sync::atomic::ATOMIC_BOOL_INIT","apiType":"constant","apiDocumentation":{"apiDescription":["An AtomicBool initialized to false."]}}

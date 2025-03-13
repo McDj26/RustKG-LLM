@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::io::prelude","apiType":"module","apiDocumentation":{"apiDescription":["The I/O Prelude","The purpose of this module is to alleviate imports of many common I/O traits by adding a glob import to the top of I/O heavy modules:","use std::io::prelude::*;"]}}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::i8","apiType":"module","apiDocumentation":{"apiDescription":["The 8-bit signed integer type.","See also the i8 primitive type."]},"children":["std::i8::MAX","std::i8::MIN"]}

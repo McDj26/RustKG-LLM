@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0"},"apiName":"std::os::raw::c_uchar","apiType":"type","apiDocumentation":{"apiDescription":["Equivalent to C's unsigned char type.","This type will always be u8, but is included for completeness. It is defined as being an unsigned integer the same size as a C char."]}}

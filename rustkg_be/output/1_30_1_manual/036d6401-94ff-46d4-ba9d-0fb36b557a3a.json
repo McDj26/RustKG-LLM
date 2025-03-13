@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::path::is_separator","apiType":"function","apiDocumentation":{"apiDescription":["Determines whether the character is one of the permitted path separators for the current platform."],"examples":["use std::path;\n\nassert!(path::is_separator('/')); // '/' works for both Unix and Windows\nassert!(!path::is_separator('❤'));"]}}

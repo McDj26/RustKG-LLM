@@ -1,0 +1,1 @@
+{"stability":{"unstable":"🔬 This is a nightly-only experimental API.  (extra_log_consts #50540)"},"apiName":"std::f64::consts::LOG2_10","apiType":"constant","apiDocumentation":{"apiDescription":["log2(10)"]}}

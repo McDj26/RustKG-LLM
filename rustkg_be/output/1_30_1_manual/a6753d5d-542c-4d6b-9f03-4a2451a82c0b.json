@@ -1,0 +1,1 @@
+{"apiName":"fn","apiType":"keyword","apiDocumentation":{"apiDescription":["The fn keyword.","The fn keyword is used to declare a function.","Example:","fn some_function() { // code goes in here }","For more information about functions, take a look at the Rust Book."]}}

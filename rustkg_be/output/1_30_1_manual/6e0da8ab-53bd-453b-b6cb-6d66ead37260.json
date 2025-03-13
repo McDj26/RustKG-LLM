@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::f64::MAX_EXP","apiType":"constant","apiDocumentation":{"apiDescription":["Maximum possible power of 2 exponent."]}}

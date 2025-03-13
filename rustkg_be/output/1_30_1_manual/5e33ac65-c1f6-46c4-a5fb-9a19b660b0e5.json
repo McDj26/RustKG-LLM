@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.9.0"},"apiName":"std::char::REPLACEMENT_CHARACTER","apiType":"constant","apiDocumentation":{"apiDescription":["U+FFFD REPLACEMENT CHARACTER (�) is used in Unicode to represent a decoding error.","It can occur, for example, when giving ill-formed UTF-8 bytes to String::from_utf8_lossy."]}}

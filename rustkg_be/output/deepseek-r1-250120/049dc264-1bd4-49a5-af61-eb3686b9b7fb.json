@@ -1,0 +1,42 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "contains",
+    "has description"
+  ],
+  "relation_pairs": [
+    ["std::any", "is a", "module"],
+    ["std::any", "has full name", "std::any"],
+    ["std::any", "stable since", "1.0.0"],
+    ["std::any", "contains", "TypeId"],
+    ["std::any", "contains", "Any"],
+    [
+      "std::any",
+      "has description",
+      "This module implements the Any trait, which enables dynamic typing of any 'static' type through runtime reflection."
+    ],
+    ["TypeId", "is a", "struct"],
+    ["TypeId", "has full name", "std::any::TypeId"],
+    [
+      "TypeId",
+      "has description",
+      "A TypeId represents a globally unique identifier for a type."
+    ],
+    ["Any", "is a", "trait"],
+    ["Any", "has full name", "std::any::Any"],
+    ["Any", "has description", "A type to emulate dynamic typing."]
+  ],
+  "links": [
+    "../../src/core/lib.rs.html",
+    "struct.TypeId.html",
+    "trait.Any.html",
+    "../../std/boxed/struct.Box.html",
+    "../index.html"
+  ],
+  "create_time": "2025-03-01T10:58:12.018Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/any/index.html",
+  "id": "049dc264-1bd4-49a5-af61-eb3686b9b7fb",
+  "model": "deepseek-r1-250120"
+}

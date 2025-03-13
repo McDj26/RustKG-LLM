@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::mem::swap","apiType":"function","apiDocumentation":{"apiDescription":["Swaps the values at two mutable locations, without deinitializing either one."],"examples":["use std::mem;\n\nlet mut x = 5;\nlet mut y = 42;\n\nmem::swap(&mut x, &mut y);\n\nassert_eq!(42, x);\nassert_eq!(5, y);"]}}

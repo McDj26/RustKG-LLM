@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.12.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::process::ExitStatusExt","apiType":"trait","apiDocumentation":{"apiDescription":["Windows-specific extensions to process::ExitStatus."]},"trait required methods":[{"name":"fn from_raw(raw: u32) -> Self","stability":["This is supported on Windows only."]}]}

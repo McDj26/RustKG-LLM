@@ -1,0 +1,1 @@
+{"stability":{"unstable":"🔬 This is a nightly-only experimental API.  (gen_future #50547)"},"apiName":"std::future::set_task_cx","apiType":"function","apiDocumentation":{"apiDescription":["Sets the thread-local task context used by async/await futures."]}}

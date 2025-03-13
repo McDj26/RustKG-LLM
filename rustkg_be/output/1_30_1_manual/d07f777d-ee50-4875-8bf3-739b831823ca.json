@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::fs::DirEntryExt","apiType":"trait","apiDocumentation":{"apiDescription":["Unix-specific extension methods for fs::DirEntry."]},"trait required methods":[{"name":"fn ino(&self) -> u64","stability":["This is supported on Unix only."]}]}

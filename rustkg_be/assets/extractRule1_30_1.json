@@ -1,0 +1,588 @@
+{
+  "stability": {
+    "selector": "#main > .stability, .fqn .since",
+    "attribute": "outerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      {
+        "type": "join",
+        "args": ["\n"]
+      },
+      { "type": "parseHTML" },
+      {
+        "type": "processByConfigs",
+        "args": [
+          {
+            "unstable": [
+              {
+                "type": "findElements",
+                "args": [".unstable"]
+              },
+              { "type": "pruneIfEmpty" },
+              { "type": "extractElementsText" },
+              {
+                "type": "index",
+                "args": [0]
+              },
+              { "type": "removeIfEmpty" }
+            ],
+            "stable since": [
+              {
+                "type": "findElements",
+                "args": [".since"]
+              },
+              { "type": "pruneIfEmpty" },
+              { "type": "extractElementsText" },
+              {
+                "type": "index",
+                "args": [0]
+              },
+              { "type": "removeIfEmpty" }
+            ],
+            "deprecated": [
+              {
+                "type": "findElements",
+                "args": [".deprecated"]
+              },
+              { "type": "pruneIfEmpty" },
+              { "type": "extractElementsText" },
+              {
+                "type": "index",
+                "args": [0]
+              },
+              { "type": "removeIfEmpty" }
+            ],
+            "others": [
+              {
+                "type": "findElements",
+                "args": [".stability > *:not(.since, .unstable, .deprecated)"]
+              },
+              { "type": "pruneIfEmpty" },
+              { "type": "extractElementsText" },
+              { "type": "removeIfEmpty" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "apiName": {
+    "selector": ".fqn .in-band",
+    "attribute": "innerText",
+    "process": [
+      {
+        "type": "split",
+        "args": [" "]
+      },
+      {
+        "type": "index",
+        "args": [-1]
+      }
+    ]
+  },
+  "apiType": {
+    "selector": ".fqn .in-band",
+    "attribute": "innerText",
+    "process": [
+      {
+        "type": "split",
+        "args": [" "]
+      },
+      {
+        "type": "index",
+        "args": [0]
+      },
+      { "type": "toLowerCase" }
+    ]
+  },
+  "apiDocumentation": {
+    "selector": "#main",
+    "attribute": "outerHTML",
+    "process": [
+      { "type": "parseHTML" },
+      {
+        "type": "removeElements",
+        "args": ["a[class=test-arrow]"]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": ["#main > [class=docblock]:not(#main > h2~):first"]
+      },
+      { "type": "childrenElements" },
+      {
+        "type": "processByConfigs",
+        "args": [
+          {
+            "apiDescription": [
+              {
+                "type": "filterElements",
+                "args": [":not(#examples, #examples~:not(#examples~h1:first~))"]
+              },
+              { "type": "extractElementsText" },
+              {
+                "type": "replace",
+                "args": ["\\s+", " ", "g"]
+              },
+              { "type": "trim" }
+            ],
+            "examples": [
+              {
+                "type": "filterElements",
+                "args": ["#examples"]
+              },
+              {
+                "type": "nextElementsUntil",
+                "args": ["h1"]
+              },
+              { "type": "extractElementsText" },
+              { "type": "removeIfEmpty" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "enum variants": {
+    "selector": "#main",
+    "attribute": "innerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      { "type": "parseHTML" },
+      {
+        "type": "querySelectorAll",
+        "args": [".variants"]
+      },
+      {
+        "type": "nextElementsUntil",
+        "args": [".variant:last ~ h2"]
+      },
+      {
+        "type": "filterElements",
+        "args": [".variant, .docblock"]
+      },
+      { "type": "extractElementsText" },
+      { "type": "removeIfEmpty" }
+    ]
+  },
+  "trait implementations": {
+    "selector": "#implementations-list, #synthetic-implementations-list",
+    "attribute": "innerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      {
+        "type": "join",
+        "args": ["\n"]
+      },
+      { "type": "parseHTML" },
+      {
+        "type": "seperateProcess",
+        "args": [
+          {
+            "type": "querySelectorAll",
+            "args": [".impl code a"]
+          },
+          {
+            "type": "map",
+            "args": [
+              {
+                "type": "setElementAttribute",
+                "args": [
+                  "innerText",
+                  [
+                    {
+                      "type": "getElementAttribute",
+                      "args": ["title"]
+                    },
+                    {
+                      "type": "split",
+                      "args": [" "]
+                    },
+                    {
+                      "type": "index",
+                      "args": [-1]
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": [".impl"]
+      },
+      {
+        "type": "map",
+        "args": [
+          {
+            "type": "processByConfigs",
+            "args": [
+              {
+                "name": [
+                  {
+                    "type": "findElements",
+                    "args": ["td code"]
+                  },
+                  { "type": "extractElementsText" },
+                  {
+                    "type": "index",
+                    "args": [0]
+                  },
+                  {
+                    "type": "replace",
+                    "args": ["\\s+", " ", "g"]
+                  },
+                  { "type": "trim" },
+                  {
+                    "type": "replace",
+                    "args": [",$", ""]
+                  }
+                ],
+                "stable since": [
+                  {
+                    "type": "findElements",
+                    "args": ["td .since"]
+                  },
+                  { "type": "extractElementsText" },
+                  {
+                    "type": "index",
+                    "args": [0]
+                  },
+                  {
+                    "type": "default",
+                    "args": ["1.0.0"]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "removeIfEmpty" }
+    ]
+  },
+  "trait required methods": {
+    "selector": "#main",
+    "attribute": "innerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      { "type": "parseHTML" },
+      {
+        "type": "removeElements",
+        "args": ["a[class=test-arrow]"]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": ["#required-methods~.methods:first"]
+      },
+      { "type": "childrenElements" },
+      {
+        "type": "filterElements",
+        "args": [".method"]
+      },
+      {
+        "type": "map",
+        "args": [
+          {
+            "type": "processByConfigs",
+            "args": [
+              {
+                "name": [
+                  {
+                    "type": "findElements",
+                    "args": ["code"]
+                  },
+                  { "type": "extractElementsText" },
+                  {
+                    "type": "index",
+                    "args": [0]
+                  },
+                  {
+                    "type": "replace",
+                    "args": ["\\s+", " ", "g"]
+                  },
+                  { "type": "trim" },
+                  {
+                    "type": "replace",
+                    "args": [",$", ""]
+                  }
+                ],
+                "stability": [
+                  {
+                    "type": "nextElementsUntil",
+                    "args": [".method"]
+                  },
+                  {
+                    "type": "findElements",
+                    "args": [".stability > *"]
+                  },
+                  { "type": "extractElementsText" },
+                  { "type": "removeIfEmpty" }
+                ],
+                "details": [
+                  { "type": "nextElements" },
+                  {
+                    "type": "filterElements",
+                    "args": [".docblock"]
+                  },
+                  { "type": "childrenElements" },
+                  {
+                    "type": "processByConfigs",
+                    "args": [
+                      {
+                        "description": [
+                          {
+                            "type": "filterElements",
+                            "args": [":not([id^=examples], [id^=examples]~)"]
+                          },
+                          { "type": "extractElementsText" },
+                          {
+                            "type": "index",
+                            "args": [0]
+                          }
+                        ],
+                        "example": [
+                          {
+                            "type": "filterElements",
+                            "args": ["[id^=examples]~"]
+                          },
+                          { "type": "extractElementsText" },
+                          { "type": "removeIfEmpty" }
+                        ]
+                      }
+                    ]
+                  },
+                  { "type": "removeIfEmpty" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "removeIfEmpty" }
+    ]
+  },
+  "trait provided methods": {
+    "selector": "#main",
+    "attribute": "innerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      { "type": "parseHTML" },
+      {
+        "type": "removeElements",
+        "args": ["a[class=test-arrow]"]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": ["#provided-methods~.methods:first"]
+      },
+      { "type": "childrenElements" },
+      {
+        "type": "filterElements",
+        "args": [".method"]
+      },
+      {
+        "type": "map",
+        "args": [
+          {
+            "type": "processByConfigs",
+            "args": [
+              {
+                "name": [
+                  {
+                    "type": "findElements",
+                    "args": ["code"]
+                  },
+                  { "type": "extractElementsText" },
+                  {
+                    "type": "index",
+                    "args": [0]
+                  },
+                  {
+                    "type": "replace",
+                    "args": ["\\s+", " ", "g"]
+                  },
+                  { "type": "trim" },
+                  {
+                    "type": "replace",
+                    "args": [",$", ""]
+                  }
+                ],
+                "stability": [
+                  {
+                    "type": "nextElementsUntil",
+                    "args": [".method"]
+                  },
+                  {
+                    "type": "findElements",
+                    "args": [".stability > *"]
+                  },
+                  { "type": "extractElementsText" },
+                  { "type": "removeIfEmpty" }
+                ],
+                "details": [
+                  { "type": "nextElements" },
+                  {
+                    "type": "filterElements",
+                    "args": [".docblock"]
+                  },
+                  { "type": "childrenElements" },
+                  {
+                    "type": "processByConfigs",
+                    "args": [
+                      {
+                        "description": [
+                          {
+                            "type": "filterElements",
+                            "args": [":not([id^=examples], [id^=examples]~)"]
+                          },
+                          { "type": "extractElementsText" },
+                          {
+                            "type": "index",
+                            "args": [0]
+                          }
+                        ],
+                        "example": [
+                          {
+                            "type": "filterElements",
+                            "args": ["[id^=examples]~"]
+                          },
+                          { "type": "extractElementsText" },
+                          { "type": "removeIfEmpty" }
+                        ]
+                      }
+                    ]
+                  },
+                  { "type": "removeIfEmpty" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "removeIfEmpty" }
+    ]
+  },
+  "methods": {
+    "selector": "#main",
+    "attribute": "innerHTML",
+    "process": [
+      { "type": "pruneIfEmpty" },
+      { "type": "parseHTML" },
+      {
+        "type": "removeElements",
+        "args": ["a[class=test-arrow]"]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": ["#methods"]
+      },
+      {
+        "type": "nextElementsUntil",
+        "args": ["h2"]
+      },
+      {
+        "type": "filterElements",
+        "args": [".impl-items"]
+      },
+      { "type": "childrenElements" },
+      {
+        "type": "filterElements",
+        "args": [".method"]
+      },
+      {
+        "type": "map",
+        "args": [
+          {
+            "type": "processByConfigs",
+            "args": [
+              {
+                "name": [
+                  {
+                    "type": "findElements",
+                    "args": ["span code"]
+                  },
+                  { "type": "extractElementsText" },
+                  {
+                    "type": "index",
+                    "args": [0]
+                  },
+                  {
+                    "type": "replace",
+                    "args": ["\\s+", " ", "g"]
+                  },
+                  { "type": "trim" },
+                  {
+                    "type": "replace",
+                    "args": [",$", ""]
+                  }
+                ],
+                "stability": [
+                  {
+                    "type": "nextElementsUntil",
+                    "args": [".method"]
+                  },
+                  {
+                    "type": "findElements",
+                    "args": [".stability > *"]
+                  },
+                  { "type": "extractElementsText" },
+                  { "type": "removeIfEmpty" }
+                ],
+                "details": [
+                  { "type": "nextElements" },
+                  {
+                    "type": "filterElements",
+                    "args": [".docblock"]
+                  },
+                  { "type": "childrenElements" },
+                  {
+                    "type": "processByConfigs",
+                    "args": [
+                      {
+                        "description": [
+                          {
+                            "type": "filterElements",
+                            "args": [":not([id^=examples], [id^=examples]~)"]
+                          },
+                          { "type": "extractElementsText" },
+                          {
+                            "type": "replace",
+                            "args": ["\\s+", " ", "g"]
+                          },
+                          { "type": "trim" }
+                        ],
+                        "example": [
+                          {
+                            "type": "filterElements",
+                            "args": ["[id^=examples]~"]
+                          },
+                          { "type": "extractElementsText" },
+                          { "type": "removeIfEmpty" }
+                        ]
+                      }
+                    ]
+                  },
+                  { "type": "removeIfEmpty" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      { "type": "removeIfEmpty" }
+    ]
+  },
+  "children": {
+    "selector": "#main > table td > a:not(.primitive,.keyword,[title^=unsafe])",
+    "attribute": "innerText",
+    "after": [
+      { "type": "pruneIfEmpty" },
+      {
+        "type": "prefix",
+        "args": ["$apiName", "::"]
+      }
+    ]
+  }
+}

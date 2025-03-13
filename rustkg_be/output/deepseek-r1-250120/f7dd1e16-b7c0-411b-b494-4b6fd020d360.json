@@ -1,0 +1,154 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "is successor of",
+    "is predecessor of",
+    "has description",
+    "has attribute",
+    "requires method",
+    "has argument",
+    "has return type",
+    "implements",
+    "has example",
+    "has constraint"
+  ],
+  "relation_pairs": [
+    ["alloc", "is a", "Module"],
+    ["alloc", "has full name", "std::alloc"],
+    ["alloc", "stable since", "1.28.0"],
+    ["alloc", "has description", "Memory allocation APIs"],
+    [
+      "alloc",
+      "has description",
+      "In a given program, the standard library has one \"global\" memory allocator that is used for example by `Box<T>` and `Vec<T>`."
+    ],
+    [
+      "alloc",
+      "has description",
+      "The `#[global_allocator]` attribute allows configuring the choice of global allocator"
+    ],
+    ["Layout", "is a", "struct"],
+    ["Layout", "has description", "Layout of a block of memory."],
+    ["LayoutErr", "is a", "struct"],
+    [
+      "LayoutErr",
+      "has description",
+      "The parameters given to `Layout::from_size_align` or some other `Layout` constructor do not satisfy its documented constraints."
+    ],
+    ["System", "is a", "struct"],
+    [
+      "System",
+      "has description",
+      "The default memory allocator provided by the operating system."
+    ],
+    ["AllocErr", "is a", "struct"],
+    ["AllocErr", "has attribute", "Experimental"],
+    [
+      "AllocErr",
+      "has description",
+      "The `AllocErr` error indicates an allocation failure that may be due to resource exhaustion"
+    ],
+    ["CannotReallocInPlace", "is a", "struct"],
+    ["CannotReallocInPlace", "has attribute", "Experimental"],
+    [
+      "CannotReallocInPlace",
+      "has description",
+      "The `CannotReallocInPlace` error is used when `grow_in_place` or `shrink_in_place` were unable to reuse the given memory block"
+    ],
+    ["Excess", "is a", "struct"],
+    ["Excess", "has attribute", "Experimental"],
+    [
+      "Excess",
+      "has description",
+      "Represents the combination of a starting address and a total capacity of the returned block."
+    ],
+    ["Global", "is a", "struct"],
+    ["Global", "has attribute", "Experimental"],
+    ["Global", "has description", "The global memory allocator."],
+    ["GlobalAlloc", "is a", "trait"],
+    [
+      "GlobalAlloc",
+      "has description",
+      "A memory allocator that can be registered as the standard library’s default through the `#[global_allocator]` attribute."
+    ],
+    ["Alloc", "is a", "trait"],
+    ["Alloc", "has attribute", "Experimental"],
+    [
+      "Alloc",
+      "has description",
+      "An implementation of `Alloc` can allocate, reallocate, and deallocate arbitrary blocks of data described via `Layout`."
+    ],
+    ["std::alloc::alloc", "has attribute", "unsafe"],
+    [
+      "std::alloc::alloc",
+      "has description",
+      "Allocate memory with the global allocator."
+    ],
+    ["std::alloc::alloc_zeroed", "has attribute", "unsafe"],
+    [
+      "std::alloc::alloc_zeroed",
+      "has description",
+      "Allocate zero-initialized memory with the global allocator."
+    ],
+    ["std::alloc::dealloc", "has attribute", "unsafe"],
+    [
+      "std::alloc::dealloc",
+      "has description",
+      "Deallocate memory with the global allocator."
+    ],
+    [
+      "std::alloc::handle_alloc_error",
+      "has description",
+      "Abort on memory allocation error or failure."
+    ],
+    ["std::alloc::realloc", "has attribute", "unsafe"],
+    [
+      "std::alloc::realloc",
+      "has description",
+      "Reallocate memory with the global allocator."
+    ],
+    ["std::alloc::set_alloc_error_hook", "has attribute", "Experimental"],
+    [
+      "std::alloc::set_alloc_error_hook",
+      "has description",
+      "Registers a custom allocation error hook, replacing any that was previously registered."
+    ],
+    ["std::alloc::take_alloc_error_hook", "has attribute", "Experimental"],
+    [
+      "std::alloc::take_alloc_error_hook",
+      "has description",
+      "Unregisters the current allocation error hook, returning it."
+    ],
+    [
+      "#[global_allocator]",
+      "has constraint",
+      "can only be used once in a crate or its recursive dependencies"
+    ]
+  ],
+  "links": [
+    "../../src/std/alloc.rs.html",
+    "struct.Layout.html",
+    "struct.LayoutErr.html",
+    "struct.System.html",
+    "struct.AllocErr.html",
+    "struct.CannotReallocInPlace.html",
+    "struct.Excess.html",
+    "struct.Global.html",
+    "trait.GlobalAlloc.html",
+    "trait.Alloc.html",
+    "fn.alloc.html",
+    "fn.alloc_zeroed.html",
+    "fn.dealloc.html",
+    "fn.handle_alloc_error.html",
+    "fn.realloc.html",
+    "fn.set_alloc_error_hook.html",
+    "fn.take_alloc_error_hook.html",
+    "../../core/alloc/trait.GlobalAlloc.html"
+  ],
+  "create_time": "2025-03-01T10:57:54.970Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/alloc/index.html",
+  "id": "f7dd1e16-b7c0-411b-b494-4b6fd020d360",
+  "model": "deepseek-r1-250120"
+}

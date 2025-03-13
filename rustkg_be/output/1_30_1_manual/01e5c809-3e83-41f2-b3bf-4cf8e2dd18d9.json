@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::env::consts::DLL_EXTENSION","apiType":"constant","apiDocumentation":{"apiDescription":["Specifies the file extension used for shared libraries on this platform that goes after the dot. Example value is so.","Some possible values:","so dylib dll"]}}

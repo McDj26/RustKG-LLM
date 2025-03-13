@@ -1,0 +1,53 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "has stability",
+    "implements",
+    "has description"
+  ],
+  "relation_pairs": [
+    ["Pinned", "is a", "Struct"],
+    ["Pinned", "has full name", "core::marker::Pinned"],
+    [
+      "Pinned",
+      "has stability",
+      "🔬 This is a nightly-only experimental API. (pin #49150)"
+    ],
+    ["Pinned", "has description", "A type which does not implement Unpin."],
+    [
+      "Pinned",
+      "has description",
+      "If a type contains a Pinned, it will not implement Unpin by default."
+    ],
+    ["Pinned", "implements", "Debug"],
+    ["Pinned", "implements", "Copy"],
+    ["Pinned", "implements", "Clone"],
+    ["Pinned", "implements", "Eq"],
+    ["Pinned", "implements", "PartialEq"],
+    ["Pinned", "implements", "Ord"],
+    ["Pinned", "implements", "PartialOrd"],
+    ["Pinned", "implements", "Hash"],
+    ["Pinned", "implements", "Send"],
+    ["Pinned", "implements", "Sync"]
+  ],
+  "links": [
+    "../index.html",
+    "index.html",
+    "https://github.com/rust-lang/rust/issues/49150",
+    "struct.PhantomData.html",
+    "trait.Copy.html",
+    "trait.Send.html",
+    "trait.Sized.html",
+    "trait.Sync.html",
+    "trait.Unpin.html",
+    "trait.Unsize.html",
+    "../../core/fmt/trait.Debug.html",
+    "../../core/clone/trait.Clone.html",
+    "../../core/cmp/trait.Eq.html",
+    "../../core/cmp/trait.PartialEq.html",
+    "../../core/cmp/trait.Ord.html",
+    "../../core/cmp/trait.PartialOrd.html",
+    "../../core/hash/trait.Hash.html"
+  ]
+}

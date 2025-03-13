@@ -1,0 +1,1 @@
+{"stability":{"unstable":"🔬 This is a nightly-only experimental API.  (unicode_version #49726)"},"apiName":"std::char::UNICODE_VERSION","apiType":"constant","apiDocumentation":{"apiDescription":["The version of Unicode that the Unicode parts of char and str methods are based on."]}}

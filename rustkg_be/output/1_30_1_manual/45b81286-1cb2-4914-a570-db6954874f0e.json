@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::f64::EPSILON","apiType":"constant","apiDocumentation":{"apiDescription":["Machine epsilon value for f64.","This is the difference between 1.0 and the next largest representable number."]}}

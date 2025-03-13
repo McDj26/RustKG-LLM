@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.26.0"},"apiName":"std::u128","apiType":"module","apiDocumentation":{"apiDescription":["The 128-bit unsigned integer type.","See also the u128 primitive type."]},"children":["std::u128::MAX","std::u128::MIN"]}

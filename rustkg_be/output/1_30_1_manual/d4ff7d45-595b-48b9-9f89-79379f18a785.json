@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.26.0"},"apiName":"std::process::id","apiType":"function","apiDocumentation":{"apiDescription":["Returns the OS-assigned process identifier associated with this process."],"examples":["Basic usage:","use std::process;\n\nprintln!(\"My pid is {}\", process::id());"]}}

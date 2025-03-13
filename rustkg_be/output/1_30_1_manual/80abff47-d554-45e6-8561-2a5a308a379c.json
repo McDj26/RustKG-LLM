@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::ptr::replace","apiType":"function","apiDocumentation":{"apiDescription":["Moves src into the pointed dest, returning the previous dest value.","Neither value is dropped.","Safety","This is only unsafe because it accepts a raw pointer. Otherwise, this operation is identical to mem::replace."]}}

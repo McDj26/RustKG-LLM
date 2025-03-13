@@ -1,0 +1,32 @@
+{
+  "processed_text": {
+    "selector": "body",
+    "attribute": "outerHTML",
+    "process": [
+      { "type": "parseHTML" },
+      {
+        "type": "seperateProcess",
+        "args": [
+          {
+            "type": "removeElements",
+            "args": [
+              "script, style, noscript, iframe, img, svg, audio, video, canvas, object, embed, source, track, picture"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "querySelectorAll",
+        "args": ["body"]
+      },
+      {
+        "type": "getElementAttribute",
+        "args": ["innerHTML"]
+      },
+      {
+        "type": "replace",
+        "args": ["\\s+", " ", "gi"]
+      }
+    ]
+  }
+}

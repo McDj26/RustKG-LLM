@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Linux only."]},"apiName":"std::os::linux","apiType":"module","apiDocumentation":{"apiDescription":["Linux-specific definitions"]},"children":["std::os::linux::fs","std::os::linux::raw"]}

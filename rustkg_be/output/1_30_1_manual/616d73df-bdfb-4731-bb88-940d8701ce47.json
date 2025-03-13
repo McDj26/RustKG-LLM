@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.28.0"},"apiName":"std::slice::from_ref","apiType":"function","apiDocumentation":{"apiDescription":["Converts a reference to T into a slice of length 1 (without copying)."]}}

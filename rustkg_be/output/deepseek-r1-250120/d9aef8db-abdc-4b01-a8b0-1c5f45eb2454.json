@@ -1,0 +1,47 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "is successor of",
+    "is predecessor of",
+    "has argument",
+    "has return type",
+    "has attribute",
+    "has description",
+    "is deprecated in favor of",
+    "has type"
+  ],
+  "relation_pairs": [
+    ["alloc_zeroed", "is a", "function"],
+    ["alloc_zeroed", "has full name", "std::alloc::alloc_zeroed"],
+    ["alloc_zeroed", "stable since", "1.28.0"],
+    ["alloc_zeroed", "has attribute", "unsafe"],
+    ["alloc_zeroed", "has argument", "layout"],
+    ["layout", "has type", "Layout"],
+    ["alloc_zeroed", "has return type", "*mut u8"],
+    [
+      "alloc_zeroed",
+      "has description",
+      "Allocate zero-initialized memory with the global allocator."
+    ],
+    [
+      "alloc_zeroed",
+      "has description",
+      "This function forwards calls to the GlobalAlloc::alloc_zeroed method of the allocator registered with the #[global_allocator] attribute if there is one, or the std crate's default."
+    ],
+    ["alloc_zeroed", "is deprecated in favor of", "Global::alloc_zeroed"]
+  ],
+  "links": [
+    "../../src/alloc/alloc.rs.html",
+    "../../std/alloc/trait.GlobalAlloc.html",
+    "../../std/alloc/struct.Global.html",
+    "../../std/alloc/trait.Alloc.html",
+    "../index.html",
+    "index.html"
+  ],
+  "create_time": "2025-03-01T11:07:15.079Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/alloc/fn.alloc_zeroed.html",
+  "id": "d9aef8db-abdc-4b01-a8b0-1c5f45eb2454",
+  "model": "deepseek-r1-250120"
+}

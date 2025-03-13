@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::io::AsRawHandle","apiType":"trait","apiDocumentation":{"apiDescription":["Extract raw handles."]},"trait required methods":[{"name":"fn as_raw_handle(&self) -> RawHandle","stability":["This is supported on Windows only."]}]}

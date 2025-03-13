@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::f32::DIGITS","apiType":"constant","apiDocumentation":{"apiDescription":["Approximate number of significant digits in base 10."]}}

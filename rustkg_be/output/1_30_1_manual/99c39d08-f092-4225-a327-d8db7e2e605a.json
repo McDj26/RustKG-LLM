@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","deprecated":"Deprecated since 1.8.0: these type aliases are no longer supported by the standard library, the libc crate on crates.io should be used instead for the correct definitions\n","others":["This is supported on Linux only."]},"apiName":"std::os::linux::raw::ino_t","apiType":"type","apiDocumentation":{"apiDescription":[]}}

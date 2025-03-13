@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::prelude","apiType":"module","apiDocumentation":{"apiDescription":["A prelude for conveniently writing platform-specific code.","Includes all extension traits, and some important type definitions."]}}

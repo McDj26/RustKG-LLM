@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::raw","apiType":"module","apiDocumentation":{"apiDescription":["Windows-specific primitives"]},"children":["std::os::windows::raw::HANDLE","std::os::windows::raw::SOCKET"]}

@@ -1,0 +1,1 @@
+{"stability":{"unstable":"🔬 This is a nightly-only experimental API.  (integer_atomics #32976)"},"apiName":"std::sync::atomic::ATOMIC_U8_INIT","apiType":"constant","apiDocumentation":{"apiDescription":["An atomic integer initialized to 0."]}}

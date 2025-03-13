@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::process","apiType":"module","apiDocumentation":{"apiDescription":["Unix-specific extensions to primitives in the std::process module."]},"children":["std::os::unix::process::CommandExt","std::os::unix::process::ExitStatusExt","std::os::unix::process::parent_id"]}

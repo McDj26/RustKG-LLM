@@ -1,0 +1,76 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "is successor of",
+    "is predecessor of",
+    "has module",
+    "has stability",
+    "has description"
+  ],
+  "relation pairs": [
+    ["std::os::windows::process", "is a", "module"],
+    ["std::os::windows::process", "has full name", "std::os::windows::process"],
+    ["std::os::windows::process", "stable since", "1.2.0"],
+    [
+      "std::os::windows::process",
+      "has stability",
+      "This is supported on Windows only."
+    ],
+    [
+      "std::os::windows::process",
+      "has description",
+      "Extensions to std::process for Windows."
+    ],
+    ["std::os::windows", "has module", "process"],
+    ["std::os::windows", "has module", "ffi"],
+    ["std::os::windows", "has module", "fs"],
+    ["std::os::windows", "has module", "io"],
+    ["std::os::windows", "has module", "prelude"],
+    ["std::os::windows", "has module", "raw"],
+    ["std::os::windows", "has module", "thread"],
+    ["CommandExt", "is a", "trait"],
+    ["CommandExt", "has full name", "std::os::windows::process::CommandExt"],
+    ["CommandExt", "has stability", "Windows"],
+    [
+      "CommandExt",
+      "has description",
+      "Windows-specific extensions to the process::Command builder."
+    ],
+    ["ExitStatusExt", "is a", "trait"],
+    [
+      "ExitStatusExt",
+      "has full name",
+      "std::os::windows::process::ExitStatusExt"
+    ],
+    ["ExitStatusExt", "has stability", "Windows"],
+    [
+      "ExitStatusExt",
+      "has description",
+      "Windows-specific extensions to process::ExitStatus."
+    ]
+  ],
+  "links": [
+    "../ffi/index.html",
+    "../fs/index.html",
+    "../io/index.html",
+    "../prelude/index.html",
+    "../process/index.html",
+    "../raw/index.html",
+    "../thread/index.html",
+    "trait.CommandExt.html",
+    "trait.ExitStatusExt.html",
+    "../../../../std/process/struct.Command.html",
+    "../../../../std/process/struct.ExitStatus.html",
+    "../../../../src/std/sys/windows/ext/process.rs.html",
+    "../../../index.html",
+    "../../index.html",
+    "../index.html",
+    "index.html"
+  ],
+  "create_time": "2025-03-02T05:09:18.494Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/os/windows/process/index.html",
+  "id": "f46b26ce-6e76-4a84-871f-b6954294d676",
+  "model": "deepseek-r1-250120"
+}

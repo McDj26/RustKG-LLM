@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::mem::align_of_val","apiType":"function","apiDocumentation":{"apiDescription":["Returns the ABI-required minimum alignment of the type of the value that val points to.","Every reference to a value of the type T must be a multiple of this number."],"examples":["use std::mem;\n\nassert_eq!(4, mem::align_of_val(&5i32));"]}}

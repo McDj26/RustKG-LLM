@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::io::RawFd","apiType":"type","apiDocumentation":{"apiDescription":["Raw file descriptors."]}}

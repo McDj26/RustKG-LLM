@@ -1,0 +1,107 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "has declaration",
+    "has attribute",
+    "requires method",
+    "provides method",
+    "has argument",
+    "has return type",
+    "has description",
+    "has type",
+    "implements",
+    "has safety note",
+    "has example"
+  ],
+  "relation_pairs": [
+    ["GlobalAlloc", "is a", "Trait"],
+    ["GlobalAlloc", "has full name", "std::alloc::GlobalAlloc"],
+    ["GlobalAlloc", "stable since", "1.28.0"],
+    ["GlobalAlloc", "has declaration", "pub unsafe trait GlobalAlloc { ... }"],
+    ["GlobalAlloc", "has attribute", "unsafe"],
+    ["GlobalAlloc", "requires method", "alloc"],
+    ["GlobalAlloc", "requires method", "dealloc"],
+    ["GlobalAlloc", "provides method", "alloc_zeroed"],
+    ["GlobalAlloc", "provides method", "realloc"],
+    [
+      "GlobalAlloc",
+      "has description",
+      "A memory allocator that can be registered as the standard library’s default though the #[global_allocator] attributes."
+    ],
+    ["alloc", "has argument", "self"],
+    ["alloc", "has argument", "layout"],
+    ["alloc", "has return type", "*mut u8"],
+    [
+      "alloc",
+      "has description",
+      "Allocate memory as described by the given layout. Returns a pointer to newly-allocated memory, or null to indicate allocation failure."
+    ],
+    ["alloc", "has attribute", "unsafe"],
+    ["layout", "has type", "Layout"],
+    ["dealloc", "has argument", "self"],
+    ["dealloc", "has argument", "ptr"],
+    ["dealloc", "has argument", "layout"],
+    [
+      "dealloc",
+      "has description",
+      "Deallocate the block of memory at the given ptr pointer with the given layout."
+    ],
+    ["dealloc", "has attribute", "unsafe"],
+    ["ptr", "has type", "*mut u8"],
+    ["alloc_zeroed", "has argument", "self"],
+    ["alloc_zeroed", "has argument", "layout"],
+    ["alloc_zeroed", "has return type", "*mut u8"],
+    [
+      "alloc_zeroed",
+      "has description",
+      "Behaves like alloc, but also ensures that the contents are set to zero before being returned."
+    ],
+    ["alloc_zeroed", "has attribute", "unsafe"],
+    ["realloc", "has argument", "self"],
+    ["realloc", "has argument", "ptr"],
+    ["realloc", "has argument", "layout"],
+    ["realloc", "has argument", "new_size"],
+    ["realloc", "has return type", "*mut u8"],
+    [
+      "realloc",
+      "has description",
+      "Shrink or grow a block of memory to the given new_size. The block is described by the given ptr pointer and layout."
+    ],
+    ["realloc", "has attribute", "unsafe"],
+    ["new_size", "has type", "usize"],
+    ["System", "implements", "GlobalAlloc"],
+    ["System", "has full name", "std::alloc::System"],
+    [
+      "GlobalAlloc",
+      "has example",
+      "<pre class=\"rust rust-example-rendered\">pub unsafe trait GlobalAlloc { ... }</pre>"
+    ],
+    [
+      "alloc",
+      "has safety note",
+      "undefined behavior can result if the caller does not ensure that layout has non-zero size"
+    ],
+    [
+      "dealloc",
+      "has safety note",
+      "ptr must denote a block of memory currently allocated via this allocator"
+    ]
+  ],
+  "links": [
+    "../../src/core/alloc.rs.html",
+    "../../std/alloc/struct.Layout.html",
+    "../../std/alloc/struct.System.html",
+    "../index.html",
+    "index.html",
+    "../../alloc/alloc/fn.handle_alloc_error.html",
+    "../primitive.pointer.html",
+    "../primitive.u8.html",
+    "../primitive.usize.html"
+  ],
+  "create_time": "2025-03-01T11:06:31.567Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/alloc/trait.GlobalAlloc.html",
+  "id": "fdbe41bc-194d-4b8b-b0a6-8e37a4c50342",
+  "model": "deepseek-r1-250120"
+}

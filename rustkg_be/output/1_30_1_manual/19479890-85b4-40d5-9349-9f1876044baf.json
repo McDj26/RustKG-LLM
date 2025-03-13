@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::env::consts::DLL_PREFIX","apiType":"constant","apiDocumentation":{"apiDescription":["Specifies the filename prefix used for shared libraries on this platform. Example value is lib.","Some possible values:","lib \"\" (an empty string)"]}}

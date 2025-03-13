@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::ptr::null_mut","apiType":"function","apiDocumentation":{"apiDescription":["Creates a null mutable raw pointer."],"examples":["use std::ptr;\n\nlet p: *mut i32 = ptr::null_mut();\nassert!(p.is_null());"]}}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::env::consts::OS","apiType":"constant","apiDocumentation":{"apiDescription":["A string describing the specific operating system in use. Example value is linux.","Some possible values:","linux macos ios freebsd dragonfly bitrig netbsd openbsd solaris android windows"]}}

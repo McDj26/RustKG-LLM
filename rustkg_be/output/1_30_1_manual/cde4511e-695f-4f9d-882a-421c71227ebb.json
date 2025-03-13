@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::sync::ONCE_INIT","apiType":"constant","apiDocumentation":{"apiDescription":["Initialization value for static Once values."],"examples":["use std::sync::{Once, ONCE_INIT};\n\nstatic START: Once = ONCE_INIT;"]}}

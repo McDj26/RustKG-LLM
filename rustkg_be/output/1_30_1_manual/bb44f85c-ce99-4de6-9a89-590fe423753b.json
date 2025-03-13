@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.6.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::fs::DirBuilderExt","apiType":"trait","apiDocumentation":{"apiDescription":["Unix-specific extensions to fs::DirBuilder."]},"trait required methods":[{"name":"fn mode(&mut self, mode: u32) -> &mut Self","stability":["This is supported on Unix only."]}]}

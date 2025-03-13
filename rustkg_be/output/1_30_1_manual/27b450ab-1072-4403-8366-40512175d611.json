@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::usize","apiType":"module","apiDocumentation":{"apiDescription":["The pointer-sized unsigned integer type.","See also the usize primitive type."]},"children":["std::usize::MAX","std::usize::MIN"]}

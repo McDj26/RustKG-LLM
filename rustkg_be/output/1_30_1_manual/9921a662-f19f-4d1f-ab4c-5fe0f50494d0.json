@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::sync::atomic::ATOMIC_ISIZE_INIT","apiType":"constant","apiDocumentation":{"apiDescription":["An atomic integer initialized to 0."]}}

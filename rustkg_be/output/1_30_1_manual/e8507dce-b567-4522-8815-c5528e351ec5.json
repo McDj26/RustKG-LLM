@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::u8","apiType":"module","apiDocumentation":{"apiDescription":["The 8-bit unsigned integer type.","See also the u8 primitive type."]},"children":["std::u8::MAX","std::u8::MIN"]}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.9.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::thread","apiType":"module","apiDocumentation":{"apiDescription":["Extensions to std::thread for Windows."]}}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.9.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::thread","apiType":"module","apiDocumentation":{"apiDescription":["Unix-specific extensions to primitives in the std::thread module."]},"children":["std::os::unix::thread::JoinHandleExt","std::os::unix::thread::RawPthread"]}

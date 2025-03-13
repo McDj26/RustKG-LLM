@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.27.0"},"apiName":"std::hint","apiType":"module","apiDocumentation":{"apiDescription":["Hints to compiler that affects how code should be emitted or optimized."]},"children":"std::hint::unreachable_unchecked"}

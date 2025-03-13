@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::f64::MIN_10_EXP","apiType":"constant","apiDocumentation":{"apiDescription":["Minimum possible normal power of 10 exponent."]}}

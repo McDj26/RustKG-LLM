@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::char::MAX","apiType":"constant","apiDocumentation":{"apiDescription":["The highest valid code point a char can have.","A char is a Unicode Scalar Value, which means that it is a Code Point, but only ones within a certain range. MAX is the highest valid code point that's a valid Unicode Scalar Value."]}}

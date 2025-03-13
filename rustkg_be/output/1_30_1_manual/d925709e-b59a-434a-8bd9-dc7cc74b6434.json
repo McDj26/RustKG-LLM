@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Unix only."]},"apiName":"std::os::unix::io","apiType":"module","apiDocumentation":{"apiDescription":["Unix-specific extensions to general I/O primitives"]},"children":["std::os::unix::io::AsRawFd","std::os::unix::io::FromRawFd","std::os::unix::io::IntoRawFd","std::os::unix::io::RawFd"]}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::i16::MAX","apiType":"constant","apiDocumentation":{"apiDescription":["The largest value that can be represented by this integer type."]}}

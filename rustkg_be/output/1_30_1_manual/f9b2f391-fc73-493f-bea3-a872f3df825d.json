@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.26.0"},"apiName":"std::i128","apiType":"module","apiDocumentation":{"apiDescription":["The 128-bit signed integer type.","See also the i128 primitive type."]},"children":["std::i128::MAX","std::i128::MIN"]}

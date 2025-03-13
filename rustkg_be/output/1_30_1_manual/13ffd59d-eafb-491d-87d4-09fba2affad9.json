@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::i32","apiType":"module","apiDocumentation":{"apiDescription":["The 32-bit signed integer type.","See also the i32 primitive type."]},"children":["std::i32::MAX","std::i32::MIN"]}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.2.0"},"apiName":"std::iter::empty","apiType":"function","apiDocumentation":{"apiDescription":["Creates an iterator that yields nothing."],"examples":["Basic usage:","use std::iter;\n\n// this could have been an iterator over i32, but alas, it's just not.\nlet mut nope = iter::empty::<i32>();\n\nassert_eq!(None, nope.next());"]}}

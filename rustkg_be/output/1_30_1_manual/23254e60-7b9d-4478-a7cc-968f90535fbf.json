@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.26.0"},"apiName":"std::i128::MIN","apiType":"constant","apiDocumentation":{"apiDescription":["The smallest value that can be represented by this integer type."]}}

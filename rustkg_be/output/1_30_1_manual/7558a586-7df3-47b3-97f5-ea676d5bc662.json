@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::path::MAIN_SEPARATOR","apiType":"constant","apiDocumentation":{"apiDescription":["The primary separator of path components for the current platform.","For example, / on Unix and \\ on Windows."]}}

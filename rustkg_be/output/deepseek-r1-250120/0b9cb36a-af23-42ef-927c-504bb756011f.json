@@ -1,0 +1,100 @@
+{
+  "relations": [
+    "is a",
+    "has full name",
+    "stable since",
+    "is successor of",
+    "is predecessor of",
+    "has declaration",
+    "has stability",
+    "requires method",
+    "has description",
+    "has argument",
+    "has type",
+    "has return type",
+    "implements",
+    "is supertrait of",
+    "is not to be confused with"
+  ],
+  "relation_pairs": [
+    ["Fn", "is a", "Trait"],
+    ["Fn", "has full name", "std::ops::Fn"],
+    ["Fn", "stable since", "1.0.0"],
+    [
+      "Fn",
+      "has declaration",
+      "pub trait Fn<args>: FnMut<args> { extern \"rust-call\" fn call(&self, args: Args) -> Self::Output; }"
+    ],
+    ["Fn", "is supertrait of", "FnMut"],
+    ["Fn", "is supertrait of", "FnOnce"],
+    ["Fn", "is not to be confused with", "fn"],
+    [
+      "Fn",
+      "has description",
+      "The version of the call operator that takes an immutable receiver."
+    ],
+    [
+      "Fn",
+      "has description",
+      "Instances of Fn can be called repeatedly without mutating state."
+    ],
+    [
+      "Fn",
+      "has description",
+      "This trait (Fn) is not to be confused with function pointers (fn)."
+    ],
+    [
+      "Fn",
+      "has description",
+      "Fn is implemented automatically by closures which only take immutable references to captured variables or don't capture anything at all, as well as (safe) function pointers (with some caveats, see their documentation for more details). Additionally, for any type F that implements Fn, &F implements Fn, too."
+    ],
+    [
+      "Fn",
+      "has description",
+      "Since both FnMut and FnOnce are supertraits of Fn, any instance of Fn can be used as a parameter where a FnMut or FnOnce is expected."
+    ],
+    [
+      "Fn",
+      "has description",
+      "Use Fn as a bound when you want to accept a parameter of function-like type and need to call it repeatedly and without mutating state (e.g. when calling it concurrently). If you do not need such strict requirements, use FnMut or FnOnce as bounds."
+    ],
+    [
+      "Fn",
+      "has description",
+      "See the chapter on closures in The Rust Programming Language for some more information on this topic."
+    ],
+    [
+      "Fn",
+      "has description",
+      "Also of note is the special syntax for Fn traits (e.g. Fn(usize, bool) -> usize). Those interested in the technical details of this can refer to the relevant section in the Rustonomicon."
+    ],
+    ["Fn", "requires method", "call"],
+    ["call", "is a", "function"],
+    ["call", "has full name", "std::ops::Fn::call"],
+    ["call", "has argument", "call::self"],
+    ["call", "has argument", "call::args"],
+    ["call::args", "has type", "Args"],
+    ["call", "has return type", "Self::Output"],
+    [
+      "call",
+      "has stability",
+      "This is a nightly-only experimental API. (fn_traits #29625)"
+    ],
+    ["&'a F", "implements", "Fn"]
+  ],
+  "links": [
+    "../../src/core/ops/function.rs.html",
+    "trait.FnMut.html",
+    "trait.FnOnce.html",
+    "../../std/primitive.fn.html",
+    "../../book/second-edition/ch13-01-closures.html",
+    "../../nomicon/hrtb.html",
+    "../index.html",
+    "index.html",
+    "https://github.com/rust-lang/rust/issues/29625"
+  ],
+  "create_time": "2025-03-01T16:32:20.487Z",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/ops/trait.Fn.html",
+  "id": "0b9cb36a-af23-42ef-927c-504bb756011f",
+  "model": "deepseek-r1-250120"
+}

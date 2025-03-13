@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::ffi::OsStringExt","apiType":"trait","apiDocumentation":{"apiDescription":["Windows-specific extensions to OsString."]},"trait required methods":[{"name":"fn from_wide(wide: &[u16]) -> Self","stability":["This is supported on Windows only."]}]}

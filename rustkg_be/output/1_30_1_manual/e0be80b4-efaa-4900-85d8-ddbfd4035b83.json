@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::u64","apiType":"module","apiDocumentation":{"apiDescription":["The 64-bit unsigned integer type.","See also the u64 primitive type."]},"children":["std::u64::MAX","std::u64::MIN"]}

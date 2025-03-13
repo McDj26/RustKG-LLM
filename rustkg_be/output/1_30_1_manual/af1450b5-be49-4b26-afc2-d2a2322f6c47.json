@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.0.0"},"apiName":"std::i64","apiType":"module","apiDocumentation":{"apiDescription":["The 64-bit signed integer type.","See also the i64 primitive type."]},"children":["std::i64::MAX","std::i64::MIN"]}

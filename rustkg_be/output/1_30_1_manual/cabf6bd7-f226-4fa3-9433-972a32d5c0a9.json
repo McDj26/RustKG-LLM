@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::io::FromRawSocket","apiType":"trait","apiDocumentation":{"apiDescription":["Create I/O objects from raw sockets."]},"trait required methods":[{"name":"unsafe fn from_raw_socket(sock: RawSocket) -> Self","stability":["This is supported on Windows only."]}]}

@@ -1,0 +1,1 @@
+{"stability":{"stable since":"1.1.0","others":["This is supported on Windows only."]},"apiName":"std::os::windows::io::FromRawHandle","apiType":"trait","apiDocumentation":{"apiDescription":["Construct I/O objects from raw handles."]},"trait required methods":[{"name":"unsafe fn from_raw_handle(handle: RawHandle) -> Self","stability":["This is supported on Windows only."]}]}
