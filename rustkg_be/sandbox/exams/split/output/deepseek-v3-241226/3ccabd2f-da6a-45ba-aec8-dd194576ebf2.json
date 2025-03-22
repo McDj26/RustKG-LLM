@@ -1,0 +1,1058 @@
+{
+  "create_time": "2025-03-22T14:45:10.124Z",
+  "id": "3ccabd2f-da6a-45ba-aec8-dd194576ebf2",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "relations": [
+    "has argument",
+    "has associated trait",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has method",
+    "has return type",
+    "has source code",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "requires method"
+  ],
+  "add_triples": [
+    ["&'a Option<T>", "has associated type", "IntoIter"],
+    ["&'a Option<T>", "has associated type", "Item"],
+    ["&'a Option<T>", "implements", "IntoIterator"],
+    ["&'a mut I", "has associated type", "Item"],
+    ["&'a mut I", "has type", "I"],
+    ["&'a mut I", "implements", "Iterator"],
+    ["&'a mut Option<T>", "has associated type", "IntoIter"],
+    ["&'a mut Option<T>", "has associated type", "Item"],
+    ["&'a mut Option<T>", "implements", "IntoIterator"],
+    ["&'a mut R", "has type", "R"],
+    ["&'a mut R", "implements", "Read"],
+    ["&'a mut W", "has type", "W"],
+    ["&'a mut W", "implements", "Write"],
+    ["Any", "has method", "get_type_id"],
+    ["Borrow", "is a", "trait"],
+    ["BorrowMut", "is a", "trait"],
+    ["Clone", "has full name", "std::clone::Clone"],
+    ["Clone", "has source code", "../../src/core/clone.rs.html#130-132"],
+    ["Clone", "is a", "trait"],
+    ["Copy", "is a", "trait"],
+    [
+      "Error",
+      "has description",
+      "The type returned in the event of a conversion error."
+    ],
+    [
+      "Error",
+      "has stability",
+      "This is a nightly-only experimental API. (try_from #33417)"
+    ],
+    ["Error", "has type", "!"],
+    ["Error", "has type", "<U as TryFrom<T>>::Error"],
+    ["FnOnce", "is a", "trait"],
+    ["From", "has method", "from"],
+    ["From", "is a", "trait"],
+    ["FromIterator", "is a", "trait"],
+    ["Hash", "has full name", "std::hash::Hash"],
+    ["Hash", "has source code", "../../src/core/hash/mod.rs.html#203-209"],
+    ["Hash", "is a", "trait"],
+    ["I", "implements", "IntoIterator"],
+    ["Into", "is a", "trait"],
+    [
+      "IntoIter",
+      "has description",
+      "Which kind of iterator are we turning this into?"
+    ],
+    ["IntoIter", "has type", "Iter<'a, T>"],
+    ["IntoIter", "has type", "IterMut<'a, T>"],
+    ["IntoIterator", "has associated type", "IntoIter"],
+    ["IntoIterator", "has associated type", "Item"],
+    ["IntoIterator", "has method", "into_iter"],
+    ["IntoIterator", "is a", "trait"],
+    [
+      "Item",
+      "has description",
+      "The type of the elements being iterated over."
+    ],
+    ["Item", "has type", "&'a T"],
+    ["Item", "has type", "&'a mut T"],
+    ["Item", "has type", "Option<A>"],
+    ["Iter", "is a", "struct"],
+    ["IterMut", "is a", "struct"],
+    ["Iterator", "is a", "trait"],
+    ["None", "has description", "No value"],
+    ["Option", "has declaration", "pub enum Option<T> { None, Some(T), }"],
+    [
+      "Option",
+      "has description",
+      "The Option type. See the module level documentation for more."
+    ],
+    ["Option", "has full name", "std::option::Option"],
+    ["Option", "has method", "and"],
+    ["Option", "has method", "and_then"],
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "cloned"],
+    ["Option", "has method", "default"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "filter"],
+    ["Option", "has method", "from_error"],
+    ["Option", "has method", "from_ok"],
+    ["Option", "has method", "get_or_insert"],
+    ["Option", "has method", "into_iter"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "or"],
+    ["Option", "has method", "or_else"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or_default"],
+    ["Option", "has method", "xor"],
+    ["Option", "has source code", "../../src/core/option.rs.html#158"],
+    ["Option", "has stability", "Stable since Rust version 1.0.0"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Any"],
+    ["Option", "implements", "Borrow"],
+    ["Option", "implements", "BorrowMut"],
+    ["Option", "implements", "Clone"],
+    ["Option", "implements", "Copy"],
+    ["Option", "implements", "Debug"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "Eq"],
+    ["Option", "implements", "From"],
+    ["Option", "implements", "From<&'a Option<T>>"],
+    ["Option", "implements", "From<&'a mut Option<T>>"],
+    ["Option", "implements", "From<T>"],
+    ["Option", "implements", "FromIterator<Option<A>>"],
+    ["Option", "implements", "Hash"],
+    ["Option", "implements", "Into"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Ord"],
+    ["Option", "implements", "PartialEq<Option<T>>"],
+    ["Option", "implements", "PartialOrd"],
+    ["Option", "implements", "PartialOrd<Option<T>>"],
+    ["Option", "implements", "Send"],
+    ["Option", "implements", "Sync"],
+    ["Option", "implements", "ToOwned"],
+    ["Option", "implements", "Try"],
+    ["Option", "implements", "TryFrom"],
+    ["Option", "implements", "TryInto"],
+    ["Option", "is a", "enum"],
+    ["Option", "requires method", "clone"],
+    ["Option", "requires method", "hash"],
+    ["Option", "requires method", "partial_cmp"],
+    ["Option::map", "has argument", "f"],
+    ["Option::map", "has argument", "self"],
+    [
+      "Option::map",
+      "has description",
+      "Maps an Option<T> to Option<U> by applying a function to a contained value."
+    ],
+    [
+      "Option::map",
+      "has example",
+      "let maybe_some_string = Some(String::from(\"Hello, World!\")); let maybe_some_len = maybe_some_string.map(|s| s.len()); assert_eq!(maybe_some_len, Some(13));"
+    ],
+    ["Option::map", "has return type", "Option<U>"],
+    ["Option::map", "is a", "method"],
+    ["Option::map_or", "has argument", "default"],
+    ["Option::map_or", "has argument", "f"],
+    ["Option::map_or", "has argument", "self"],
+    [
+      "Option::map_or",
+      "has description",
+      "Applies a function to the contained value (if any), or returns the provided default (if not)."
+    ],
+    [
+      "Option::map_or",
+      "has example",
+      "let x = Some(\"foo\"); assert_eq!(x.map_or(42, |v| v.len()), 3); let x: Option<&str> = None; assert_eq!(x.map_or(42, |v| v.len()), 42);"
+    ],
+    ["Option::map_or", "has return type", "U"],
+    ["Option::map_or", "is a", "method"],
+    ["Option::map_or_else", "has argument", "default"],
+    ["Option::map_or_else", "has argument", "f"],
+    ["Option::map_or_else", "has argument", "self"],
+    [
+      "Option::map_or_else",
+      "has description",
+      "Applies a function to the contained value (if any), or computes a default (if not)."
+    ],
+    [
+      "Option::map_or_else",
+      "has example",
+      "let k = 21; let x = Some(\"foo\"); assert_eq!(x.map_or_else(|| 2 * k, |v| v.len()), 3); let x: Option<&str> = None; assert_eq!(x.map_or_else(|| 2 * k, |v| v.len()), 42);"
+    ],
+    ["Option::map_or_else", "has return type", "U"],
+    ["Option::map_or_else", "is a", "method"],
+    ["Option<&'a T>", "has type", "&'a T"],
+    ["Option<&'a T>", "implements", "Clone"],
+    ["Option<&'a mut T>", "has type", "&'a mut T"],
+    ["Option<&'a mut T>", "implements", "Clone"],
+    ["Option<T>", "has source code", "../../src/core/option.rs.html#1059-1063"],
+    ["Option<T>", "has source code", "../../src/core/option.rs.html#1066-1070"],
+    ["Option<T>", "has source code", "../../src/core/option.rs.html#1073-1077"],
+    ["Option<T>", "has source code", "../../src/core/option.rs.html#158"],
+    ["Option<T>", "has stability", "Stable since Rust version 1.12.0"],
+    ["Option<T>", "has stability", "Stable since Rust version 1.30.0"],
+    ["Option<T>", "has type", "T"],
+    ["Option<T>", "implements", "Copy"],
+    ["Option<T>", "implements", "Default"],
+    ["Option<T>", "implements", "From<&'a Option<T>>"],
+    ["Option<T>", "implements", "From<&'a mut Option<T>>"],
+    ["Option<T>", "implements", "From<T>"],
+    ["Option<T>", "implements", "FromIterator<Option<A>>"],
+    ["Option<T>", "implements", "Try"],
+    ["Option<T>", "requires method", "cmp"],
+    ["Option<T>", "requires method", "ge"],
+    ["Option<T>", "requires method", "gt"],
+    ["Option<T>", "requires method", "le"],
+    ["Option<T>", "requires method", "lt"],
+    ["Option<T>", "requires method", "max"],
+    ["Option<T>", "requires method", "partial_cmp"],
+    ["Option<V>", "implements", "FromIterator<Option<A>>"],
+    ["PartialOrd", "has full name", "std::cmp::PartialOrd"],
+    ["PartialOrd", "is a", "trait"],
+    ["Read", "is a", "trait"],
+    ["Sized", "is a", "trait"],
+    ["Some", "has type", "T"],
+    ["SomeErr", "has description", "Derives Debug, Eq, PartialEq"],
+    ["SomeErr", "is a", "struct"],
+    ["String", "is a", "struct"],
+    ["ToOwned", "has associated type", "Owned"],
+    ["ToOwned", "has method", "clone_into"],
+    ["ToOwned", "has method", "to_owned"],
+    ["Try", "has associated type", "Error"],
+    ["Try", "has associated type", "Ok"],
+    [
+      "Try",
+      "has stability",
+      "This is a nightly-only experimental API. (try_trait #42327)"
+    ],
+    ["Try::Error", "has type", "NoneError"],
+    ["Try::Ok", "has type", "T"],
+    ["TryFrom", "has associated type", "Error"],
+    ["TryFrom", "has method", "try_from"],
+    ["TryFrom", "is a", "trait"],
+    ["TryInto", "has associated type", "Error"],
+    ["Write", "is a", "trait"],
+    [
+      "and",
+      "has description",
+      "Returns None if the option is None, otherwise returns optb."
+    ],
+    [
+      "and",
+      "has example",
+      "let x = Some(2); let y: Option<&str> = None; assert_eq!(x.and(y), None); let x: Option<u32> = None; let y = Some(\"foo\"); assert_eq!(x.and(y), None);"
+    ],
+    ["and", "has return type", "Option"],
+    ["and", "is a", "method"],
+    [
+      "and_then",
+      "has description",
+      "Returns None if the option is None, otherwise calls f with the wrapped value and returns the result."
+    ],
+    [
+      "and_then",
+      "has example",
+      "fn sq(x: u32) -> Option<u32> { Some(x * x) } fn nope(_: u32) -> Option<u32> { None } assert_eq!(Some(2).and_then(sq).and_then(sq), Some(16)); assert_eq!(Some(2).and_then(sq).and_then(nope), None); assert_eq!(Some(2).and_then(nope).and_then(sq), None); assert_eq!(None.and_then(sq).and_then(sq), None);"
+    ],
+    ["and_then", "has return type", "Option"],
+    ["and_then", "is a", "method"],
+    ["as_mut", "has declaration", "pub fn as_mut(&mut self) -> Option<&mut T>"],
+    ["as_mut", "has description", "Converts from Option<T> to Option<&mut T>."],
+    [
+      "as_mut",
+      "has example",
+      "let mut x = Some(2); match x.as_mut() { Some(v) => *v = 42, None => {}, } assert_eq!(x, Some(42));"
+    ],
+    ["as_mut", "is a", "method"],
+    [
+      "as_pin_mut",
+      "has declaration",
+      "pub fn as_pin_mut(self: PinMut<'a, Option<T>>) -> Option<PinMut<'a, T>>"
+    ],
+    [
+      "as_pin_mut",
+      "has description",
+      "Converts from Option<T> to Option<PinMut<'_, T>>"
+    ],
+    [
+      "as_pin_mut",
+      "has stability",
+      "This is a nightly-only experimental API. (pin #49150)"
+    ],
+    ["as_pin_mut", "is a", "method"],
+    ["as_ref", "has description", "Converts from Option<T> to Option<&T>."],
+    ["as_ref", "has return type", "Option<&T>"],
+    ["borrow", "has argument", "&self"],
+    ["borrow", "has description", "Immutably borrows from an owned value."],
+    ["borrow", "has full name", "std::borrow::Borrow::borrow"],
+    ["borrow", "has return type", "&T"],
+    ["borrow", "has source code", "../../src/core/borrow.rs.html#220"],
+    ["borrow", "is a", "function"],
+    ["borrow_mut", "has argument", "&mut self"],
+    ["borrow_mut", "has argument", "self"],
+    ["borrow_mut", "has description", "Mutably borrows from an owned value."],
+    ["borrow_mut", "has full name", "std::borrow::BorrowMut::borrow_mut"],
+    ["borrow_mut", "has return type", "&mut T"],
+    ["borrow_mut", "has source code", "../../src/core/borrow.rs.html#224-226"],
+    ["borrow_mut", "is a", "function"],
+    ["clone", "has argument", "self"],
+    ["clone", "has description", "Returns a copy of the value."],
+    ["clone", "has full name", "std::clone::Clone::clone"],
+    ["clone", "has return type", "Option<T>"],
+    ["clone", "is a", "method"],
+    ["clone_into", "has argument", "clone_into::self"],
+    ["clone_into", "has argument", "clone_into::target"],
+    ["clone_into", "has argument", "self"],
+    ["clone_into", "has argument", "target"],
+    ["clone_into", "has declaration", "fn clone_into(&self, target: &mut T)"],
+    [
+      "clone_into",
+      "has description",
+      "Creates owned data from borrowed data, usually by cloning."
+    ],
+    [
+      "clone_into",
+      "has description",
+      "Uses borrowed data to replace owned data, usually by cloning."
+    ],
+    ["clone_into", "has full name", "std::borrow::ToOwned::clone_into"],
+    [
+      "clone_into",
+      "has stability",
+      "This is a nightly-only experimental API. (toowned_clone_into #41263)"
+    ],
+    ["clone_into", "has type", "&mut T"],
+    ["clone_into", "is a", "function"],
+    ["clone_into::target", "has type", "&mut T"],
+    [
+      "cloned",
+      "has description",
+      "Maps an Option<&T> to an Option<T> by cloning the contents of the option."
+    ],
+    [
+      "cloned",
+      "has example",
+      "let x = 12; let opt_x = Some(&x); assert_eq!(opt_x, Some(&12)); let cloned = opt_x.cloned(); assert_eq!(cloned, Some(12));"
+    ],
+    ["cloned", "has return type", "Option<T>"],
+    ["cloned", "is a", "function"],
+    ["cmp", "has argument", "cmp::other"],
+    ["cmp", "has argument", "cmp::self"],
+    [
+      "cmp",
+      "has description",
+      "This method returns an Ordering between self and other."
+    ],
+    ["cmp", "has return type", "Ordering"],
+    ["cmp", "has source code", "../../src/core/option.rs.html#158"],
+    ["cmp", "is a", "function"],
+    ["default", "has description", "Returns None."],
+    ["default", "has return type", "Option<T>"],
+    ["deref", "has argument", "deref::self"],
+    [
+      "deref",
+      "has declaration",
+      "pub fn deref(&self) -> Option<&<T as Deref>::Target>"
+    ],
+    [
+      "deref",
+      "has description",
+      "Converts from &Option<T> to Option<&T::Target>. Leaves the original Option in-place, creating a new one with a reference to the original one, additionally coercing the contents via Deref."
+    ],
+    ["deref", "has return type", "Option<&<T as Deref>::Target>"],
+    [
+      "deref",
+      "has stability",
+      "This is a nightly-only experimental API. (inner_deref #50264)"
+    ],
+    ["deref", "is a", "function"],
+    ["eq", "has declaration", "fn eq(&self, other: &Option<T>) -> bool"],
+    [
+      "eq",
+      "has description",
+      "This method tests for self and other values to be equal, and is used by ==."
+    ],
+    ["eq", "has source code", "../../src/core/option.rs.html#158"],
+    ["eq", "is a", "function"],
+    ["expect", "has declaration", "pub fn expect(self, msg: &str) -> T"],
+    [
+      "expect",
+      "has description",
+      "Unwraps an option, yielding the content of a Some."
+    ],
+    [
+      "expect",
+      "has example",
+      "let x = Some(\"value\"); assert_eq!(x.expect(\"the world is ending\"), \"value\");"
+    ],
+    [
+      "expect",
+      "has example",
+      "let x: Option<&str> = None; x.expect(\"the world is ending\"); // panics with `the world is ending`"
+    ],
+    ["expect", "is a", "method"],
+    [
+      "filter",
+      "has description",
+      "Returns None if the option is None, otherwise calls predicate with the wrapped value and returns: Some(t) if predicate returns true (where t is the wrapped value), and None if predicate returns false."
+    ],
+    [
+      "filter",
+      "has example",
+      "assert_eq!(None.filter(is_even), None); assert_eq!(Some(3).filter(is_even), None); assert_eq!(Some(4).filter(is_even), Some(4));"
+    ],
+    ["filter", "has return type", "Option"],
+    ["filter", "has stability", "Stable since Rust version 1.27.0"],
+    ["filter", "is a", "function"],
+    ["filter", "is a", "method"],
+    [
+      "fmt",
+      "has declaration",
+      "fn fmt(&self, f: &mut Formatter) -> Result<(), Error>"
+    ],
+    ["fmt", "has description", "Formats the value using the given formatter."],
+    ["fmt", "has source code", "../../src/core/option.rs.html#158"],
+    ["fmt", "is a", "function"],
+    ["from", "has argument", "from::o"],
+    ["from", "has argument", "from::val"],
+    ["from", "has argument", "t"],
+    ["from", "has description", "Performs the conversion."],
+    ["from", "has return type", "Option<&'a T>"],
+    ["from", "has return type", "Option<&'a mut T>"],
+    ["from", "has return type", "Option<T>"],
+    ["from", "has return type", "T"],
+    ["from", "has source code", "../../src/core/option.rs.html#1074-1076"],
+    ["from", "is a", "function"],
+    ["from_error", "has argument", "from_error::NoneError"],
+    [
+      "from_error",
+      "has description",
+      "Wrap an error value to construct the composite result. For example, Result::Err(x) and Result::from_error(x) are equivalent."
+    ],
+    ["from_error", "has return type", "Option<T>"],
+    [
+      "from_error",
+      "has stability",
+      "This is a nightly-only experimental API. (try_trait #42327)"
+    ],
+    ["from_error::NoneError", "has type", "NoneError"],
+    ["from_iter", "has argument", "from_iter::iter"],
+    [
+      "from_iter",
+      "has description",
+      "Takes each element in the Iterator: if it is None, no further elements are taken, and the None is returned. Should no None occur, a container with the values of each Option is returned."
+    ],
+    [
+      "from_iter",
+      "has example",
+      "use std::u16; let v = vec![1, 2]; let res: Option<Vec<u16>> = v.iter().map(|&x: &u16| if x == u16::MAX { None } else { Some(x + 1) } ).collect(); assert!(res == Some(vec![2, 3]));"
+    ],
+    ["from_iter", "has full name", "std::iter::FromIterator::from_iter"],
+    ["from_iter", "has return type", "Option<V>"],
+    ["from_iter", "is a", "function"],
+    ["from_iter::iter", "has type", "I"],
+    ["from_ok", "has argument", "from_ok::v"],
+    [
+      "from_ok",
+      "has description",
+      "Wrap an OK value to construct the composite result. For example, Result::Ok(x) and Result::from_ok(x) are equivalent."
+    ],
+    ["from_ok", "has return type", "Option<T>"],
+    [
+      "from_ok",
+      "has stability",
+      "This is a nightly-only experimental API. (try_trait #42327)"
+    ],
+    ["from_ok::v", "has type", "T"],
+    ["ge", "has argument", "ge::other"],
+    ["ge", "has argument", "ge::self"],
+    [
+      "ge",
+      "has description",
+      "This method tests greater than or equal to (for self and other) and is used by the >= operator."
+    ],
+    ["ge", "has return type", "bool"],
+    ["ge", "has source code", "../../src/core/option.rs.html#158"],
+    ["ge", "is a", "function"],
+    ["get_or_insert", "has argument", "self"],
+    ["get_or_insert", "has argument", "v"],
+    ["get_or_insert", "has description", "Important traits for &'a mut I"],
+    [
+      "get_or_insert",
+      "has description",
+      "Inserts v into the option if it is None, then returns a mutable reference to the contained value."
+    ],
+    [
+      "get_or_insert",
+      "has example",
+      "let mut x = None; { let y: &mut u32 = x.get_or_insert(5); assert_eq!(y, &5); *y = 7; } assert_eq!(x, Some(7));"
+    ],
+    ["get_or_insert", "has return type", "&mut T"],
+    ["get_or_insert", "is a", "function"],
+    ["get_or_insert", "is a", "method"],
+    ["get_or_insert_with", "has argument", "f"],
+    ["get_or_insert_with", "has argument", "get_or_insert_with::f"],
+    ["get_or_insert_with", "has argument", "get_or_insert_with::self"],
+    ["get_or_insert_with", "has argument", "self"],
+    [
+      "get_or_insert_with",
+      "has description",
+      "Inserts a value computed from f into the option if it is None, then returns a mutable reference to the contained value."
+    ],
+    [
+      "get_or_insert_with",
+      "has example",
+      "let mut x = None; { let y: &mut u32 = x.get_or_insert_with(|| 5); assert_eq!(y, &5); *y = 7; } assert_eq!(x, Some(7));"
+    ],
+    ["get_or_insert_with", "has return type", "&mut T"],
+    ["get_or_insert_with", "has return type", "&mut u32"],
+    ["get_or_insert_with", "is a", "method"],
+    ["get_type_id", "has argument", "self"],
+    ["get_type_id", "has description", "Gets the TypeId of self."],
+    ["get_type_id", "has full name", "std::any::Any::get_type_id"],
+    ["get_type_id", "has return type", "TypeId"],
+    [
+      "get_type_id",
+      "has stability",
+      "This is a nightly-only experimental API."
+    ],
+    ["get_type_id", "is a", "function"],
+    ["gt", "has argument", "gt::other"],
+    ["gt", "has argument", "gt::self"],
+    [
+      "gt",
+      "has description",
+      "This method tests greater than (for self and other) and is used by the > operator."
+    ],
+    ["gt", "has return type", "bool"],
+    ["gt", "has source code", "../../src/core/option.rs.html#158"],
+    ["gt", "is a", "function"],
+    ["hash", "has argument", "self"],
+    ["hash", "has argument", "state"],
+    ["hash", "has description", "Feeds this value into the given Hasher."],
+    ["hash", "has full name", "std::hash::Hash::hash"],
+    ["hash", "has return type", "()"],
+    ["hash", "is a", "method"],
+    ["into", "has argument", "self"],
+    ["into", "has description", "Performs the conversion."],
+    ["into", "has full name", "std::convert::Into::into"],
+    ["into", "has return type", "U"],
+    ["into", "has source code", "../../src/core/convert.rs.html#455-457"],
+    ["into", "is a", "function"],
+    ["into_iter", "has argument", "self"],
+    ["into_iter", "has description", "Creates an iterator from a value."],
+    [
+      "into_iter",
+      "has description",
+      "Returns a consuming iterator over the possibly contained value."
+    ],
+    [
+      "into_iter",
+      "has example",
+      "let x = Some(\"string\"); let v: Vec<&str> = x.into_iter().collect(); assert_eq!(v, [\"string\"]); let x = None; let v: Vec<&str> = x.into_iter().collect(); assert!(v.is_empty());"
+    ],
+    ["into_iter", "has return type", "I"],
+    ["into_iter", "has return type", "IntoIter<T>"],
+    ["into_iter", "has return type", "Iter<'a, T>"],
+    ["into_iter", "has return type", "IterMut<'a, T>"],
+    ["into_iter", "has source code", "../../src/core/option.rs.html#1043-1045"],
+    ["into_iter", "has source code", "../../src/core/option.rs.html#1053-1055"],
+    ["into_iter", "is a", "method"],
+    [
+      "into_result",
+      "has description",
+      "The type of this value when viewed as successful."
+    ],
+    ["into_result", "has full name", "std::ops::Try::into_result"],
+    ["into_result", "has return type", "Result<T, NoneError>"],
+    ["into_result", "is a", "function"],
+    [
+      "is_none",
+      "has description",
+      "Returns true if the option is a None value."
+    ],
+    ["is_none", "has return type", "bool"],
+    [
+      "is_some",
+      "has description",
+      "Returns true if the option is a Some value."
+    ],
+    ["is_some", "has return type", "bool"],
+    ["iter", "has argument", "iter::self"],
+    ["iter", "has declaration", "pub fn iter(&self) -> Iter<T>"],
+    [
+      "iter",
+      "has description",
+      "Returns an iterator over the possibly contained value."
+    ],
+    [
+      "iter",
+      "has example",
+      "let x = Some(4); assert_eq!(x.iter().next(), Some(&4)); let x: Option<u32> = None; assert_eq!(x.iter().next(), None);"
+    ],
+    ["iter", "has return type", "Iter<T>"],
+    ["iter", "is a", "function"],
+    ["iter", "is a", "method"],
+    [
+      "iter_mut",
+      "has description",
+      "Returns a mutable iterator over the possibly contained value."
+    ],
+    [
+      "iter_mut",
+      "has example",
+      "let mut x = Some(4); match x.iter_mut().next() { Some(v) => *v = 42, None => {}, } assert_eq!(x, Some(42)); let mut x: Option<u32> = None; assert_eq!(x.iter_mut().next(), None);"
+    ],
+    ["iter_mut", "is a", "method"],
+    ["le", "has argument", "le::other"],
+    ["le", "has argument", "le::self"],
+    [
+      "le",
+      "has description",
+      "This method tests less than or equal to (for self and other) and is used by the <= operator."
+    ],
+    ["le", "has return type", "bool"],
+    ["le", "has source code", "../../src/core/option.rs.html#158"],
+    ["le", "is a", "function"],
+    ["lt", "has argument", "lt::other"],
+    ["lt", "has argument", "lt::self"],
+    [
+      "lt",
+      "has description",
+      "This method tests less than (for self and other) and is used by the < operator."
+    ],
+    ["lt", "has return type", "bool"],
+    ["lt", "has source code", "../../src/core/option.rs.html#158"],
+    ["lt", "is a", "function"],
+    ["map", "has argument", "map::f"],
+    ["map", "has argument", "map::self"],
+    [
+      "map",
+      "has declaration",
+      "pub fn map<U, F>(self, f: F) -> Option<U> where F: FnOnce(T) -> U"
+    ],
+    [
+      "map",
+      "has description",
+      "Maps an Option<T> to Option<U> by applying a function to a contained value."
+    ],
+    ["map", "has return type", "Option<U>"],
+    ["map", "is a", "function"],
+    ["max", "has argument", "max::other"],
+    ["max", "has argument", "max::self"],
+    ["max", "has declaration", "fn max(self, other: Self) -> Self"],
+    [
+      "max",
+      "has description",
+      "Compares and returns the maximum of two values."
+    ],
+    ["max", "has return type", "Self"],
+    ["max", "has source code", "../../src/core/cmp.rs.html#556-559"],
+    ["max", "has source code", "../../src/core/option.rs.html#158"],
+    ["max", "has stability", "Stable since Rust version 1.21.0"],
+    ["max", "is a", "function"],
+    ["min", "has declaration", "fn min(self, other: Self) -> Self"],
+    [
+      "min",
+      "has description",
+      "Compares and returns the minimum of two values."
+    ],
+    ["min", "has source code", "../../src/core/cmp.rs.html#573-576"],
+    ["min", "has stability", "Stable since Rust version 1.21.0"],
+    ["min", "is a", "function"],
+    ["ne", "has declaration", "fn ne(&self, other: &Option<T>) -> bool"],
+    ["ne", "has description", "This method tests for !=."],
+    ["ne", "has source code", "../../src/core/option.rs.html#158"],
+    ["ne", "is a", "function"],
+    ["ok_or", "has argument", "ok_or::err"],
+    ["ok_or", "has argument", "ok_or::self"],
+    [
+      "ok_or",
+      "has declaration",
+      "pub fn ok_or<E>(self, err: E) -> Result<T, E>"
+    ],
+    [
+      "ok_or",
+      "has description",
+      "Transforms the Option<T> into a Result<T, E>, mapping Some(v) to Ok(v) and None to Err(err)."
+    ],
+    [
+      "ok_or",
+      "has example",
+      "let x = Some(\"foo\"); assert_eq!(x.ok_or(0), Ok(\"foo\")); let x: Option<&str> = None; assert_eq!(x.ok_or(0), Err(0));"
+    ],
+    ["ok_or", "has return type", "Result<T, E>"],
+    ["ok_or", "is a", "function"],
+    ["ok_or_else", "has argument", "ok_or_else::err"],
+    ["ok_or_else", "has argument", "ok_or_else::self"],
+    [
+      "ok_or_else",
+      "has declaration",
+      "pub fn ok_or_else<E, F>(self, err: F) -> Result<T, E> where F: FnOnce() -> E"
+    ],
+    [
+      "ok_or_else",
+      "has description",
+      "Transforms the Option<T> into a Result<T, E>, mapping Some(v) to Ok(v) and None to Err(err())."
+    ],
+    [
+      "ok_or_else",
+      "has example",
+      "let x = Some(\"foo\"); assert_eq!(x.ok_or_else(|| 0), Ok(\"foo\")); let x: Option<&str> = None; assert_eq!(x.ok_or_else(|| 0), Err(0));"
+    ],
+    ["ok_or_else", "has return type", "Result<T, E>"],
+    ["ok_or_else", "is a", "function"],
+    [
+      "or",
+      "has description",
+      "Returns the option if it contains a value, otherwise returns optb."
+    ],
+    [
+      "or",
+      "has example",
+      "assert_eq!(x.or(y), Some(2)); assert_eq!(x.or(y), Some(100)); assert_eq!(x.or(y), Some(2)); assert_eq!(x.or(y), None);"
+    ],
+    ["or", "is a", "function"],
+    [
+      "or_else",
+      "has description",
+      "Returns the option if it contains a value, otherwise calls f and returns the result."
+    ],
+    [
+      "or_else",
+      "has example",
+      "assert_eq!(Some(\"barbarians\").or_else(vikings), Some(\"barbarians\")); assert_eq!(None.or_else(vikings), Some(\"vikings\")); assert_eq!(None.or_else(nobody), None);"
+    ],
+    [
+      "or_else",
+      "has example",
+      "fn nobody() -> Option<String> { None } fn vikings() -> Option<String> { Some(\"vikings\".to_string()) } assert_eq!(Some(\"barbarians\").or_else(vikings), Some(\"barbarians\")); assert_eq!(None.or_else(vikings), Some(\"vikings\")); assert_eq!(None.or_else(nobody), None);"
+    ],
+    ["or_else", "is a", "function"],
+    ["partial_cmp", "has argument", "partial_cmp::other"],
+    ["partial_cmp", "has argument", "partial_cmp::self"],
+    ["partial_cmp", "has argument", "self"],
+    [
+      "partial_cmp",
+      "has description",
+      "Compares two values, returning an ordering."
+    ],
+    [
+      "partial_cmp",
+      "has description",
+      "This method returns an ordering between self and other values if one exists."
+    ],
+    ["partial_cmp", "has full name", "std::cmp::PartialOrd::partial_cmp"],
+    ["partial_cmp", "has return type", "Option<Ordering>"],
+    ["partial_cmp", "has source code", "../../src/core/option.rs.html#158"],
+    ["partial_cmp", "is a", "function"],
+    ["partial_cmp", "is a", "method"],
+    ["replace", "has argument", "replace::self"],
+    ["replace", "has argument", "replace::value"],
+    [
+      "replace",
+      "has description",
+      "Replaces the actual value in the option by the value given in parameter, returning the old value if present, leaving a Some in its place without deinitializing either one."
+    ],
+    [
+      "replace",
+      "has example",
+      "let mut x = Some(2); let old = x.replace(5); assert_eq!(x, Some(5)); assert_eq!(old, Some(2)); let mut x = None; let old = x.replace(3); assert_eq!(x, Some(3)); assert_eq!(old, None);"
+    ],
+    ["replace", "has return type", "Option<T>"],
+    [
+      "replace",
+      "has stability",
+      "This is a nightly-only experimental API. (option_replace #51998)"
+    ],
+    ["replace", "is a", "method"],
+    ["take", "has argument", "take::self"],
+    [
+      "take",
+      "has description",
+      "Takes the value out of the option, leaving a None in its place."
+    ],
+    [
+      "take",
+      "has example",
+      "let mut x = Some(2); let y = x.take(); assert_eq!(x, None); assert_eq!(y, Some(2)); let mut x: Option<u32> = None; let y = x.take(); assert_eq!(x, None); assert_eq!(y, None);"
+    ],
+    ["take", "has return type", "Option<T>"],
+    ["take", "is a", "method"],
+    ["to_owned", "has argument", "self"],
+    [
+      "to_owned",
+      "has description",
+      "Creates owned data from borrowed data, usually by cloning."
+    ],
+    ["to_owned", "has full name", "std::borrow::ToOwned::to_owned"],
+    ["to_owned", "has return type", "T"],
+    ["to_owned", "is a", "function"],
+    ["transpose", "has argument", "transpose::self"],
+    [
+      "transpose",
+      "has declaration",
+      "pub fn transpose(self) -> Result<Option<T>, E>"
+    ],
+    [
+      "transpose",
+      "has description",
+      "Transposes an Option of a Result into a Result of an Option. None will be mapped to Ok(None). Some(Ok(_)) and Some(Err(_)) will be mapped to Ok(Some(_)) and Err(_)."
+    ],
+    ["transpose", "has return type", "Result<Option<T>, E>"],
+    [
+      "transpose",
+      "has stability",
+      "This is a nightly-only experimental API. (transpose_result #47338)"
+    ],
+    ["transpose", "is a", "function"],
+    [
+      "transpose_result",
+      "has description",
+      "Transposes an Option of a Result into a Result of an Option."
+    ],
+    [
+      "transpose_result",
+      "has example",
+      "let x: Result<Option<i32>, SomeErr> = Ok(Some(5)); let y: Option<Result<i32, SomeErr>> = Some(Ok(5)); assert_eq!(x, y.transpose());"
+    ],
+    ["transpose_result", "is a", "experimental API"],
+    ["try_from", "has argument", "value"],
+    ["try_from", "has description", "Performs the conversion."],
+    ["try_from", "has return type", "Result<T, <T as TryFrom<U>>::Error>"],
+    [
+      "try_from",
+      "has stability",
+      "This is a nightly-only experimental API. (try_from #33417)"
+    ],
+    ["try_into", "has argument", "self"],
+    ["try_into", "has description", "Performs the conversion."],
+    ["try_into", "has full name", "std::convert::TryInto::try_into"],
+    ["try_into", "has return type", "Result<U, <U as TryFrom<T>>::Error>"],
+    ["try_into", "has source code", "../../src/core/convert.rs.html#473-475"],
+    [
+      "try_into",
+      "has stability",
+      "This is a nightly-only experimental API. (try_from #33417)"
+    ],
+    ["try_into", "is a", "function"],
+    ["unwrap", "has declaration", "pub fn unwrap(self) -> T"],
+    [
+      "unwrap",
+      "has description",
+      "Moves the value v out of the Option<T> if it is Some(v). In general, because this function may panic, its use is discouraged. Instead, prefer to use pattern matching and handle the None case explicitly."
+    ],
+    [
+      "unwrap",
+      "has example",
+      "let x = Some(\"air\"); assert_eq!(x.unwrap(), \"air\");"
+    ],
+    [
+      "unwrap",
+      "has example",
+      "let x: Option<&str> = None; assert_eq!(x.unwrap(), \"air\"); // fails"
+    ],
+    ["unwrap", "has return type", "T"],
+    ["unwrap", "is a", "function"],
+    ["unwrap", "is a", "method"],
+    ["unwrap_or", "has argument", "unwrap_or::def"],
+    ["unwrap_or", "has argument", "unwrap_or::self"],
+    ["unwrap_or", "has declaration", "pub fn unwrap_or(self, def: T) -> T"],
+    [
+      "unwrap_or",
+      "has description",
+      "Returns the contained value or a default. Arguments passed to unwrap_or are eagerly evaluated; if you are passing the result of a function call, it is recommended to use unwrap_or_else, which is lazily evaluated."
+    ],
+    [
+      "unwrap_or",
+      "has example",
+      "assert_eq!(Some(\"car\").unwrap_or(\"bike\"), \"car\"); assert_eq!(None.unwrap_or(\"bike\"), \"bike\");"
+    ],
+    ["unwrap_or", "has return type", "T"],
+    ["unwrap_or", "is a", "function"],
+    ["unwrap_or_default", "has argument", "unwrap_or_default::self"],
+    [
+      "unwrap_or_default",
+      "has declaration",
+      "pub fn unwrap_or_default(self) -> T"
+    ],
+    [
+      "unwrap_or_default",
+      "has description",
+      "Returns the contained value or a default"
+    ],
+    [
+      "unwrap_or_default",
+      "has description",
+      "Returns the contained value or a default."
+    ],
+    [
+      "unwrap_or_default",
+      "has example",
+      "Convert a string to an integer, turning poorly-formed strings into 0 (the default value for integers). parse converts a string to any other type that implements FromStr, returning None on error."
+    ],
+    ["unwrap_or_default", "has return type", "T"],
+    ["unwrap_or_default", "is a", "function"],
+    ["unwrap_or_else", "has argument", "unwrap_or_else::f"],
+    ["unwrap_or_else", "has argument", "unwrap_or_else::self"],
+    [
+      "unwrap_or_else",
+      "has declaration",
+      "pub fn unwrap_or_else<F>(self, f: F) -> T where F: FnOnce() -> T"
+    ],
+    [
+      "unwrap_or_else",
+      "has description",
+      "Returns the contained value or computes it from a closure."
+    ],
+    [
+      "unwrap_or_else",
+      "has example",
+      "let k = 10; assert_eq!(Some(4).unwrap_or_else(|| 2 * k), 4); assert_eq!(None.unwrap_or_else(|| 2 * k), 20);"
+    ],
+    ["unwrap_or_else", "has return type", "T"],
+    ["unwrap_or_else", "is a", "function"],
+    ["usize", "is a", "primitive type"],
+    [
+      "xor",
+      "has description",
+      "Returns Some if exactly one of self, optb is Some, otherwise returns None."
+    ],
+    [
+      "xor",
+      "has example",
+      "assert_eq!(x.xor(y), Some(2)); assert_eq!(x.xor(y), Some(2)); assert_eq!(x.xor(y), None); assert_eq!(x.xor(y), None);"
+    ],
+    [
+      "xor",
+      "has stability",
+      "This is a nightly-only experimental API. (option_xor #50512)"
+    ],
+    ["xor", "is a", "function"]
+  ],
+  "add_links": [
+    "../../src/alloc/borrow.rs.html",
+    "../../src/core/any.rs.html",
+    "../../src/core/borrow.rs.html",
+    "../../src/core/clone.rs.html",
+    "../../src/core/cmp.rs.html",
+    "../../src/core/convert.rs.html",
+    "../../src/core/hash/mod.rs.html",
+    "../../src/core/option.rs.html",
+    "../../std/any/trait.Any.html",
+    "../../std/borrow/trait.Borrow.html",
+    "../../std/borrow/trait.BorrowMut.html",
+    "../../std/borrow/trait.ToOwned.html",
+    "../../std/clone/trait.Clone.html",
+    "../../std/cmp/enum.Ordering.html",
+    "../../std/cmp/trait.Ord.html",
+    "../../std/cmp/trait.PartialEq.html",
+    "../../std/cmp/trait.PartialOrd.html",
+    "../../std/convert/trait.From.html",
+    "../../std/convert/trait.Into.html",
+    "../../std/convert/trait.TryFrom.html",
+    "../../std/convert/trait.TryInto.html",
+    "../../std/default/trait.Default.html",
+    "../../std/fmt/trait.Debug.html",
+    "../../std/hash/trait.Hash.html",
+    "../../std/index.html",
+    "../../std/io/trait.Read.html",
+    "../../std/io/trait.Write.html",
+    "../../std/iter/trait.FromIterator.html",
+    "../../std/iter/trait.IntoIterator.html",
+    "../../std/iter/trait.Iterator.html",
+    "../../std/marker/trait.Copy.html",
+    "../../std/marker/trait.Send.html",
+    "../../std/marker/trait.Sized.html",
+    "../../std/marker/trait.Sync.html",
+    "../../std/ops/trait.Deref.html",
+    "../../std/ops/trait.FnOnce.html",
+    "../../std/ops/trait.Try.html",
+    "../../std/option/enum.Option.html",
+    "../../std/option/struct.Iter.html",
+    "../../std/option/struct.IterMut.html",
+    "../../std/option/struct.NoneError.html",
+    "../../std/primitive.str.html",
+    "../../std/primitive.usize.html",
+    "../../std/result/enum.Result.html",
+    "../../std/str/trait.FromStr.html",
+    "../../std/string/struct.String.html",
+    "../index.html",
+    "../primitive.bool.html",
+    "../primitive.reference.html",
+    "enum.Option.html",
+    "https://github.com/rust-lang/rust/issues/41263",
+    "https://github.com/rust-lang/rust/issues/42327",
+    "https://github.com/rust-lang/rust/issues/47338",
+    "https://github.com/rust-lang/rust/issues/49150",
+    "https://github.com/rust-lang/rust/issues/51998",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0A%23!%5Bfeature(option_xor)%5D%0A%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Aassert_eq!(x.xor(y)%2C%20Some(2))%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Alet%20y%20%3D%20Some(2)%3B%0Aassert_eq!(x.xor(y)%2C%20Some(2))%3B%0A%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%20%3D%20Some(2)%3B%0Aassert_eq!(x.xor(y)%2C%20None)%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Alet%20y%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Aassert_eq!(x.xor(y)%2C%20None)%3B%0A%7D&amp;version=nightly",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0A%23!%5Bfeature(transpose_result)%5D%0A%0Afn%20main()%20%7B%0A%23%5Bderive(Debug%2C%20Eq%2C%20PartialEq)%5D%0Astruct%20SomeErr%3B%0A%0Alet%20x%3A%20Result%3COption%3Ci32%3E%2C%20SomeErr%3E%20%3D%20Ok(Some(5))%3B%0Alet%20y%3A%20Option%3CResult%3Ci32%2C%20SomeErr%3E%3E%20%3D%20Some(Ok(5))%3B%0Aassert_eq!(x%2C%20y.transpose())%3B%0A%7D&version=nightly",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Aassert_eq!(Some(%22car%22).unwrap_or(%22bike%22)%2C%20%22car%22)%3B%0Aassert_eq!(None.unwrap_or(%22bike%22)%2C%20%22bike%22)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Afn%20is_even(n%3A%20%26i32)%20-%3E%20bool%20%7B%0A%20%20%20%20n%20%25%202%20%3D%3D%200%0A%7D%0A%0Aassert_eq!(None.filter(is_even)%2C%20None)%3B%0Aassert_eq!(Some(3).filter(is_even)%2C%20None)%3B%0Aassert_eq!(Some(4).filter(is_even)%2C%20Some(4))%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Afn%20nobody()%20-%3E%20Option%3C%26'static%20str%3E%20%7B%20None%20%7D%0Afn%20vikings()%20-%3E%20Option%3C%26'static%20str%3E%20%7B%20Some(%22vikings%22)%20%7D%0A%0Aassert_eq!(Some(%22barbarians%22).or_else(vikings)%2C%20Some(%22barbarians%22))%3B%0Aassert_eq!(None.or_else(vikings)%2C%20Some(%22vikings%22))%3B%0Aassert_eq!(None.or_else(nobody)%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Afn%20sq(x%3A%20u32)%20-%3E%20Option%3Cu32%3E%20%7B%20Some(x%20*%20x)%20%7D%0Afn%20nope(_%3A%20u32)%20-%3E%20Option%3Cu32%3E%20%7B%20None%20%7D%0A%0Aassert_eq!(Some(2).and_then(sq).and_then(sq)%2C%20Some(16))%3B%0Aassert_eq!(Some(2).and_then(sq).and_then(nope)%2C%20None)%3B%0Aassert_eq!(Some(2).and_then(nope).and_then(sq)%2C%20None)%3B%0Aassert_eq!(None.and_then(sq).and_then(sq)%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20k%20%3D%2010%3B%0Aassert_eq!(Some(4).unwrap_or_else(%7C%7C%202%20*%20k)%2C%204)%3B%0Aassert_eq!(None.unwrap_or_else(%7C%7C%202%20*%20k)%2C%2020)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20mut%20x%20%3D%20Some(4)%3B%0Amatch%20x.iter_mut().next()%20%7B%0A%20%20%20%20Some(v)%20%3D%3E%20*v%20%3D%2042%2C%0A%20%20%20%20None%20%3D%3E%20%7B%7D%2C%0A%7D%0Aassert_eq!(x%2C%20Some(42))%3B%0A%0Alet%20mut%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Aassert_eq!(x.iter_mut().next()%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(%22air%22)%3B%0Aassert_eq!(x.unwrap()%2C%20%22air%22)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(%22string%22)%3B%0Alet%20v%3A%20Vec%3C%26str%3E%20%3D%20x.into_iter().collect()%3B%0Aassert_eq!(v%2C%20%5B%22string%22%5D)%3B%0A%0Alet%20x%20%3D%20None%3B%0Alet%20v%3A",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%20%3D%20None%3B%0Aassert_eq!(x.or(y)%2C%20Some(2))%3B%0A%0Alet%20x%20%3D%20None%3B%0Alet%20y%20%3D%20Some(100)%3B%0Aassert_eq!(x.or(y)%2C%20Some(100))%3B%0A%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%20%3D%20Some(100)%3B%0Aassert_eq!(x.or(y)%2C%20Some(2))%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Alet%20y%20%3D%20None%3B%0Aassert_eq!(x.or(y)%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%3A%20Option%3C%26str%3E%20%3D%20None%3B%0Aassert_eq!(x.and(y)%2C%20None)%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Alet%20y%20%3D%20Some(%22foo%22)%3B%0Aassert_eq!(x.and(y)%2C%20None)%3B%0A%0Alet%20x%20%3D%20Some(2)%3B%0Alet%20y%20%3D%20Some(%22foo%22)%3B%0Aassert_eq!(x.and(y)%2C%20Some(%22foo%22))%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Alet%20y%3A%20Option%3C%26str%3E%20%3D%20None%3B%0Aassert_eq!(x.and(y)%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%20%3D%20Some(4)%3B%0Aassert_eq!(x.iter().next()%2C%20Some(%264))%3B%0A%0Alet%20x%3A%20Option%3Cu32%3E%20%3D%20None%3B%0Aassert_eq!(x.iter().next()%2C%20None)%3B%0A%7D",
+    "https://play.rust-lang.org/?code=%23!%5Ballow(unused)%5D%0Afn%20main()%20%7B%0Alet%20x%3A%20Option%3C%26str%3E%20%3D%20None%3B%0Aassert_eq!(x.unwrap()%2C%20%22air%22)%3B%20%2F%2F%20fails%0A%7D",
+    "index.html",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html"
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 627131,
+    "totalUsage": {
+      "prompt_tokens": 137521,
+      "completion_tokens": 17490,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "chunkLength": 26,
+    "chunksInfo": [
+      { "contextLength": 0, "contentLength": 7000, "costTime": 21103 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 11982 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 20528 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 44171 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 22516 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 23197 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 26825 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 37706 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 33335 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 34375 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 20845 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 22143 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 15465 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 22815 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 26132 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 16525 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 24371 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 37695 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 21265 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 22534 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 23020 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 20139 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 20232 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 23286 },
+      { "contextLength": 500, "contentLength": 7000, "costTime": 24124 },
+      { "contextLength": 500, "contentLength": 1900, "costTime": 10802 }
+    ]
+  },
+  "model": "deepseek-v3-241226",
+  "extraInfo": { "startTime": "2025-03-22T14:34:41.448Z", "examGroup": "split" }
+}

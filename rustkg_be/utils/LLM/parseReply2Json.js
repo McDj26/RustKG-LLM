@@ -22,7 +22,11 @@ const openai = new OpenAI({
  * result: object | string;
  * }>}
  */
-module.exports = async function (prompt, model = process.env.LLM_MODEL) {
+module.exports = async function (
+  prompt,
+  max_tokens = 4 * 1024,
+  model = process.env.LLM_MODEL
+) {
   if (!model) {
     throw new Error("please provide a model");
   }
@@ -34,16 +38,14 @@ module.exports = async function (prompt, model = process.env.LLM_MODEL) {
         content: prompt,
       },
     ],
-    response_format: {
-      type: "json_object",
-    },
+    max_tokens,
   });
 
   const usage = completion.usage;
   let result = completion.choices[0].message.content.trim();
   // 如果返回的json被包裹在代码块中，使用正则表达式的命名分组匹配中间的内容
   if (result.startsWith("`") || result.endsWith("`")) {
-    result = /(```json)?(?<result>.*)/.exec(result).groups.result;
+    result = /(```json)?(?<result>.*)/i.exec(result).groups.result;
     while (result.endsWith("`")) result = result.slice(0, -1);
   }
 

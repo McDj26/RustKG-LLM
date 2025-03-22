@@ -1,28 +1,25 @@
-const fs = require("fs").promises;
+const fs = require("fs");
 const path = require("path");
-const dirPath = path.resolve(__dirname, "../output/deepseek-r1-250120");
-const targetUrl =
-  "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/iter/trait.Iterator.html";
-console.log(dirPath);
 
-fs.readdir(dirPath)
-  .then((files) => {
-    const promises = files.map((file) => {
-      const filePath = path.join(dirPath, file);
-      return fs
-        .readFile(filePath)
-        .then((data) => {
-          const jsonData = JSON.parse(data);
-          console.log(jsonData.source_url);
+const dir =
+  "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120";
 
-          return jsonData.source_url === targetUrl ? jsonData.id : null;
-        })
-        .catch((error) => null);
-    });
+const files = fs
+  .readdirSync(dir)
+  .filter((file) => path.extname(file) === ".json");
+const result = [];
 
-    return Promise.all(promises).then((results) =>
-      results.filter((item) => item !== null)
-    );
-  })
-  .then((results) => console.log(results))
-  .catch((error) => console.error(error));
+files.forEach((file) => {
+  const filePath = path.join(dir, file);
+  const data = JSON.parse(fs.readFileSync(filePath));
+  const sourceUrl = data.source_url.replace("file:///", "");
+  const name = path.basename(sourceUrl);
+  const id = data.id;
+  if (fs.existsSync(sourceUrl) === false) return;
+  const stats = fs.statSync(sourceUrl);
+  if (stats.size > 40 * 1024 && stats.size < 50 * 1024) {
+    result.push({ id, name, size: stats.size });
+  }
+});
+
+console.log(result);

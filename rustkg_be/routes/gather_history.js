@@ -4,7 +4,7 @@ const fs = require("fs");
 const TaskManager = require("../utils/TaskManager");
 const controller = new TaskManager();
 const model = process.env.LLM_MODEL;
-const model_output_path = path.join(__dirname, "../output", model);
+const model_output_path = path.join(__dirname, "../output", model || "");
 const URLBlacklist = require("./llm_extraction/URLBlackList");
 const failed = new Set(require("../assets/failed.json").map((i) => i.url));
 

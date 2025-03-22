@@ -1,0 +1,2967 @@
+[
+  [
+    "Error",
+    "is a",
+    "Struct"
+  ],
+  [
+    "Error",
+    "has full name",
+    "alloc::fmt::Error"
+  ],
+  [
+    "Error",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "Error",
+    "has declaration",
+    "pub struct Error;"
+  ],
+  [
+    "Error",
+    "has description",
+    "The error type which is returned from formatting a message into a stream. This type does not support transmission of an error other than that an error occurred. Any extra information must be arranged to be transmitted through some other means."
+  ],
+  [
+    "Error",
+    "implements",
+    "Copy"
+  ],
+  [
+    "Error",
+    "implements",
+    "Default"
+  ],
+  [
+    "Error",
+    "implements",
+    "Display"
+  ],
+  [
+    "Error",
+    "implements",
+    "Hash"
+  ],
+  [
+    "Error",
+    "implements",
+    "Clone"
+  ],
+  [
+    "Error",
+    "implements",
+    "PartialOrd<Error>"
+  ],
+  [
+    "Error",
+    "implements",
+    "Ord"
+  ],
+  [
+    "Error",
+    "implements",
+    "Debug"
+  ],
+  [
+    "Error",
+    "implements",
+    "Eq"
+  ],
+  [
+    "Error",
+    "implements",
+    "PartialEq<Error>"
+  ],
+  [
+    "Error",
+    "implements",
+    "Send"
+  ],
+  [
+    "Error",
+    "implements",
+    "Sync"
+  ],
+  [
+    "fmt",
+    "is a",
+    "function"
+  ],
+  [
+    "fmt",
+    "has return type",
+    "Result<(), Error>"
+  ],
+  [
+    "fmt",
+    "has argument",
+    "self"
+  ],
+  [
+    "fmt",
+    "has argument",
+    "f"
+  ],
+  [
+    "self",
+    "has type",
+    "&Error"
+  ],
+  [
+    "f",
+    "has type",
+    "&mut Formatter"
+  ],
+  [
+    "Error",
+    "has method",
+    "fmt"
+  ],
+  [
+    "default",
+    "is a",
+    "function"
+  ],
+  [
+    "default",
+    "has return type",
+    "Error"
+  ],
+  [
+    "Error",
+    "has method",
+    "default"
+  ],
+  [
+    "hash",
+    "is a",
+    "function"
+  ],
+  [
+    "hash",
+    "has argument",
+    "self"
+  ],
+  [
+    "hash",
+    "has argument",
+    "state"
+  ],
+  [
+    "Error",
+    "has method",
+    "hash"
+  ],
+  [
+    "clone",
+    "is a",
+    "function"
+  ],
+  [
+    "clone",
+    "has return type",
+    "Error"
+  ],
+  [
+    "Error",
+    "has method",
+    "clone"
+  ],
+  [
+    "BorrowMut",
+    "is a",
+    "Trait"
+  ],
+  [
+    "BorrowMut",
+    "has full name",
+    "alloc::borrow::BorrowMut"
+  ],
+  [
+    "BorrowMut",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "BorrowMut",
+    "has declaration",
+    "pub trait BorrowMut<Borrowed>: Borrow<Borrowed> where Borrowed: ?Sized { fn borrow_mut(&mut self) -> &mut Borrowed; }"
+  ],
+  [
+    "BorrowMut",
+    "requires method",
+    "borrow_mut"
+  ],
+  [
+    "BorrowMut",
+    "has description",
+    "A trait for mutably borrowing data. As a companion to Borrow<T> this trait allows a type to borrow as an underlying type by providing a mutable reference. See Borrow<T> for more information on borrowing as another type."
+  ],
+  [
+    "BorrowMut<Borrowed>",
+    "inherits from",
+    "Borrow<Borrowed>"
+  ],
+  [
+    "borrow_mut",
+    "is a",
+    "function"
+  ],
+  [
+    "borrow_mut",
+    "has return type",
+    "&mut Borrowed"
+  ],
+  [
+    "borrow_mut",
+    "has argument",
+    "&mut self"
+  ],
+  [
+    "borrow_mut",
+    "has description",
+    "Mutably borrows from an owned value."
+  ],
+  [
+    "&'_ mut T",
+    "implements",
+    "BorrowMut<T>"
+  ],
+  [
+    "T",
+    "implements",
+    "BorrowMut<T>"
+  ],
+  [
+    "Vec<T>",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 0]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 1]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 2]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 3]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 4]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 5]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 6]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 7]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 8]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 9]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 10]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 11]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 12]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 13]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 14]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 15]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 16]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 17]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 18]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 19]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 20]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 21]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 22]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 23]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 24]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 25]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 26]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 27]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 28]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 29]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 30]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 31]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "[T; 32]",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "Box<T>",
+    "implements",
+    "BorrowMut<T>"
+  ],
+  [
+    "Error",
+    "is a",
+    "struct"
+  ],
+  [
+    "Error",
+    "has description",
+    "The error type which is returned from formatting a message into a stream."
+  ],
+  [
+    "Error",
+    "has description",
+    "This type does not support transmission of an error other than that an error occurred. Any extra information must be arranged to be transmitted through some other means."
+  ],
+  [
+    "Error",
+    "has description",
+    "An important thing to remember is that the type fmt::Error should not be confused with std::io::Error or std::error::Error, which you may also have in scope."
+  ],
+  [
+    "Error",
+    "is distinct from",
+    "std::io::Error"
+  ],
+  [
+    "Error",
+    "is distinct from",
+    "std::error::Error"
+  ],
+  [
+    "Default",
+    "requires method",
+    "default"
+  ],
+  [
+    "Display",
+    "requires method",
+    "fmt"
+  ],
+  [
+    "fmt",
+    "has argument",
+    "fmt::self"
+  ],
+  [
+    "fmt::self",
+    "has type",
+    "&Error"
+  ],
+  [
+    "fmt",
+    "has argument",
+    "fmt::f"
+  ],
+  [
+    "fmt::f",
+    "has type",
+    "&mut Formatter"
+  ],
+  [
+    "Hash",
+    "requires method",
+    "hash"
+  ],
+  [
+    "hash",
+    "has argument",
+    "hash::self"
+  ],
+  [
+    "hash::self",
+    "has type",
+    "&Error"
+  ],
+  [
+    "hash",
+    "has argument",
+    "hash::state"
+  ],
+  [
+    "hash::state",
+    "has type",
+    "&mut __H"
+  ],
+  [
+    "Clone",
+    "requires method",
+    "clone"
+  ],
+  [
+    "clone",
+    "has argument",
+    "clone::self"
+  ],
+  [
+    "clone::self",
+    "has type",
+    "&Error"
+  ],
+  [
+    "PartialOrd<Error>",
+    "requires method",
+    "partial_cmp"
+  ],
+  [
+    "partial_cmp",
+    "has argument",
+    "partial_cmp::self"
+  ],
+  [
+    "partial_cmp",
+    "has argument",
+    "partial_cmp::other"
+  ],
+  [
+    "partial_cmp::other",
+    "has type",
+    "&Error"
+  ],
+  [
+    "partial_cmp",
+    "has return type",
+    "Option<Ordering>"
+  ],
+  [
+    "Ord",
+    "requires method",
+    "cmp"
+  ],
+  [
+    "cmp",
+    "has argument",
+    "cmp::self"
+  ],
+  [
+    "cmp",
+    "has argument",
+    "cmp::other"
+  ],
+  [
+    "cmp::other",
+    "has type",
+    "&Error"
+  ],
+  [
+    "cmp",
+    "has return type",
+    "Ordering"
+  ],
+  [
+    "Debug",
+    "requires method",
+    "fmt"
+  ],
+  [
+    "PartialEq<Error>",
+    "requires method",
+    "eq"
+  ],
+  [
+    "eq",
+    "has argument",
+    "eq::self"
+  ],
+  [
+    "eq",
+    "has argument",
+    "eq::other"
+  ],
+  [
+    "eq::other",
+    "has type",
+    "&Error"
+  ],
+  [
+    "eq",
+    "has return type",
+    "bool"
+  ],
+  [
+    "PartialEq<Error>",
+    "requires method",
+    "ne"
+  ],
+  [
+    "ne",
+    "has argument",
+    "ne::self"
+  ],
+  [
+    "ne",
+    "has argument",
+    "ne::other"
+  ],
+  [
+    "ne::other",
+    "has type",
+    "&Error"
+  ],
+  [
+    "ne",
+    "has return type",
+    "bool"
+  ],
+  [
+    "Weak",
+    "is a",
+    "struct"
+  ],
+  [
+    "Weak",
+    "has full name",
+    "std::rc::Weak"
+  ],
+  [
+    "Weak",
+    "stable since",
+    "1.4.0"
+  ],
+  [
+    "Weak",
+    "has description",
+    "Weak is a version of Rc that holds a non-owning reference to the managed value. The value is accessed by calling upgrade on the Weak pointer, which returns an Option<Rc<T>>."
+  ],
+  [
+    "Weak::new",
+    "is a",
+    "method"
+  ],
+  [
+    "Weak::new",
+    "stable since",
+    "1.10.0"
+  ],
+  [
+    "Weak",
+    "has method",
+    "new"
+  ],
+  [
+    "Weak::new",
+    "has description",
+    "Constructs a new Weak<T>, without allocating any memory. Calling upgrade on the return value always gives None."
+  ],
+  [
+    "Weak::upgrade",
+    "is a",
+    "method"
+  ],
+  [
+    "Weak",
+    "has method",
+    "upgrade"
+  ],
+  [
+    "Weak::upgrade",
+    "has return type",
+    "Option<Rc<T>>"
+  ],
+  [
+    "Weak::upgrade",
+    "has description",
+    "Attempts to upgrade the Weak pointer to an Rc, extending the lifetime of the value if successful."
+  ],
+  [
+    "Weak",
+    "implements",
+    "Default"
+  ],
+  [
+    "Weak",
+    "implements",
+    "Debug"
+  ],
+  [
+    "Weak",
+    "implements",
+    "Drop"
+  ],
+  [
+    "Weak",
+    "implements",
+    "Clone"
+  ],
+  [
+    "Weak",
+    "implements",
+    "!Send"
+  ],
+  [
+    "Weak",
+    "implements",
+    "!Sync"
+  ],
+  [
+    "Weak::default",
+    "is a",
+    "method"
+  ],
+  [
+    "Weak::default",
+    "has description",
+    "Constructs a new Weak<T>, allocating memory for T without initializing it. Calling upgrade always gives None."
+  ],
+  [
+    "Weak::clone",
+    "is a",
+    "method"
+  ],
+  [
+    "Weak::clone",
+    "has description",
+    "Makes a clone of the Weak pointer that points to the same value."
+  ],
+  [
+    "Weak::drop",
+    "is a",
+    "method"
+  ],
+  [
+    "Weak::drop",
+    "has description",
+    "Drops the Weak pointer."
+  ],
+  [
+    "Weak",
+    "has declaration",
+    "pub struct Weak<T> where T: ?Sized { /* fields omitted */ }"
+  ],
+  [
+    "Weak",
+    "is a",
+    "Struct"
+  ],
+  [
+    "Weak",
+    "has description",
+    "Weak is a version of Rc that holds a non-owning reference to the managed value"
+  ],
+  [
+    "Weak",
+    "requires trait",
+    "Sized"
+  ],
+  [
+    "Weak::new",
+    "is a",
+    "function"
+  ],
+  [
+    "Weak::new",
+    "has return type",
+    "Weak<T>"
+  ],
+  [
+    "Weak::new",
+    "has example",
+    "let empty: Weak<i64> = Weak::new();"
+  ],
+  [
+    "Weak::upgrade",
+    "has description",
+    "Attempts to upgrade the Weak pointer to an Rc"
+  ],
+  [
+    "Weak",
+    "implements",
+    "CoerceUnsized<Weak<U>>"
+  ],
+  [
+    "Default::default",
+    "has return type",
+    "Weak<T>"
+  ],
+  [
+    "Debug::fmt",
+    "has argument",
+    "&self"
+  ],
+  [
+    "Debug::fmt",
+    "has argument",
+    "f: &mut Formatter"
+  ],
+  [
+    "Drop::drop",
+    "has description",
+    "Drops the Weak pointer"
+  ],
+  [
+    "Clone::clone",
+    "has description",
+    "Makes a clone of the Weak pointer"
+  ],
+  [
+    "Stdin",
+    "is a",
+    "struct"
+  ],
+  [
+    "Stdin",
+    "has full name",
+    "std::io::Stdin"
+  ],
+  [
+    "Stdin",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "Stdin",
+    "has declaration",
+    "pub struct Stdin { /* fields omitted */ }"
+  ],
+  [
+    "Stdin",
+    "has description",
+    "A handle to the standard input stream of a process."
+  ],
+  [
+    "lock",
+    "is a",
+    "function"
+  ],
+  [
+    "lock",
+    "has return type",
+    "StdinLock"
+  ],
+  [
+    "Stdin",
+    "has method",
+    "lock"
+  ],
+  [
+    "read_line",
+    "is a",
+    "function"
+  ],
+  [
+    "read_line",
+    "has argument",
+    "buf: &mut String"
+  ],
+  [
+    "read_line",
+    "has return type",
+    "Result<usize>"
+  ],
+  [
+    "Stdin",
+    "has method",
+    "read_line"
+  ],
+  [
+    "Stdin",
+    "implements",
+    "Read"
+  ],
+  [
+    "Stdin",
+    "implements",
+    "AsRawHandle"
+  ],
+  [
+    "Stdin",
+    "implements",
+    "AsRawFd"
+  ],
+  [
+    "Stdin",
+    "implements",
+    "Debug"
+  ],
+  [
+    "AsRawHandle",
+    "has stability",
+    "This is supported on Windows only."
+  ],
+  [
+    "AsRawFd",
+    "has stability",
+    "This is supported on Unix only."
+  ],
+  [
+    "StdinLock",
+    "is a",
+    "struct"
+  ],
+  [
+    "StdinLock",
+    "implements",
+    "Read"
+  ],
+  [
+    "StdinLock",
+    "implements",
+    "BufRead"
+  ],
+  [
+    "read",
+    "has argument",
+    "buf: &mut [u8]"
+  ],
+  [
+    "read",
+    "has return type",
+    "Result<usize>"
+  ],
+  [
+    "Stdin",
+    "requires method",
+    "read"
+  ],
+  [
+    "BorrowMut",
+    "has description",
+    "A trait for mutably borrowing data."
+  ],
+  [
+    "BorrowMut",
+    "inherits from",
+    "Borrow"
+  ],
+  [
+    "alloc::fmt::Error",
+    "is a",
+    "struct"
+  ],
+  [
+    "alloc::fmt::Error",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "alloc::fmt::Error",
+    "has declaration",
+    "pub struct Error;"
+  ],
+  [
+    "alloc::fmt::Error",
+    "has description",
+    "The error type which is returned from formatting a message into a stream. This type does not support transmission of an error other than that an error occurred. Any extra information must be arranged to be transmitted through some other means. An important thing to remember is that the type fmt::Error should not be confused with std::io::Error or std::error::Error, which you may also have in scope."
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Copy"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Default"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Display"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Hash"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Clone"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "PartialOrd<Error>"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Ord"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Debug"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Eq"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "PartialEq<Error>"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Send"
+  ],
+  [
+    "alloc::fmt::Error",
+    "implements",
+    "Sync"
+  ],
+  [
+    "f",
+    "has type",
+    "Formatter"
+  ],
+  [
+    "new",
+    "is a",
+    "function"
+  ],
+  [
+    "new",
+    "has full name",
+    "std::rc::Weak::new"
+  ],
+  [
+    "new",
+    "stable since",
+    "1.10.0"
+  ],
+  [
+    "new",
+    "has description",
+    "Constructs a new Weak<T>, without allocating any memory. Calling upgrade on the return value always gives None."
+  ],
+  [
+    "upgrade",
+    "is a",
+    "function"
+  ],
+  [
+    "upgrade",
+    "has full name",
+    "std::rc::Weak::upgrade"
+  ],
+  [
+    "upgrade",
+    "has return type",
+    "Option<Rc<T>>"
+  ],
+  [
+    "upgrade",
+    "has description",
+    "Attempts to upgrade the Weak pointer to an Rc, extending the lifetime of the value if successful. Returns None if the value has since been dropped."
+  ],
+  [
+    "Default",
+    "has method",
+    "default"
+  ],
+  [
+    "default",
+    "has return type",
+    "Weak<T>"
+  ],
+  [
+    "default",
+    "has description",
+    "Constructs a new Weak<T>, allocating memory for T without initializing it. Calling upgrade always gives None."
+  ],
+  [
+    "Debug",
+    "has method",
+    "fmt"
+  ],
+  [
+    "fmt",
+    "has description",
+    "Formats the value using the given formatter."
+  ],
+  [
+    "Drop",
+    "has method",
+    "drop"
+  ],
+  [
+    "drop",
+    "has description",
+    "Drops the Weak pointer."
+  ],
+  [
+    "Clone",
+    "has method",
+    "clone"
+  ],
+  [
+    "clone",
+    "has description",
+    "Makes a clone of the Weak pointer that points to the same value."
+  ],
+  [
+    "TryRecvError",
+    "is a",
+    "Enum"
+  ],
+  [
+    "TryRecvError",
+    "has full name",
+    "std::sync::mpsc::TryRecvError"
+  ],
+  [
+    "TryRecvError",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "TryRecvError",
+    "has variant",
+    "Empty"
+  ],
+  [
+    "TryRecvError",
+    "has variant",
+    "Disconnected"
+  ],
+  [
+    "Empty",
+    "has description",
+    "This channel is currently empty, but the Sender(s) have not yet disconnected, so data may yet become available."
+  ],
+  [
+    "Disconnected",
+    "has description",
+    "The channel's sending half has become disconnected, and there will never be any more data received on it."
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Error"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Display"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Debug"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "PartialEq<TryRecvError>"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Eq"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Copy"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "From<RecvError>"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Clone"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Send"
+  ],
+  [
+    "TryRecvError",
+    "implements",
+    "Sync"
+  ],
+  [
+    "TryRecvError",
+    "has declaration",
+    "pub enum TryRecvError { Empty, Disconnected }"
+  ],
+  [
+    "TryRecvError::from",
+    "is a",
+    "method"
+  ],
+  [
+    "TryRecvError::from",
+    "converts from",
+    "RecvError"
+  ],
+  [
+    "AsRef",
+    "is a",
+    "Trait"
+  ],
+  [
+    "AsRef",
+    "has full name",
+    "core::convert::AsRef"
+  ],
+  [
+    "AsRef",
+    "stable since",
+    "1.0.0"
+  ],
+  [
+    "AsRef",
+    "requires method",
+    "as_ref"
+  ],
+  [
+    "AsRef",
+    "has declaration",
+    "pub trait AsRef<T: ?Sized> { fn as_ref(&self) -> &T; }"
+  ],
+  [
+    "AsRef",
+    "has description",
+    "A cheap reference-to-reference conversion. Used to convert a value to a reference value within generic code."
+  ],
+  [
+    "as_ref",
+    "is a",
+    "function"
+  ],
+  [
+    "as_ref",
+    "has return type",
+    "&T"
+  ],
+  [
+    "as_ref",
+    "has argument",
+    "&self"
+  ],
+  [
+    "as_ref",
+    "has description",
+    "Performs the conversion."
+  ],
+  [
+    "str",
+    "implements",
+    "AsRef<[u8]>"
+  ],
+  [
+    "str",
+    "implements",
+    "AsRef<str>"
+  ],
+  [
+    "[T; 0]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 1]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 2]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 3]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 4]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 5]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 6]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 7]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 8]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 9]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 10]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 11]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 12]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 13]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 14]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 15]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 16]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 17]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 18]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 19]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 20]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 21]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 22]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 23]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 24]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 25]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 26]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 27]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 28]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 29]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 30]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 31]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T; 32]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "[T]",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "Iter<'_, T>",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "&T",
+    "implements",
+    "AsRef<U> where T: AsRef<U>"
+  ],
+  [
+    "&mut T",
+    "implements",
+    "AsRef<U> where T: AsRef<U>"
+  ],
+  [
+    "lock",
+    "returns",
+    "StdinLock"
+  ],
+  [
+    "lock",
+    "has description",
+    "Locks this handle to the standard input stream, returning a readable guard."
+  ],
+  [
+    "read_line",
+    "returns",
+    "Result<usize>"
+  ],
+  [
+    "read_line",
+    "has description",
+    "Locks this handle and reads a line of input into the specified buffer."
+  ],
+  [
+    "Stdin",
+    "implements",
+    "Send"
+  ],
+  [
+    "Stdin",
+    "implements",
+    "Sync"
+  ],
+  [
+    "never",
+    "is a",
+    "Primitive Type"
+  ],
+  [
+    "never",
+    "has stability",
+    "This is a nightly-only experimental API. (#35121)"
+  ],
+  [
+    "never",
+    "has alias",
+    "!"
+  ],
+  [
+    "std::process::exit",
+    "has return type",
+    "never"
+  ],
+  [
+    "break",
+    "has type",
+    "never"
+  ],
+  [
+    "continue",
+    "has type",
+    "never"
+  ],
+  [
+    "return",
+    "has type",
+    "never"
+  ],
+  [
+    "String::from_str",
+    "has error type",
+    "never"
+  ],
+  [
+    "never",
+    "implements",
+    "Copy"
+  ],
+  [
+    "never",
+    "implements",
+    "Display"
+  ],
+  [
+    "never",
+    "implements",
+    "Hash"
+  ],
+  [
+    "never",
+    "implements",
+    "Clone"
+  ],
+  [
+    "never",
+    "implements",
+    "PartialOrd<!>"
+  ],
+  [
+    "never",
+    "implements",
+    "Ord"
+  ],
+  [
+    "never",
+    "implements",
+    "Debug"
+  ],
+  [
+    "never",
+    "implements",
+    "Eq"
+  ],
+  [
+    "never",
+    "implements",
+    "PartialEq<!>"
+  ],
+  [
+    "never",
+    "implements",
+    "Error"
+  ],
+  [
+    "never",
+    "implements",
+    "Termination"
+  ],
+  [
+    "Error",
+    "requires method",
+    "description"
+  ],
+  [
+    "Error",
+    "requires method",
+    "cause"
+  ],
+  [
+    "Error",
+    "requires method",
+    "source"
+  ],
+  [
+    "PartialEq<TryRecvError>",
+    "requires method",
+    "eq"
+  ],
+  [
+    "From<RecvError>",
+    "requires method",
+    "from"
+  ],
+  [
+    "fmt",
+    "has return type",
+    "Result"
+  ],
+  [
+    "from",
+    "has return type",
+    "TryRecvError"
+  ],
+  [
+    "TryRecvError",
+    "has source",
+    "../../../src/std/sync/mpsc/mod.rs.html#594-604"
+  ],
+  [
+    "TryRecvError",
+    "has stability",
+    "This is supported on Windows only."
+  ],
+  [
+    "System",
+    "is a",
+    "struct"
+  ],
+  [
+    "System",
+    "has full name",
+    "std::alloc::System"
+  ],
+  [
+    "System",
+    "stable since",
+    "1.28.0"
+  ],
+  [
+    "System",
+    "has description",
+    "The default memory allocator provided by the operating system."
+  ],
+  [
+    "System",
+    "based on",
+    "malloc"
+  ],
+  [
+    "System",
+    "based on",
+    "HeapAlloc"
+  ],
+  [
+    "System",
+    "implements",
+    "GlobalAlloc"
+  ],
+  [
+    "System",
+    "implements",
+    "Alloc"
+  ],
+  [
+    "System",
+    "implements",
+    "Send"
+  ],
+  [
+    "System",
+    "implements",
+    "Sync"
+  ],
+  [
+    "GlobalAlloc",
+    "has method",
+    "alloc"
+  ],
+  [
+    "GlobalAlloc",
+    "has method",
+    "alloc_zeroed"
+  ],
+  [
+    "GlobalAlloc",
+    "has method",
+    "dealloc"
+  ],
+  [
+    "GlobalAlloc",
+    "has method",
+    "realloc"
+  ],
+  [
+    "alloc",
+    "is a",
+    "function"
+  ],
+  [
+    "alloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "alloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "alloc",
+    "has return type",
+    "*mut u8"
+  ],
+  [
+    "alloc",
+    "has description",
+    "Allocate memory as described by the given layout."
+  ],
+  [
+    "Alloc",
+    "has method",
+    "alloc"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "alloc_zeroed"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "dealloc"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "realloc"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "usable_size"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "alloc_excess"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "realloc_excess"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "grow_in_place"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "shrink_in_place"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "alloc_one"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "dealloc_one"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "alloc_array"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "realloc_array"
+  ],
+  [
+    "Alloc",
+    "has method",
+    "dealloc_array"
+  ],
+  [
+    "alloc_zeroed",
+    "has description",
+    "Behaves like alloc, but also ensures that the contents are set to zero before being returned."
+  ],
+  [
+    "dealloc",
+    "has description",
+    "Deallocate the block of memory at the given ptr pointer with the given layout."
+  ],
+  [
+    "realloc",
+    "has description",
+    "Shink or grow a block of memory to the given new_size."
+  ],
+  [
+    "System",
+    "has stability",
+    "This is supported on Windows only."
+  ],
+  [
+    "AllocErr",
+    "is a",
+    "struct"
+  ],
+  [
+    "AllocErr",
+    "has description",
+    "The `AllocErr` error indicates an allocation failure that may be due to resource exhaustion or to something wrong when combining the given input arguments with this allocator."
+  ],
+  [
+    "CannotReallocInPlace",
+    "is a",
+    "struct"
+  ],
+  [
+    "CannotReallocInPlace",
+    "has description",
+    "The `CannotReallocInPlace` error is used when `grow_in_place` or `shrink_in_place` were unable to reuse the given memory block for a requested layout."
+  ],
+  [
+    "Excess",
+    "is a",
+    "struct"
+  ],
+  [
+    "Excess",
+    "has description",
+    "Represents the combination of a starting address and a total capacity of the returned block."
+  ],
+  [
+    "Global",
+    "is a",
+    "struct"
+  ],
+  [
+    "Global",
+    "has description",
+    "The global memory allocator."
+  ],
+  [
+    "Layout",
+    "is a",
+    "struct"
+  ],
+  [
+    "Layout",
+    "has description",
+    "Layout of a block of memory."
+  ],
+  [
+    "LayoutErr",
+    "is a",
+    "struct"
+  ],
+  [
+    "LayoutErr",
+    "has description",
+    "The parameters given to `Layout::from_size_align` or some other `Layout` constructor do not satisfy its documented constraints."
+  ],
+  [
+    "Alloc",
+    "is a",
+    "trait"
+  ],
+  [
+    "Alloc",
+    "has description",
+    "An implementation of `Alloc` can allocate, reallocate, and deallocate arbitrary blocks of data described via `Layout`."
+  ],
+  [
+    "GlobalAlloc",
+    "is a",
+    "trait"
+  ],
+  [
+    "GlobalAlloc",
+    "has description",
+    "A memory allocator that can be registered as the standard library’s default though the `#[global_allocator]` attributes."
+  ],
+  [
+    "alloc",
+    "has description",
+    "Allocate memory with the global allocator."
+  ],
+  [
+    "alloc_zeroed",
+    "has description",
+    "Allocate zero-initialized memory with the global allocator."
+  ],
+  [
+    "dealloc",
+    "has description",
+    "Deallocate memory with the global allocator."
+  ],
+  [
+    "handle_alloc_error",
+    "has description",
+    "Abort on memory allocation error or failure."
+  ],
+  [
+    "realloc",
+    "has description",
+    "Reallocate memory with the global allocator."
+  ],
+  [
+    "set_alloc_error_hook",
+    "has description",
+    "Registers a custom allocation error hook, replacing any that was previously registered."
+  ],
+  [
+    "take_alloc_error_hook",
+    "has description",
+    "Unregisters the current allocation error hook, returning it."
+  ],
+  [
+    "core::slice::Iter<'_, T>",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "&T",
+    "implements",
+    "AsRef<U>"
+  ],
+  [
+    "&mut T",
+    "implements",
+    "AsRef<U>"
+  ],
+  [
+    "alloc::boxed::Box<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "alloc::sync::Arc<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "alloc::rc::Rc<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "alloc::borrow::Cow<'a, T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "alloc::string::String",
+    "implements",
+    "AsRef<str>"
+  ],
+  [
+    "alloc::string::String",
+    "implements",
+    "AsRef<[u8]>"
+  ],
+  [
+    "alloc::vec::Vec<T>",
+    "implements",
+    "AsRef<alloc::vec::Vec<T>>"
+  ],
+  [
+    "alloc::vec::Vec<T>",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "as_ref",
+    "has argument",
+    "self"
+  ],
+  [
+    "Box<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "Arc<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "Rc<T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "Cow<'a, T>",
+    "implements",
+    "AsRef<T>"
+  ],
+  [
+    "String",
+    "implements",
+    "AsRef<str>"
+  ],
+  [
+    "String",
+    "implements",
+    "AsRef<[u8]>"
+  ],
+  [
+    "Vec<T>",
+    "implements",
+    "AsRef<Vec<T>>"
+  ],
+  [
+    "Vec<T>",
+    "implements",
+    "AsRef<[T]>"
+  ],
+  [
+    "lock",
+    "has example",
+    "use std::io::{self, Read}; ..."
+  ],
+  [
+    "Read",
+    "requires method",
+    "read"
+  ],
+  [
+    "AsRawHandle",
+    "provides access to",
+    "RawHandle"
+  ],
+  [
+    "AsRawFd",
+    "provides access to",
+    "RawFd"
+  ],
+  [
+    "Stdin",
+    "defined in",
+    "../../src/std/io/stdio.rs"
+  ],
+  [
+    "!",
+    "is a",
+    "Primitive Type"
+  ],
+  [
+    "!",
+    "is known as",
+    "never"
+  ],
+  [
+    "!",
+    "has full name",
+    "std::primitive::never"
+  ],
+  [
+    "!",
+    "has stability",
+    "nightly-only experimental API (never_type #35121)"
+  ],
+  [
+    "!",
+    "has description",
+    "The `!` type, also called \"never\". Represents computations that never resolve to a value"
+  ],
+  [
+    "!",
+    "implements",
+    "Copy"
+  ],
+  [
+    "!",
+    "implements",
+    "Display"
+  ],
+  [
+    "!",
+    "implements",
+    "Hash"
+  ],
+  [
+    "!",
+    "implements",
+    "Clone"
+  ],
+  [
+    "!",
+    "implements",
+    "PartialOrd<!>"
+  ],
+  [
+    "!",
+    "implements",
+    "Ord"
+  ],
+  [
+    "!",
+    "implements",
+    "Debug"
+  ],
+  [
+    "!",
+    "implements",
+    "Eq"
+  ],
+  [
+    "!",
+    "implements",
+    "PartialEq<!>"
+  ],
+  [
+    "!",
+    "implements",
+    "Error"
+  ],
+  [
+    "!",
+    "implements",
+    "Termination"
+  ],
+  [
+    "Display::fmt",
+    "has argument",
+    "&self"
+  ],
+  [
+    "Display::fmt",
+    "has argument",
+    "formatter: &mut Formatter"
+  ],
+  [
+    "Display::fmt",
+    "returns",
+    "Result<(), Error>"
+  ],
+  [
+    "Hash::hash",
+    "has argument",
+    "&self"
+  ],
+  [
+    "Hash::hash",
+    "has argument",
+    "state: &mut H"
+  ],
+  [
+    "Clone::clone",
+    "returns",
+    "!"
+  ],
+  [
+    "!",
+    "has full name",
+    "never"
+  ],
+  [
+    "!",
+    "has stability",
+    "This is a nightly-only experimental API. (never_type #35121)"
+  ],
+  [
+    "!",
+    "implements",
+    "PartialOrd"
+  ],
+  [
+    "!",
+    "implements",
+    "PartialEq"
+  ],
+  [
+    "Display::fmt",
+    "has return type",
+    "fmt::Result"
+  ],
+  [
+    "Display::fmt",
+    "has argument",
+    "self"
+  ],
+  [
+    "Display::fmt",
+    "has argument",
+    "formatter"
+  ],
+  [
+    "Hash::hash",
+    "has argument",
+    "self"
+  ],
+  [
+    "Clone::clone",
+    "has return type",
+    "!"
+  ],
+  [
+    "Clone::clone",
+    "has argument",
+    "self"
+  ],
+  [
+    "PartialOrd::partial_cmp",
+    "has return type",
+    "Option<Ordering>"
+  ],
+  [
+    "PartialOrd::partial_cmp",
+    "has argument",
+    "self"
+  ],
+  [
+    "Ord::cmp",
+    "has return type",
+    "Ordering"
+  ],
+  [
+    "Ord::cmp",
+    "has argument",
+    "self"
+  ],
+  [
+    "Debug::fmt",
+    "has return type",
+    "fmt::Result"
+  ],
+  [
+    "Debug::fmt",
+    "has argument",
+    "self"
+  ],
+  [
+    "Debug::fmt",
+    "has argument",
+    "formatter"
+  ],
+  [
+    "PartialEq::eq",
+    "has return type",
+    "bool"
+  ],
+  [
+    "PartialEq::eq",
+    "has argument",
+    "self"
+  ],
+  [
+    "Error::description",
+    "has return type",
+    "&str"
+  ],
+  [
+    "Error::source",
+    "has return type",
+    "Option<&(dyn Error + 'static)>"
+  ],
+  [
+    "Termination::report",
+    "has return type",
+    "i32"
+  ],
+  [
+    "Termination::report",
+    "has argument",
+    "self"
+  ],
+  [
+    "break",
+    "has type",
+    "!"
+  ],
+  [
+    "continue",
+    "has type",
+    "!"
+  ],
+  [
+    "return",
+    "has type",
+    "!"
+  ],
+  [
+    "exit",
+    "has return type",
+    "!"
+  ],
+  [
+    "!",
+    "has description",
+    "The ! type, also called 'never'."
+  ],
+  [
+    "!",
+    "has tracking issue",
+    "https://github.com/rust-lang/rust/issues/35121"
+  ],
+  [
+    "!",
+    "requires feature",
+    "never_type"
+  ],
+  [
+    "TokenTree",
+    "is a",
+    "Enum"
+  ],
+  [
+    "TokenTree",
+    "has full name",
+    "proc_macro::TokenTree"
+  ],
+  [
+    "TokenTree",
+    "stable since",
+    "1.29.0"
+  ],
+  [
+    "TokenTree",
+    "has declaration",
+    "pub enum TokenTree { Group(Group), Ident(Ident), Punct(Punct), Literal(Literal), }"
+  ],
+  [
+    "TokenTree",
+    "has description",
+    "A single token or a delimited sequence of token trees (e.g. [1, (), ..])."
+  ],
+  [
+    "TokenTree::Group",
+    "has variant",
+    "Group"
+  ],
+  [
+    "TokenTree::Ident",
+    "has variant",
+    "Ident"
+  ],
+  [
+    "TokenTree::Punct",
+    "has variant",
+    "Punct"
+  ],
+  [
+    "TokenTree::Literal",
+    "has variant",
+    "Literal"
+  ],
+  [
+    "TokenTree",
+    "has method",
+    "span"
+  ],
+  [
+    "TokenTree",
+    "has method",
+    "set_span"
+  ],
+  [
+    "span",
+    "returns",
+    "Span"
+  ],
+  [
+    "span",
+    "has description",
+    "Returns the span of this tree, delegating to the span method of the contained token or a delimited stream."
+  ],
+  [
+    "set_span",
+    "has parameter",
+    "span: Span"
+  ],
+  [
+    "set_span",
+    "has description",
+    "Configures the span for only this token. Note that if this token is a Group then this method will not configure the span of each of the internal tokens."
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "!Sync"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "Extend<TokenTree>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "From<Group>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "From<Ident>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "From<Punct>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "From<Literal>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "!Send"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "Clone"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "Display"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "Debug"
+  ],
+  [
+    "Group",
+    "converts to",
+    "TokenTree"
+  ],
+  [
+    "Ident",
+    "converts to",
+    "TokenTree"
+  ],
+  [
+    "Punct",
+    "converts to",
+    "TokenTree"
+  ],
+  [
+    "Literal",
+    "converts to",
+    "TokenTree"
+  ],
+  [
+    "TokenTree",
+    "is a",
+    "enum"
+  ],
+  [
+    "TokenTree",
+    "has declaration",
+    "pub enum TokenTree { Group(Group), Ident(Ident), Punct(Punct), Literal(Literal) }"
+  ],
+  [
+    "TokenTree",
+    "has variant",
+    "Group"
+  ],
+  [
+    "TokenTree",
+    "has variant",
+    "Ident"
+  ],
+  [
+    "TokenTree",
+    "has variant",
+    "Punct"
+  ],
+  [
+    "TokenTree",
+    "has variant",
+    "Literal"
+  ],
+  [
+    "Group",
+    "is a",
+    "struct"
+  ],
+  [
+    "Ident",
+    "is a",
+    "struct"
+  ],
+  [
+    "Punct",
+    "is a",
+    "struct"
+  ],
+  [
+    "Literal",
+    "is a",
+    "struct"
+  ],
+  [
+    "Group",
+    "has description",
+    "A token stream surrounded by bracket delimiters."
+  ],
+  [
+    "Ident",
+    "has description",
+    "An identifier."
+  ],
+  [
+    "Punct",
+    "has description",
+    "A single punctuation character (+, $, etc.)."
+  ],
+  [
+    "Literal",
+    "has description",
+    "A literal character ('a'), string (\"hello\"), number (2.3), etc."
+  ],
+  [
+    "span",
+    "has return type",
+    "Span"
+  ],
+  [
+    "set_span",
+    "has argument",
+    "span: Span"
+  ],
+  [
+    "set_span",
+    "has description",
+    "Configures the span for only this token. Note that if this token is a Group then this method will not configure the span of each of the internal tokens, this will simply delegate to the set_span method of each variant."
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "From<TokenTree>"
+  ],
+  [
+    "TokenTree",
+    "implements",
+    "FromIterator<TokenTree>"
+  ],
+  [
+    "Span",
+    "is a",
+    "struct"
+  ],
+  [
+    "System",
+    "has declaration",
+    "pub struct System;"
+  ],
+  [
+    "GlobalAlloc::alloc",
+    "has return type",
+    "*mut u8"
+  ],
+  [
+    "GlobalAlloc::alloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "GlobalAlloc::alloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "GlobalAlloc::dealloc",
+    "has argument",
+    "ptr: *mut u8"
+  ],
+  [
+    "GlobalAlloc::dealloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "GlobalAlloc::dealloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "Alloc::alloc",
+    "has return type",
+    "Result<NonNull<u8>, AllocErr>"
+  ],
+  [
+    "Alloc::alloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "Alloc::alloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "Alloc::dealloc",
+    "has argument",
+    "ptr: NonNull<u8>"
+  ],
+  [
+    "Alloc::dealloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "Alloc::dealloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "Global",
+    "has full name",
+    "std::alloc::Global"
+  ],
+  [
+    "Layout",
+    "has full name",
+    "std::alloc::Layout"
+  ],
+  [
+    "AllocErr",
+    "has full name",
+    "std::alloc::AllocErr"
+  ],
+  [
+    "BorrowMut",
+    "inherits from",
+    "Borrow<Borrowed>"
+  ],
+  [
+    "alloc::vec::Vec<T>",
+    "implements",
+    "BorrowMut<[T]>"
+  ],
+  [
+    "alloc::boxed::Box<T>",
+    "implements",
+    "BorrowMut<T>"
+  ],
+  [
+    "Ident",
+    "has description",
+    "An identifier (`ident`)."
+  ],
+  [
+    "Punct",
+    "has description",
+    "A single punctuation character (`+`, `-`, `$`, etc.)."
+  ],
+  [
+    "Literal",
+    "has description",
+    "A literal character (`'a'`), string (`\"hello\"`), number (`2.3`), etc."
+  ],
+  [
+    "span",
+    "has description",
+    "Returns the span of this tree, delegating to the `span` method of the contained token or a delimited stream."
+  ],
+  [
+    "set_span",
+    "has argument",
+    "span"
+  ],
+  [
+    "set_span",
+    "has description",
+    "Configures the span for _only this token_. Note that if this token is a `Group` then this method will not configure the span of each of the internal tokens."
+  ],
+  [
+    "TokenStream",
+    "implements",
+    "Extend<TokenTree>"
+  ],
+  [
+    "TokenStream",
+    "implements",
+    "From<TokenTree>"
+  ],
+  [
+    "TokenTree",
+    "has implementation",
+    "From<Group>"
+  ],
+  [
+    "TokenTree",
+    "has implementation",
+    "From<Ident>"
+  ],
+  [
+    "TokenTree",
+    "has implementation",
+    "From<Punct>"
+  ],
+  [
+    "TokenTree",
+    "has implementation",
+    "From<Literal>"
+  ],
+  [
+    "TokenStream",
+    "implements",
+    "FromIterator<TokenTree>"
+  ],
+  [
+    "GlobalAlloc",
+    "requires method",
+    "std::alloc::GlobalAlloc::alloc"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc",
+    "has return type",
+    "*mut u8"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc",
+    "has description",
+    "Allocate memory as described by the given layout."
+  ],
+  [
+    "GlobalAlloc",
+    "requires method",
+    "std::alloc::GlobalAlloc::alloc_zeroed"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc_zeroed",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc_zeroed",
+    "has return type",
+    "*mut u8"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc_zeroed",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc_zeroed",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::GlobalAlloc::alloc_zeroed",
+    "has description",
+    "Behaves like alloc, but also ensures that the contents are set to zero before being returned."
+  ],
+  [
+    "GlobalAlloc",
+    "requires method",
+    "std::alloc::GlobalAlloc::dealloc"
+  ],
+  [
+    "std::alloc::GlobalAlloc::dealloc",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::GlobalAlloc::dealloc",
+    "has argument",
+    "ptr: *mut u8"
+  ],
+  [
+    "std::alloc::GlobalAlloc::dealloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::GlobalAlloc::dealloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::GlobalAlloc::dealloc",
+    "has description",
+    "Deallocate the block of memory at the given ptr pointer with the given layout."
+  ],
+  [
+    "GlobalAlloc",
+    "requires method",
+    "std::alloc::GlobalAlloc::realloc"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has return type",
+    "*mut u8"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has argument",
+    "ptr: *mut u8"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has argument",
+    "new_size: usize"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::GlobalAlloc::realloc",
+    "has description",
+    "Shrink or grow a block of memory to the given new_size. The block is described by the given ptr pointer and layout."
+  ],
+  [
+    "Alloc",
+    "requires method",
+    "std::alloc::Alloc::alloc"
+  ],
+  [
+    "std::alloc::Alloc::alloc",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::Alloc::alloc",
+    "has return type",
+    "Result<NonNull<u8>, AllocErr>"
+  ],
+  [
+    "std::alloc::Alloc::alloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::Alloc::alloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::Alloc::alloc",
+    "has description",
+    "Returns a pointer meeting the size and alignment guarantees of layout."
+  ],
+  [
+    "Alloc",
+    "requires method",
+    "std::alloc::Alloc::dealloc"
+  ],
+  [
+    "std::alloc::Alloc::dealloc",
+    "is a",
+    "function"
+  ],
+  [
+    "std::alloc::Alloc::dealloc",
+    "has argument",
+    "ptr: NonNull<u8>"
+  ],
+  [
+    "std::alloc::Alloc::dealloc",
+    "has argument",
+    "layout: Layout"
+  ],
+  [
+    "std::alloc::Alloc::dealloc",
+    "has attribute",
+    "unsafe"
+  ],
+  [
+    "std::alloc::Alloc::dealloc",
+    "has description",
+    "Deallocates the memory referenced by ptr."
+  ],
+  [
+    "TryRecvError",
+    "has declaration",
+    "pub enum TryRecvError { Empty, Disconnected, }"
+  ],
+  [
+    "Error::description",
+    "is a",
+    "method"
+  ],
+  [
+    "Error::description",
+    "has description",
+    "This method is soft-deprecated"
+  ],
+  [
+    "Error::cause",
+    "is a",
+    "method"
+  ],
+  [
+    "Error::source",
+    "is a",
+    "method"
+  ],
+  [
+    "Display::fmt",
+    "is a",
+    "method"
+  ],
+  [
+    "Debug::fmt",
+    "is a",
+    "method"
+  ],
+  [
+    "PartialEq::eq",
+    "is a",
+    "method"
+  ],
+  [
+    "From::from",
+    "is a",
+    "method"
+  ],
+  [
+    "Clone::clone",
+    "is a",
+    "method"
+  ],
+  [
+    "impl-Error",
+    "has source",
+    "../../../src/std/sync/mpsc/mod.rs.html#1760-1776"
+  ],
+  [
+    "impl-Display",
+    "has source",
+    "../../../src/std/sync/mpsc/mod.rs.html#1746-1757"
+  ],
+  [
+    "TryRecvError",
+    "has description",
+    "This enumeration is the list of the possible reasons that try_recv could not return data when called."
+  ]
+]

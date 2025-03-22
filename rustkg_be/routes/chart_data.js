@@ -6,11 +6,26 @@ async function handler(ctx) {
   if (!fileName.endsWith(".json")) {
     fileName += ".json";
   }
-  const filePath = path.join(__dirname, "../output", fileName);
+  let filePath = fileName;
+  if (!fs.existsSync(filePath)) {
+    filePath = path.join(__dirname, "../output", fileName);
+  }
   try {
     const data = JSON.parse(await fs.promises.readFile(filePath, "utf8"));
-    const relationPairs =
-      "relation_pairs" in data ? data.relation_pairs : data["relation pairs"];
+    let relationPairs = [];
+    if (Array.isArray(data)) {
+      relationPairs = data;
+    } else if (
+      data &&
+      Object.keys(data).some((key) =>
+        ["relation_pairs", "relation pairs", "relation_triples"].includes(key)
+      )
+    ) {
+      relationPairs =
+        data["relation_pairs"] ||
+        data["relation pairs"] ||
+        data["relation_triples"];
+    }
     const nodeSet = new Set();
     const chartData = {
       data: [],

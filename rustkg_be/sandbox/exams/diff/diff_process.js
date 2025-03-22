@@ -4,7 +4,7 @@ const chat = require("../../../utils/LLM/parseReply2Json.js");
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
-const split2DiffChunks = require("../../../utils/diff/splitChunks");
+const split2DiffChunks = require("../../../utils/diff/splitChunksV2");
 const uniqueObjects = require("../../../utils/uniqueObjects.js");
 const ExtractProcessor = require("../../../utils/crawler/ExtractProcessor.js");
 const processor = new ExtractProcessor(
@@ -63,6 +63,7 @@ process.on("message", async (msg) => {
     baseUrl,
     savePath,
     model = process.env.LLM_MODEL,
+    max_tokens,
     ...extraInfo
   } = msg;
   const defaultSavePath = `./output/${model}`;
@@ -189,6 +190,7 @@ process.on("message", async (msg) => {
           prompts.example_of_diff_extraction,
           input
         ),
+        max_tokens,
         model
       );
       let endTime = Date.now();

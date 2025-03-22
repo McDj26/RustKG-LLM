@@ -18,6 +18,7 @@ function split2DiffChunks(
   const diffResult = diffProcessor[`${method}Diff`](oldStr, newStr);
   const chunks = [];
   const len = diffResult.length;
+  const chunksType = [];
   for (let i = 0; i < len; i++) {
     if (diffResult[i].added || diffResult[i].removed) {
       // 向前/后扩展窗口
@@ -36,14 +37,18 @@ function split2DiffChunks(
         sizeCountOld <= windowLength &&
         sizeCountNew <= windowLength
       ) {
-        const oldSizePatch = diffResult[forwardIndex].added
-          ? 0
-          : diffResult[forwardIndex].length;
-        const newSizePatch = diffResult[forwardIndex].removed
-          ? 0
-          : diffResult[forwardIndex].length;
-        sizeCountOld += oldSizePatch;
-        sizeCountNew += newSizePatch;
+        const result = diffResult[forwardIndex];
+        if (result.added) {
+          sizeCountNew += result.length;
+          chunksType.push("added");
+        } else if (result.removed) {
+          sizeCountOld += result.length;
+          chunksType.push("removed");
+        } else {
+          sizeCountOld += result.length;
+          sizeCountNew += result.length;
+          chunksType.push("same");
+        }
         forwardIndex++;
       }
       if (sizeCountOld > windowLength || sizeCountNew > windowLength) {
@@ -55,8 +60,7 @@ function split2DiffChunks(
           // 如果已经超限，且另一个未超限，则继续扩展
           if (
             forwardIndex < len &&
-            !diffResult[forwardIndex - 1].added &&
-            !diffResult[forwardIndex - 1].removed &&
+            chunksType[chunksType.length - 1] === "same" &&
             ((diffResult[forwardIndex].added && sizeCountNew < windowLength) ||
               (diffResult[forwardIndex].removed && sizeCountOld < windowLength))
           ) {
