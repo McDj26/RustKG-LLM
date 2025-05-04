@@ -6,6 +6,17 @@ module.exports = class TaskManager {
     this.tasks = [];
     this.runningCount = 0;
     this.maxConcurrency = maxConcurrency;
+    this.taskCompleteCallback = [];
+  }
+
+  /**
+   * @param {"taskComplete"} event
+   * @param {Function} callback
+   */
+  addEventListener(event, callback) {
+    if (event === "taskComplete" && typeof callback === "function") {
+      this.taskCompleteCallback.push(callback);
+    }
   }
 
   async next() {
@@ -19,6 +30,8 @@ module.exports = class TaskManager {
 
     if (this.tasks.length > 0) {
       await this.next();
+    } else {
+      this.taskCompleteCallback.forEach((callback) => callback());
     }
   }
 
@@ -28,10 +41,13 @@ module.exports = class TaskManager {
   }
 
   /**
-   * @param {any[]} array
+   * @param {any[] | number} array
    * @param {(val:any, index:number)=>any} func
    */
   async mapTasks(array, func) {
+    if (typeof array === "number") {
+      array = new Array(array).fill(null);
+    }
     await Promise.allSettled(
       array.map((val, index) => this.addTask(func.bind(array, val, index)))
     );

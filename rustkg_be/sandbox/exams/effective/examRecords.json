@@ -1,0 +1,7 @@
+{
+  "std/index.html": "1.80",
+  "std/io/enum.ErrorKind.html": "1.80",
+  "std/sync/mpsc/index.html": "1.80",
+  "std/sync/index.html": "1.80",
+  "core/ffi/index.html": "1.80"
+}

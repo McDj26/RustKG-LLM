@@ -1,0 +1,280 @@
+{
+  "create_time": "2025-03-26T13:57:22.514Z",
+  "id": "c1a9d207-a461-4781-9648-fad95ede58ce",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\effective\\output\\merged_3235c2a5-82d7-49cb-8973-bb05d953fe81.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has description",
+    "has full name",
+    "has generic parameter",
+    "has method",
+    "has parameter",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "requires trait",
+    "returns"
+  ],
+  "delete_triples": [
+    { "triples": [], "startIndex": 0, "endIndex": 38530 },
+    {
+      "triples": [
+        [
+          "or",
+          "has description",
+          "Returns the option if it contains a value, otherwise returns optb."
+        ]
+      ],
+      "startIndex": 39929,
+      "endIndex": 78929
+    },
+    { "triples": [], "startIndex": 78988, "endIndex": 117988 },
+    { "triples": [], "startIndex": 118389, "endIndex": 157387 },
+    {
+      "triples": [
+        ["Option<T>", "implements", "IntoIterator"],
+        ["Option<T> as IntoIterator", "has associated type", "Item = T"],
+        [
+          "Option<T> as IntoIterator",
+          "has associated type",
+          "IntoIter = IntoIter<T>"
+        ],
+        [
+          "into_iter",
+          "has description",
+          "Returns a consuming iterator over the possibly contained value."
+        ],
+        ["&'a Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "Item = &'a T"
+        ],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "IntoIter = Iter<'a, T>"
+        ],
+        ["&'a mut Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "Item = &'a mut T"
+        ],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "IntoIter = IterMut<'a, T>"
+        ],
+        ["&'a Option<T>", "has method", "into_iter"],
+        ["into_iter (for &'a Option<T>)", "has return type", "Iter<'a, T>"],
+        ["&'a mut Option<T>", "has method", "into_iter"],
+        [
+          "into_iter (for &'a mut Option<T>)",
+          "has return type",
+          "IterMut<'a, T>"
+        ],
+        ["Iter<T>", "is a", "struct"],
+        ["IterMut<T>", "is a", "struct"]
+      ],
+      "startIndex": 157387,
+      "endIndex": 176900
+    }
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["option", "contains", "NoneError"],
+        ["NoneError", "is a", "struct"],
+        [
+          "NoneError",
+          "has description",
+          "The error type that results from applying the try operator (`?`) to a `None` value. If you wish to allow `x?` (where `x` is an `Option<T>`) to be converted into your error type, you can implement `impl From<NoneError>` for `YourErrorType`. In that case, `x?` within a function that returns `Result<_, YourErrorType>` will translate a `None` value into an `Err` result."
+        ],
+        ["Option", "has method", "as_pin_mut"],
+        [
+          "Option::as_pin_mut",
+          "has description",
+          "Converts from `Option<T>` to `Option<PinMut<'_, T>>`"
+        ],
+        ["Option", "has method", "iter"],
+        ["Option", "has method", "iter_mut"],
+        ["Option", "has method", "and"],
+        ["Option", "has method", "and_then"],
+        ["Option", "has method", "filter"],
+        ["Option", "has method", "or"],
+        ["Option", "has method", "or_else"],
+        ["Option", "has method", "xor"],
+        ["Option", "has method", "get_or_insert"],
+        ["Option", "has method", "get_or_insert_with"],
+        ["Option", "has method", "take"],
+        ["Option", "has method", "replace"],
+        ["Option", "has method", "cloned"],
+        ["Option", "has method", "unwrap_or_default"],
+        ["Option", "has method", "deref"],
+        ["Option", "has method", "transpose"],
+        ["Option", "implements", "IntoIterator"],
+        ["Option", "implements", "Hash"],
+        ["Option", "implements", "Clone"],
+        ["Option", "implements", "PartialOrd<Option<T>>"],
+        ["Option", "implements", "Ord"],
+        ["Option", "implements", "Debug"],
+        ["Option", "implements", "Eq"],
+        ["Option", "implements", "PartialEq<Option<T>>"],
+        ["Option", "implements", "From<&'a mut Option<T>>"],
+        ["Option", "implements", "From<T>"],
+        ["Option", "implements", "From<&'a Option<T>>"],
+        ["Option", "implements", "Copy"],
+        ["Option", "implements", "FromIterator<Option<A>>"],
+        ["Option", "implements", "Try"],
+        ["Option", "implements", "Default"]
+      ],
+      "startIndex": 0,
+      "endIndex": 38530
+    },
+    {
+      "triples": [
+        ["Iter", "implements", "Iterator"],
+        ["IterMut", "implements", "Iterator"],
+        [
+          "filter",
+          "has description",
+          "Returns None if the option is None, otherwise calls predicate with the wrapped value and returns: Some(t) if predicate returns true (where t is the wrapped value), and None if predicate returns false."
+        ],
+        ["filter", "has argument", "predicate"],
+        ["predicate", "has type", "FnOnce(&T) -> bool"],
+        [
+          "xor",
+          "has description",
+          "Returns Some if exactly one of self, optb is Some, otherwise returns None."
+        ],
+        [
+          "or",
+          "has description",
+          "Returns the option if it contains a value, otherwise returns optb. Arguments passed to or are eagerly evaluated; if you are passing the result of a function call, it is recommended to use or_else, which is lazily evaluated."
+        ]
+      ],
+      "startIndex": 39929,
+      "endIndex": 78929
+    },
+    {
+      "triples": [
+        ["replace", "has argument", "value"],
+        ["replace::value", "has type", "T"],
+        ["replace", "returns", "Option<T>"],
+        [
+          "replace",
+          "has description",
+          "Replaces the actual value in the option by the value given in parameter, returning the old value if present, leaving a Some in its place without deinitializing either one."
+        ],
+        ["Option<&mut T>", "has method", "cloned"],
+        [
+          "cloned",
+          "has description",
+          "Maps an Option<&mut T> to an Option<T> by cloning the contents of the option."
+        ],
+        ["Option<T>", "has method", "deref"],
+        ["deref", "returns", "Option<&T::Target>"],
+        [
+          "deref",
+          "has description",
+          "Converts from &Option<T> to Option<&T::Target> via Deref."
+        ],
+        ["Option<Result<T, E>>", "has method", "transpose"],
+        ["transpose", "returns", "Result<Option<T>, E>"],
+        [
+          "transpose",
+          "has description",
+          "Transposes an Option of a Result into a Result of an Option. None maps to Ok(None), Some(Ok(_)) and Some(Err(_)) map to Ok(Some(_)) and Err(_)."
+        ]
+      ],
+      "startIndex": 78988,
+      "endIndex": 117988
+    },
+    {
+      "triples": [
+        ["Option<T>", "implements", "Try"],
+        ["Option<T> as Try", "has associated type", "Ok = T"],
+        ["Option<T> as Try", "has associated type", "Error = NoneError"],
+        ["Option<T>", "has method", "into_result"],
+        ["into_result", "has return type", "Result<T, NoneError>"],
+        [
+          "into_result",
+          "has description",
+          "Applies the `?` operator. A return of `Ok(t)` means execution continues normally; `Err(e)` branches to the innermost `catch` or returns from the function."
+        ],
+        ["Option<T>", "has method", "from_ok"],
+        ["from_ok", "has return type", "Option<T>"],
+        [
+          "from_ok",
+          "has description",
+          "Wrap an OK value to construct the composite result."
+        ],
+        ["Option<T>", "has method", "from_error"],
+        ["from_error", "has return type", "Option<T>"],
+        [
+          "from_error",
+          "has description",
+          "Wrap an error value to construct the composite result."
+        ]
+      ],
+      "startIndex": 118389,
+      "endIndex": 157387
+    },
+    { "triples": [], "startIndex": 157387, "endIndex": 176900 }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 853850,
+    "totalUsage": {
+      "prompt_tokens": 108767,
+      "completion_tokens": 25178,
+      "cached_tokens": 0,
+      "reasoning_tokens": 23090
+    },
+    "chunkLength": 5,
+    "chunksInfo": [
+      {
+        "oldContextLength": 27,
+        "oldStrLength": 29160,
+        "newContextLength": 27,
+        "newStrLength": 38551,
+        "costTime": 227631
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 22329,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 137850
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 10296,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 148003
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 18273,
+        "newContextLength": 227,
+        "newStrLength": 39019,
+        "costTime": 252203
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 8050,
+        "newContextLength": 227,
+        "newStrLength": 19534,
+        "costTime": 88163
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

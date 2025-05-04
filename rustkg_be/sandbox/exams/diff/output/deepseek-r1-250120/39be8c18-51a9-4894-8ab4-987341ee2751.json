@@ -1,0 +1,152 @@
+{
+  "create_time": "2025-03-22T18:28:28.987Z",
+  "id": "39be8c18-51a9-4894-8ab4-987341ee2751",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output\\deepseek-r1-250120\\3f0f1c81-3846-4b68-93ec-513b95a22e61.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has return type",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "is a enum",
+    "is a primitive type",
+    "is a struct",
+    "is a trait",
+    "requires trait",
+    "stable since"
+  ],
+  "delete_triples": [
+    ["Option", "has method", "xor"],
+    ["replace", "has stability", "unstable"],
+    ["xor", "has stability", "unstable"]
+  ],
+  "add_triples": [
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_pin_ref"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "map"],
+    ["Option", "has method", "map_or"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or"],
+    ["Option", "has method", "unwrap_or_else"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Copy"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "From<T>"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Try"],
+    ["as_pin_mut", "has stability", "unstable"],
+    ["as_pin_ref", "has stability", "unstable"],
+    ["is_none", "has return type", "bool"],
+    ["is_some", "has return type", "bool"],
+    ["replace", "stable since", "1.31.0"],
+    ["std::option", "contains", "IntoIter"],
+    ["std::option", "contains", "Iter"],
+    ["std::option", "contains", "IterMut"],
+    ["std::option", "contains", "NoneError"],
+    ["std::option", "contains", "Option"]
+  ],
+  "delete_links": ["method.xor.html"],
+  "add_links": [
+    "enum.Option.html",
+    "impl-Copy.html",
+    "impl-Default.html",
+    "impl-From.html",
+    "impl-IntoIterator.html",
+    "impl-Try.html",
+    "method.as_mut.html",
+    "method.as_pin_mut.html",
+    "method.as_pin_ref.html",
+    "method.as_ref.html",
+    "method.expect.html",
+    "method.is_none.html",
+    "method.is_some.html",
+    "method.map.html",
+    "method.map_or.html",
+    "method.replace.html",
+    "method.unwrap.html",
+    "method.unwrap_or.html",
+    "method.unwrap_or_else.html",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html"
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 508134,
+    "totalUsage": {
+      "prompt_tokens": 126978,
+      "completion_tokens": 13983,
+      "cached_tokens": 0,
+      "reasoning_tokens": 10527
+    },
+    "chunkLength": 6,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 29489,
+        "newContextLength": 527,
+        "newStrLength": 31000,
+        "costTime": 77317
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 30317,
+        "newContextLength": 527,
+        "newStrLength": 30317,
+        "costTime": 172479
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 30361,
+        "newContextLength": 527,
+        "newStrLength": 30026,
+        "costTime": 90185
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 22855,
+        "newContextLength": 527,
+        "newStrLength": 30996,
+        "costTime": 55013
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 31000,
+        "newContextLength": 527,
+        "newStrLength": 27060,
+        "costTime": 51381
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 18809,
+        "newContextLength": 527,
+        "newStrLength": 14610,
+        "costTime": 61759
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-22T18:19:21.911Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 31000 },
+    "sourceId": "3f0f1c81-3846-4b68-93ec-513b95a22e61"
+  }
+}

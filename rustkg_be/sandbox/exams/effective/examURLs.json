@@ -1,0 +1,7 @@
+[
+  "std/index.html",
+  "std/io/enum.ErrorKind.html",
+  "std/sync/mpsc/index.html",
+  "std/sync/index.html",
+  "core/ffi/index.html"
+]

@@ -45,7 +45,7 @@ module.exports = async function (
   let result = completion.choices[0].message.content.trim();
   // 如果返回的json被包裹在代码块中，使用正则表达式的命名分组匹配中间的内容
   if (result.startsWith("`") || result.endsWith("`")) {
-    result = /(```json)?(?<result>.*)/i.exec(result).groups.result;
+    result = /(```json)?(?<result>.*)/is.exec(result).groups.result;
     while (result.endsWith("`")) result = result.slice(0, -1);
   }
 

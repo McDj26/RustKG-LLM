@@ -1,0 +1,332 @@
+{
+  "create_time": "2025-03-29T06:22:01.987Z",
+  "id": "1b9961e0-1799-4b5a-9697-05e1cb9bf664",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.50-x86_64-pc-windows-msvc/share/doc/rust/html/std/rc/struct.Rc.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\effective\\output\\std_rc-struct_Rc\\merged_1f549011-c46d-438f-8922-b15e0b710685.json",
+  "relations": [
+    "contains",
+    "excludes",
+    "has argument",
+    "has associated type",
+    "has description",
+    "has feature",
+    "has full name",
+    "has generic parameter",
+    "has method",
+    "has return type",
+    "has stability",
+    "has version",
+    "implements",
+    "is a",
+    "stable since"
+  ],
+  "delete_triples": [
+    {
+      "triples": [
+        ["Rc", "has method", "into_raw_non_null"],
+        ["Rc::into_raw_non_null", "is a", "method"],
+        [
+          "Rc::into_raw_non_null",
+          "has full name",
+          "std::rc::Rc::into_raw_non_null"
+        ],
+        ["Rc::into_raw_non_null", "has return type", "NonNull<T>"],
+        [
+          "Rc::into_raw_non_null",
+          "has description",
+          "Consumes the Rc, returning the wrapped pointer as NonNull<T>."
+        ],
+        [
+          "Rc::into_raw_non_null",
+          "has stability",
+          "Unstable (rc_into_raw_non_null #47336)"
+        ]
+      ],
+      "startIndex": 242,
+      "endIndex": 38963
+    },
+    {
+      "triples": [
+        [
+          "Rc::from_raw",
+          "has description",
+          "Constructs an Rc from a raw pointer."
+        ],
+        [
+          "downgrade",
+          "has description",
+          "Downgrades the Rc<T> to a Weak<T> reference."
+        ],
+        [
+          "Rc::downgrade",
+          "has description",
+          "Creates a new Weak pointer to this value."
+        ]
+      ],
+      "startIndex": 39607,
+      "endIndex": 78607
+    },
+    {
+      "triples": [
+        ["Rc<T>", "implements", "UnwindSafe"],
+        ["Rc<T>", "excludes", "Sync"],
+        ["Rc<T>", "excludes", "Send"],
+        ["Rc<T>", "implements", "From<&str>"],
+        ["Rc<T>", "implements", "From<&[T]>"],
+        ["Rc<T>", "implements", "From<Box<T>>"],
+        ["Rc<T>", "implements", "From<Vec<T>>"]
+      ],
+      "startIndex": 79225,
+      "endIndex": 110248
+    },
+    {
+      "triples": [["Rc<T>", "implements", "PartialOrd"]],
+      "startIndex": 110247,
+      "endIndex": 140416
+    },
+    { "triples": [], "startIndex": 140425, "endIndex": 179425 },
+    { "triples": [], "startIndex": 179452, "endIndex": 194454 }
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["Rc", "has method", "new_cyclic"],
+        ["new_cyclic", "is a", "method"],
+        ["new_cyclic", "has full name", "std::rc::Rc::new_cyclic"],
+        [
+          "new_cyclic",
+          "has description",
+          "Constructs a new Rc<T> using a weak reference to itself. Attempting to upgrade the weak reference before this function returns will result in a None value."
+        ],
+        ["new_cyclic", "has stability", "Unstable (arc_new_cyclic #75861)"],
+        ["Rc", "has method", "new_zeroed"],
+        ["new_zeroed", "is a", "method"],
+        ["new_zeroed", "has full name", "std::rc::Rc::new_zeroed"],
+        [
+          "new_zeroed",
+          "has description",
+          "Constructs a new Rc with uninitialized contents, with the memory being filled with 0 bytes."
+        ],
+        ["new_zeroed", "has stability", "Unstable (new_uninit #63291)"],
+        ["Rc", "has method", "new_zeroed_slice"],
+        ["new_zeroed_slice", "is a", "method"],
+        ["new_zeroed_slice", "has full name", "std::rc::Rc::new_zeroed_slice"],
+        [
+          "new_zeroed_slice",
+          "has description",
+          "Constructs a new reference-counted slice with uninitialized contents, with the memory being filled with 0 bytes."
+        ],
+        ["new_zeroed_slice", "has stability", "Unstable (new_uninit #63291)"],
+        ["Rc", "has method", "as_ptr"],
+        ["as_ptr", "is a", "method"],
+        ["as_ptr", "has full name", "std::rc::Rc::as_ptr"],
+        ["as_ptr", "has return type", "*const T"]
+      ],
+      "startIndex": 242,
+      "endIndex": 38963
+    },
+    {
+      "triples": [
+        ["as_ptr", "has description", "Provides a raw pointer to the data."],
+        ["as_ptr", "stable since", "1.45.0"],
+        [
+          "Rc::from_raw",
+          "has description",
+          "Constructs an Rc<T> from a raw pointer."
+        ],
+        [
+          "downgrade",
+          "has description",
+          "Creates a new Weak pointer to this allocation."
+        ],
+        [
+          "Rc::downgrade",
+          "has description",
+          "Creates a new Weak pointer to this allocation."
+        ]
+      ],
+      "startIndex": 39607,
+      "endIndex": 78607
+    },
+    {
+      "triples": [
+        ["Rc<T>", "implements", "Clone"],
+        ["Rc<T>", "has method", "clone"],
+        ["clone", "is a", "method"],
+        [
+          "clone",
+          "has description",
+          "Makes a clone of the Rc pointer. This creates another pointer to the same inner value, increasing the strong reference count."
+        ],
+        ["Rc<T>", "implements", "Drop"],
+        ["Rc<T>", "has method", "drop"],
+        ["drop", "is a", "method"],
+        [
+          "drop",
+          "has description",
+          "Drops the Rc. This will decrement the strong reference count. If the strong reference count reaches zero then the only other references (if any) are Weak, so we drop the inner value."
+        ],
+        ["Rc<T>", "implements", "Deref"],
+        ["Rc<T>", "implements", "Borrow<T>"],
+        ["Rc<T>", "implements", "AsRef<T>"],
+        ["Rc<T>", "implements", "Debug"],
+        ["Rc<T>", "implements", "Display"],
+        ["Rc<T>", "implements", "Pointer"],
+        ["Rc<T>", "implements", "CoerceUnsized<Rc<U>>"],
+        ["Rc<T>", "implements", "DispatchFromDyn"],
+        ["Rc<T>", "implements", "Default"],
+        ["Rc<T>", "implements", "Eq"]
+      ],
+      "startIndex": 79225,
+      "endIndex": 110248
+    },
+    {
+      "triples": [
+        ["Rc<CStr>", "implements", "From<&CStr>"],
+        ["Rc<OsStr>", "implements", "From<OsString>"],
+        ["Rc<Path>", "implements", "From<PathBuf>"],
+        ["Rc<str>", "implements", "From<&str>"],
+        ["Rc<CStr>", "implements", "From<CString>"],
+        ["Rc<OsStr>", "implements", "From<&OsStr>"],
+        ["Rc<Path>", "implements", "From<&Path>"],
+        ["Rc<str>", "implements", "From<String>"],
+        ["Rc<T>", "implements", "From<T>"],
+        ["Rc<[T]>", "implements", "From<Vec<T>>"],
+        ["Rc<B>", "implements", "From<Cow<'a, B>>"]
+      ],
+      "startIndex": 110247,
+      "endIndex": 140416
+    },
+    {
+      "triples": [
+        ["Rc<T>", "implements", "Hash"],
+        ["Rc<T>", "implements", "Ord"],
+        ["Rc<T>", "implements", "PartialEq<Rc<T>>"],
+        ["Rc<T>", "implements", "PartialOrd<Rc<T>>"],
+        ["Rc<T>", "has method", "cmp"],
+        ["Rc<T>::cmp", "is a", "method"],
+        ["Rc<T>::cmp", "has description", "Comparison for two Rcs."],
+        ["Rc<T>", "has method", "lt"],
+        ["Rc<T>::lt", "is a", "method"],
+        ["Rc<T>::lt", "has description", "Less-than comparison for two Rcs."],
+        ["Rc<T>", "has method", "le"],
+        ["Rc<T>::le", "is a", "method"],
+        [
+          "Rc<T>::le",
+          "has description",
+          "'Less than or equal to' comparison for two Rcs."
+        ],
+        ["Rc<T>", "has method", "gt"],
+        ["Rc<T>::gt", "is a", "method"],
+        [
+          "Rc<T>::gt",
+          "has description",
+          "Greater-than comparison for two Rcs."
+        ],
+        ["Rc<T>", "has method", "ge"],
+        ["Rc<T>::ge", "is a", "method"],
+        [
+          "Rc<T>::ge",
+          "has description",
+          "'Greater than or equal to' comparison for two Rcs."
+        ],
+        ["Rc<T>", "has method", "partial_cmp"],
+        ["Rc<T>::partial_cmp", "is a", "method"],
+        [
+          "Rc<T>::partial_cmp",
+          "has description",
+          "Partial comparison for two Rcs."
+        ],
+        ["Rc<T>", "has method", "fmt"],
+        ["Rc<T>::fmt", "is a", "method"],
+        [
+          "Rc<T>::fmt",
+          "has description",
+          "Formats the value using the given formatter."
+        ]
+      ],
+      "startIndex": 140425,
+      "endIndex": 179425
+    },
+    {
+      "triples": [
+        ["T", "implements", "From<!>"],
+        ["T", "implements", "From<T>"],
+        ["T", "implements", "Into<U>"],
+        ["T", "implements", "TryFrom<U>"],
+        ["T", "implements", "TryInto<U>"],
+        ["from", "is a", "method"],
+        ["from", "has description", "Performs the conversion."],
+        ["T", "has method", "from"],
+        ["into", "is a", "method"],
+        ["into", "has description", "Performs the conversion."],
+        ["T", "has method", "into"],
+        ["try_from", "is a", "method"],
+        ["try_from", "has description", "Performs the conversion."],
+        ["T", "has method", "try_from"],
+        ["try_into", "is a", "method"],
+        ["try_into", "has description", "Performs the conversion."],
+        ["T", "has method", "try_into"]
+      ],
+      "startIndex": 179452,
+      "endIndex": 194454
+    }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 1101088,
+    "totalUsage": {
+      "prompt_tokens": 159984,
+      "completion_tokens": 28322,
+      "cached_tokens": 0,
+      "reasoning_tokens": 25336
+    },
+    "chunkLength": 6,
+    "chunksInfo": [
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 32390,
+        "newContextLength": 227,
+        "newStrLength": 38742,
+        "costTime": 76603
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 38473,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 146638
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 38927,
+        "newContextLength": 227,
+        "newStrLength": 31044,
+        "costTime": 70001
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 39021,
+        "newContextLength": 227,
+        "newStrLength": 30190,
+        "costTime": 189298
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 25544,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 410853
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 10040,
+        "newContextLength": 227,
+        "newStrLength": 15023,
+        "costTime": 207695
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

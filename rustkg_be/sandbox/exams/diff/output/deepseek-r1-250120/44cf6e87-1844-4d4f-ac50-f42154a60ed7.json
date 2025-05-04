@@ -1,0 +1,359 @@
+{
+  "create_time": "2025-03-22T18:33:38.401Z",
+  "id": "44cf6e87-1844-4d4f-ac50-f42154a60ed7",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output\\deepseek-r1-250120\\3f0f1c81-3846-4b68-93ec-513b95a22e61.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has return type",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "is a enum",
+    "is a primitive type",
+    "is a struct",
+    "is a trait",
+    "requires trait",
+    "stable since"
+  ],
+  "delete_triples": [],
+  "add_triples": [
+    ["Option", "has method", "and"],
+    ["Option", "has method", "and_then"],
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_pin_ref"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "cloned"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "filter"],
+    ["Option", "has method", "get_or_insert"],
+    ["Option", "has method", "get_or_insert_with"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "or"],
+    ["Option", "has method", "or_else"],
+    ["Option", "has method", "replace"],
+    ["Option", "has method", "take"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or_default"],
+    ["Option", "has method", "xor"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Clone"],
+    ["Option", "implements", "Debug"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "Eq"],
+    ["Option", "implements", "Hash"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Ord"],
+    ["Option", "implements", "PartialEq"],
+    ["Option", "implements", "PartialOrd"],
+    ["Option::clone", "has description", "Returns a copy of the value"],
+    ["Option::cmp", "has description", "Returns Ordering between values"],
+    [
+      "Option::cmp",
+      "has description",
+      "This method returns an Ordering between self and other."
+    ],
+    ["Option::default", "has description", "Returns None"],
+    ["Option::default", "has return type", "Option<T>"],
+    ["Option::eq", "has description", "Tests equality between options"],
+    [
+      "Option::eq",
+      "has description",
+      "This method tests for self and other values to be equal, and is used by =="
+    ],
+    ["Option::fmt", "has description", "Formats the value using formatter"],
+    [
+      "Option::fmt",
+      "has description",
+      "Formats the value using the given formatter."
+    ],
+    [
+      "Option::ge",
+      "has description",
+      "This method tests greater than or equal to (for self and other) and is used by the >= operator."
+    ],
+    [
+      "Option::gt",
+      "has description",
+      "This method tests greater than (for self and other) and is used by the > operator."
+    ],
+    [
+      "Option::hash",
+      "has description",
+      "Feeds this value into the given Hasher"
+    ],
+    [
+      "Option::into_iter",
+      "has description",
+      "Creates an iterator from a value"
+    ],
+    ["Option::into_iter", "has return type", "IntoIter<T>"],
+    [
+      "Option::partial_cmp",
+      "has description",
+      "Returns ordering between values"
+    ],
+    ["and", "has argument", "optb"],
+    [
+      "and",
+      "has description",
+      "Returns None if the option is None, otherwise returns optb."
+    ],
+    ["and", "has return type", "Option<U>"],
+    ["and_then", "has argument", "f"],
+    [
+      "and_then",
+      "has description",
+      "Returns None if the option is None, otherwise calls f with the wrapped value and returns the result."
+    ],
+    ["and_then", "has return type", "Option<U>"],
+    ["as_mut", "has description", "Converts from Option<T> to Option<&mut T>."],
+    ["as_mut", "has return type", "Option<&mut T>"],
+    [
+      "as_pin_mut",
+      "has description",
+      "Converts from Pin<&mut Option<T>> to Option<Pin<&mut T>>"
+    ],
+    ["as_pin_mut", "has feature", "unsafe"],
+    ["as_pin_mut", "has return type", "Option<Pin<&mut T>>"],
+    ["as_pin_mut", "has stability", "nightly"],
+    [
+      "as_pin_ref",
+      "has description",
+      "Converts from Pin<&Option<T>> to Option<Pin<&T>>"
+    ],
+    ["as_pin_ref", "has feature", "unsafe"],
+    ["as_pin_ref", "has return type", "Option<Pin<&T>>"],
+    ["as_pin_ref", "has stability", "nightly"],
+    ["as_ref", "has description", "Converts from Option<T> to Option<&T>."],
+    ["as_ref", "has return type", "Option<&T>"],
+    [
+      "cloned",
+      "has description",
+      "Maps an `Option<&T>` to an `Option<T>` by cloning the contents of the option."
+    ],
+    ["cloned", "has return type", "Option<T>"],
+    [
+      "expect",
+      "has description",
+      "Unwraps an option, yielding the content of a Some."
+    ],
+    ["expect", "has return type", "T"],
+    ["f", "has type", "FnOnce() -> Option<T>"],
+    ["f", "has type", "FnOnce() -> T"],
+    ["f", "has type", "FnOnce(T) -> Option<U>"],
+    ["filter", "has argument", "predicate"],
+    [
+      "filter",
+      "has description",
+      "Returns None if the option is None, otherwise calls predicate with the wrapped value and returns: Some(t) if predicate returns true, otherwise None."
+    ],
+    ["filter", "has return type", "Option<T>"],
+    ["get_or_insert", "has argument", "v"],
+    [
+      "get_or_insert",
+      "has description",
+      "Inserts `v` into the option if it is `None`, then returns a mutable reference to the contained value."
+    ],
+    ["get_or_insert", "has return type", "&mut T"],
+    ["get_or_insert_with", "has argument", "f"],
+    [
+      "get_or_insert_with",
+      "has description",
+      "Inserts a value computed from `f` into the option if it is `None`, then returns a mutable reference to the contained value."
+    ],
+    ["get_or_insert_with", "has return type", "&mut T"],
+    [
+      "is_none",
+      "has description",
+      "Returns true if the option is a None value."
+    ],
+    ["is_none", "has return type", "bool"],
+    [
+      "is_some",
+      "has description",
+      "Returns true if the option is a Some value."
+    ],
+    ["is_some", "has return type", "bool"],
+    ["optb", "has type", "Option<T>"],
+    ["optb", "has type", "Option<U>"],
+    ["or", "has argument", "optb"],
+    [
+      "or",
+      "has description",
+      "Returns the option if it contains a value, otherwise returns optb."
+    ],
+    ["or", "has return type", "Option<T>"],
+    ["or_else", "has argument", "f"],
+    [
+      "or_else",
+      "has description",
+      "Returns the option if it contains a value, otherwise calls f and returns the result."
+    ],
+    ["or_else", "has return type", "Option<T>"],
+    ["predicate", "has type", "FnOnce(&T) -> bool"],
+    ["replace", "has argument", "value"],
+    [
+      "replace",
+      "has description",
+      "Replaces the actual value in the option by the value given in parameter, returning the old value if present, leaving a `Some` in its place without deinitializing either one."
+    ],
+    ["replace", "has return type", "Option<T>"],
+    ["replace", "has stability", "1.31.0"],
+    [
+      "take",
+      "has description",
+      "Takes the value out of the option, leaving a `None` in its place."
+    ],
+    ["take", "has return type", "Option<T>"],
+    [
+      "unwrap",
+      "has description",
+      "Moves the value v out of the Option<T> if it is Some(v)."
+    ],
+    ["unwrap", "has return type", "T"],
+    [
+      "unwrap_or_default",
+      "has description",
+      "Returns the contained value or a default"
+    ],
+    ["unwrap_or_default", "has return type", "T"],
+    ["v", "has type", "T"],
+    ["value", "has type", "T"],
+    ["xor", "has argument", "optb"],
+    [
+      "xor",
+      "has description",
+      "Returns Some if exactly one of self, optb is Some, otherwise returns None."
+    ],
+    ["xor", "has return type", "Option<T>"],
+    ["xor", "has stability", "nightly"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../../src/core/option.rs.html",
+    "enum.Option.html",
+    "method.and",
+    "method.and_then",
+    "method.as_mut",
+    "method.as_pin_mut",
+    "method.as_pin_ref",
+    "method.as_ref",
+    "method.clone",
+    "method.cloned",
+    "method.cmp",
+    "method.default",
+    "method.eq",
+    "method.expect",
+    "method.filter",
+    "method.fmt",
+    "method.ge",
+    "method.get_or_insert",
+    "method.get_or_insert_with",
+    "method.gt",
+    "method.hash",
+    "method.into_iter",
+    "method.is_none",
+    "method.is_some",
+    "method.or",
+    "method.or_else",
+    "method.partial_cmp",
+    "method.replace",
+    "method.take",
+    "method.unwrap",
+    "method.unwrap_or_default",
+    "method.xor",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html"
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 862303,
+    "totalUsage": {
+      "prompt_tokens": 134649,
+      "completion_tokens": 25303,
+      "cached_tokens": 0,
+      "reasoning_tokens": 19843
+    },
+    "chunkLength": 8,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 20881,
+        "newContextLength": 527,
+        "newStrLength": 22392,
+        "costTime": 195398
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 21518,
+        "newContextLength": 527,
+        "newStrLength": 21518,
+        "costTime": 123157
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 23000,
+        "newContextLength": 527,
+        "newStrLength": 23000,
+        "costTime": 173852
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 22874,
+        "newContextLength": 527,
+        "newStrLength": 22539,
+        "costTime": 52409
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 16211,
+        "newContextLength": 527,
+        "newStrLength": 23000,
+        "costTime": 77837
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 20280,
+        "newContextLength": 527,
+        "newStrLength": 23000,
+        "costTime": 43999
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 21934,
+        "newContextLength": 527,
+        "newStrLength": 14789,
+        "costTime": 45855
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 12087,
+        "newContextLength": 527,
+        "newStrLength": 9725,
+        "costTime": 149796
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-22T18:18:39.087Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 23000 },
+    "sourceId": "3f0f1c81-3846-4b68-93ec-513b95a22e61"
+  }
+}

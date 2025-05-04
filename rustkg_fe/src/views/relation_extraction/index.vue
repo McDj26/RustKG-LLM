@@ -4,7 +4,12 @@
     ><textarea name="url" v-model="url" class="extract__input"></textarea><br />
     <label class="extract__label">Save File Directory</label
     ><input type="text" v-model="fileDirectory" /><br />
+    <label class="extract__label">Model</label
+    ><input type="text" v-model="model" /><br />
     <button @click="startCrawler">Start</button>
+    <button @click="forceFlag = !forceFlag">
+      {{ "Force: " + forceFlag.toString() }}
+    </button>
     <button @click="visitMoreFlag = !visitMoreFlag">
       {{ "Visit More: " + visitMoreFlag.toString() }}
     </button>
@@ -19,18 +24,22 @@ import TaskManager from "@/utils/TaskManager";
 
 const url = ref("");
 const fileDirectory = ref("");
+const model = ref("");
 const visitMoreFlag = ref(true);
+const forceFlag = ref(false);
 const taskManager = new TaskManager();
 
 const visitMore = async (url: string) => {
-  const response = await http.post("/relation_extraction", {
-    url,
-    savePath: fileDirectory.value,
-  });
-  console.log(response.data);
   if (!visitMoreFlag.value) {
     return;
   }
+  const response = await http.post("/relation_extraction", {
+    url,
+    savePath: fileDirectory.value,
+    force: forceFlag.value,
+    model: model.value.length > 0 ? model.value : undefined,
+  });
+  console.log(response.data);
   taskManager.mapTasks(response.data.links, visitMore);
 };
 
@@ -38,6 +47,8 @@ const startCrawler = async () => {
   const response = await http.post("/relation_extraction", {
     url: url.value,
     savePath: fileDirectory.value,
+    force: forceFlag.value,
+    model: model.value.length > 0 ? model.value : undefined,
   });
   console.log(response.data);
   taskManager.mapTasks(response.data.links, visitMore);

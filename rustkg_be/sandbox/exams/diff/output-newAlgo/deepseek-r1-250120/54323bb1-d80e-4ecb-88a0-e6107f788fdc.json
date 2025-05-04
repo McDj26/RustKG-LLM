@@ -1,0 +1,64 @@
+{
+  "create_time": "2025-03-15T13:46:34.478Z",
+  "id": "54323bb1-d80e-4ecb-88a0-e6107f788fdc",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120\\8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332.json",
+  "relations": [
+    "created by",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [],
+  "add_triples": [
+    ["Stdin", "implements", "Send"],
+    ["Stdin", "implements", "Sync"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../../std/marker/trait.Send.html",
+    "../../std/marker/trait.Sync.html"
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 390509,
+    "totalUsage": {
+      "prompt_tokens": 30682,
+      "completion_tokens": 10385,
+      "cached_tokens": 0,
+      "reasoning_tokens": 9546
+    },
+    "chunkLength": 2,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 24593,
+        "newContextLength": 527,
+        "newStrLength": 22905,
+        "costTime": 303116
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14798,
+        "newContextLength": 527,
+        "newStrLength": 16505,
+        "costTime": 87393
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-15T13:40:02.379Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 31000 },
+    "sourceId": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332"
+  }
+}

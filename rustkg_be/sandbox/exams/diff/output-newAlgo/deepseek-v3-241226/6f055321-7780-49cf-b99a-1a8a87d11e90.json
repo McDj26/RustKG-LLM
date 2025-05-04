@@ -1,0 +1,79 @@
+{
+  "create_time": "2025-03-15T13:53:57.183Z",
+  "id": "6f055321-7780-49cf-b99a-1a8a87d11e90",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120\\8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332.json",
+  "relations": [
+    "created by",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [],
+  "add_triples": [["Stdin", "implements", "Send"]],
+  "delete_links": [],
+  "add_links": [],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 21360,
+    "totalUsage": {
+      "prompt_tokens": 22536,
+      "completion_tokens": 434,
+      "cached_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "chunkLength": 5,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6730,
+        "newContextLength": 527,
+        "newStrLength": 6749,
+        "costTime": 4871
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 2212,
+        "newContextLength": 527,
+        "newStrLength": 505,
+        "costTime": 4123
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 918,
+        "newContextLength": 527,
+        "newStrLength": 918,
+        "costTime": 3738
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 506,
+        "newContextLength": 527,
+        "newStrLength": 2213,
+        "costTime": 4095
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4601,
+        "newContextLength": 527,
+        "newStrLength": 4601,
+        "costTime": 4533
+      }
+    ]
+  },
+  "model": "deepseek-v3-241226",
+  "extraInfo": {
+    "startTime": "2025-03-15T13:53:33.272Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 7000 },
+    "sourceId": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332"
+  }
+}

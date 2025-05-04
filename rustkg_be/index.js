@@ -14,6 +14,7 @@ const relation_extraction_wrap = require("./routes/llm_extraction/relation_extra
 const relation_extraction = require("./routes/llm_extraction/relation_extraction");
 const gather_history = require("./routes/gather_history");
 const chart_data = require("./routes/chart_data");
+const merged_data = require("./routes/merged_chart_data");
 
 puppeteer.launch().then((browser) => {
   router.get(structure[0], structure[1](browser));
@@ -26,6 +27,7 @@ puppeteer.launch().then((browser) => {
   );
   router.get(gather_history[0], gather_history[1]);
   router.get(chart_data[0], chart_data[1]);
+  router.get(merged_data[0], merged_data[1]);
 
   app.use(cors());
   app.use(bodyparser());

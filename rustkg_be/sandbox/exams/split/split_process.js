@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const prompts = require("./prompt.js");
+const prompts = require("./split_prompt.js");
 const chat = require("../../../utils/LLM/parseReply2Json.js");
 const path = require("path");
 const fs = require("fs");
@@ -192,8 +192,8 @@ process.on("message", async (msg) => {
         id: resultId,
         source_url: source_url,
         relations: existing_relations.sort(),
-        add_triples: add_triples.sort(),
-        add_links: add_links.sort(),
+        relation_triples: add_triples.sort(),
+        links: add_links.sort(),
         metrics: {
           escapeCount,
           costTime,

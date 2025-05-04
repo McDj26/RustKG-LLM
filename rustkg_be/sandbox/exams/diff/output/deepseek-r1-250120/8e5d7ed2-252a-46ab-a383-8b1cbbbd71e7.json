@@ -1,0 +1,208 @@
+{
+  "create_time": "2025-03-22T18:34:21.701Z",
+  "id": "8e5d7ed2-252a-46ab-a383-8b1cbbbd71e7",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output\\deepseek-r1-250120\\3f0f1c81-3846-4b68-93ec-513b95a22e61.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has return type",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "is a enum",
+    "is a primitive type",
+    "is a struct",
+    "is a trait",
+    "requires trait",
+    "stable since"
+  ],
+  "delete_triples": [
+    ["Option::deref", "has return type", "Option<Pin<&'a T>>"]
+  ],
+  "add_triples": [
+    ["None", "has description", "No value"],
+    ["Option", "has declaration", "../../src/core/option.rs.html"],
+    ["Option", "has method", "and"],
+    ["Option", "has method", "and_then"],
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_pin_ref"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "cloned"],
+    ["Option", "has method", "deref"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "filter"],
+    ["Option", "has method", "get_or_insert"],
+    ["Option", "has method", "get_or_insert_with"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "iter"],
+    ["Option", "has method", "iter_mut"],
+    ["Option", "has method", "map"],
+    ["Option", "has method", "map_or"],
+    ["Option", "has method", "map_or_else"],
+    ["Option", "has method", "ok_or"],
+    ["Option", "has method", "ok_or_else"],
+    ["Option", "has method", "or"],
+    ["Option", "has method", "or_else"],
+    ["Option", "has method", "replace"],
+    ["Option", "has method", "take"],
+    ["Option", "has method", "transpose"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or"],
+    ["Option", "has method", "unwrap_or_default"],
+    ["Option", "has method", "unwrap_or_else"],
+    ["Option", "has method", "xor"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Clone"],
+    ["Option", "implements", "Copy"],
+    ["Option", "implements", "Debug"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "Eq"],
+    ["Option", "implements", "From<&'a Option<T>>"],
+    ["Option", "implements", "From<&'a mut Option<T>>"],
+    ["Option", "implements", "From<T>"],
+    ["Option", "implements", "FromIterator<Option<A>>"],
+    ["Option", "implements", "Hash"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Ord"],
+    ["Option", "implements", "PartialEq<Option<T>>"],
+    ["Option", "implements", "PartialOrd<Option<T>>"],
+    ["Option", "implements", "Try"],
+    ["Option", "stable since", "1.0.0"],
+    ["Option::as_pin_mut", "has return type", "Option<Pin<&'a mut T>>"],
+    ["Option::as_pin_ref", "has return type", "Option<Pin<&'a T>>"],
+    ["Option::deref", "has return type", "Option<&<T as Deref>::Target>"],
+    ["Option::deref", "has stability", "nightly"],
+    ["Option::replace", "stable since", "1.31.0"],
+    ["Option::transpose", "has return type", "Result<Option<T>, E>"],
+    ["Option::transpose", "has stability", "nightly"],
+    ["Some", "has description", "Some value T"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../../src/core/option.rs.html",
+    "../../std/clone/trait.Clone.html",
+    "../../std/ops/trait.Deref.html",
+    "../../std/pin/struct.Pin.html",
+    "enum.Option.html",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html"
+  ],
+  "metrics": {
+    "escapeCount": 2,
+    "costTime": 1616658,
+    "totalUsage": {
+      "prompt_tokens": 132130,
+      "completion_tokens": 44226,
+      "cached_tokens": 0,
+      "reasoning_tokens": 34192
+    },
+    "chunkLength": 12,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7395,
+        "newContextLength": 527,
+        "newStrLength": 7457,
+        "costTime": 198330
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13545,
+        "newContextLength": 527,
+        "newStrLength": 14994,
+        "costTime": 164628
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 15000,
+        "costTime": 135763
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14323,
+        "newContextLength": 527,
+        "newStrLength": 14323,
+        "costTime": 170105
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 14665,
+        "costTime": 143074
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 12963,
+        "newContextLength": 527,
+        "newStrLength": 12965,
+        "costTime": 268742
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 8386,
+        "newContextLength": 527,
+        "newStrLength": 15000,
+        "costTime": 144340
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13548,
+        "newContextLength": 527,
+        "newStrLength": 14993,
+        "costTime": 66562
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13606,
+        "newContextLength": 527,
+        "newStrLength": 14906,
+        "costTime": 58825
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 9896,
+        "costTime": 115318
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14778,
+        "newContextLength": 527,
+        "newStrLength": 10523,
+        "costTime": 99044
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 918,
+        "newContextLength": 527,
+        "newStrLength": 918,
+        "costTime": 51927
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-22T18:05:02.573Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 15000 },
+    "sourceId": "3f0f1c81-3846-4b68-93ec-513b95a22e61"
+  }
+}

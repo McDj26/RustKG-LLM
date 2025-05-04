@@ -1,0 +1,73 @@
+{
+  "create_time": "2025-03-15T13:26:38.985Z",
+  "id": "2afe075c-fc88-47b1-87a9-6b01909cb6f6",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120\\8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332.json",
+  "relations": [
+    "created by",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [],
+  "add_triples": [],
+  "delete_links": [],
+  "add_links": [
+    "../../src/std/io/stdio.rs.html",
+    "../../std/fmt/trait.Debug.html",
+    "../../std/io/struct.StdinLock.html",
+    "../../std/io/trait.Read.html",
+    "../../std/os/unix/io/trait.AsRawFd.html",
+    "../../std/os/windows/io/trait.AsRawHandle.html",
+    "../../std/primitive.usize.html",
+    "../../std/process/struct.Command.html",
+    "../../std/string/struct.String.html",
+    "../../std/vec/struct.Vec.html",
+    "../index.html",
+    "fn.stdin.html",
+    "index.html",
+    "trait.BufRead.html"
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 221899,
+    "totalUsage": {
+      "prompt_tokens": 31206,
+      "completion_tokens": 5818,
+      "cached_tokens": 0,
+      "reasoning_tokens": 4530
+    },
+    "chunkLength": 2,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 24593,
+        "newContextLength": 527,
+        "newStrLength": 22905,
+        "costTime": 149346
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14798,
+        "newContextLength": 527,
+        "newStrLength": 16505,
+        "costTime": 72553
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-15T13:22:56.202Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 31000 },
+    "sourceId": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332"
+  }
+}

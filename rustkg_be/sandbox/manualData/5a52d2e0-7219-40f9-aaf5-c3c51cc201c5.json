@@ -1,19 +1,4 @@
 {
-  "relations": [
-    "is a",
-    "has full name",
-    "stable since",
-    "is successor of",
-    "is predecessor of",
-    "has stability",
-    "has description",
-    "has return type",
-    "has type",
-    "implements",
-    "requires method",
-    "has argument",
-    "has error type"
-  ],
   "relation_pairs": [
     ["never", "is a", "Primitive Type"],
     [
@@ -67,30 +52,8 @@
     ["never", "implements", "Termination"],
     ["Termination", "requires method", "report"]
   ],
-  "links": [
-    "process/fn.exit.html",
-    "../std/hash/trait.Hash.html",
-    "../src/core/hash/mod.rs.html",
-    "../src/core/clone.rs.html",
-    "../src/core/cmp.rs.html",
-    "../src/core/fmt/mod.rs.html",
-    "../src/std/error.rs.html",
-    "../src/std/process.rs.html",
-    "../std/clone/trait.Clone.html",
-    "../std/cmp/trait.PartialOrd.html",
-    "../std/cmp/trait.Ord.html",
-    "../std/fmt/trait.Debug.html",
-    "../std/cmp/trait.Eq.html",
-    "../std/cmp/trait.PartialEq.html",
-    "../std/marker/trait.Copy.html",
-    "../std/fmt/trait.Display.html",
-    "../std/error/trait.Error.html",
-    "../std/process/trait.Termination.html"
-  ],
   "add_triples": [],
   "delete_triples": [],
-  "add_links": [],
-  "delete_links": [],
   "create_time": "2025-03-01T15:37:44.693Z",
   "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/primitive.never.html",
   "id": "5a52d2e0-7219-40f9-aaf5-c3c51cc201c5",

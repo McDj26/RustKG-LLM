@@ -6,7 +6,7 @@ const diffProcessor = require("./diffMethods");
  * @param {number} contextLength
  * @param {number} windowLength
  * @param {"char" | "word" | "line"} method
- * @returns {{oldContext: string; newContext: string; oldStr: string; newStr: string; limitExceed: boolean}[]}
+ * @returns {{startIndexOld: number; startIndexNew: number; oldContext: string; newContext: string; oldStr: string; newStr: string; limitExceed: boolean}[]}
  */
 function split2DiffChunks(
   oldStr,
@@ -97,6 +97,8 @@ function split2DiffChunks(
       const contextNewStartIndex =
         startIndexNew - contextLength < 0 ? 0 : startIndexNew - contextLength;
       chunks.push({
+        startIndexOld,
+        startIndexNew,
         oldContext: oldStr.slice(contextOldStartIndex, startIndexOld),
         oldStr: oldStr.slice(startIndexOld, startIndexOld + sizeCountOld),
         newContext: newStr.slice(contextNewStartIndex, startIndexNew),
@@ -132,6 +134,8 @@ function split2DiffChunks(
     const contextNewStartIndex =
       startIndexNew - contextLength < 0 ? 0 : startIndexNew - contextLength;
     chunks.push({
+      startIndexOld,
+      startIndexNew,
       oldContext: oldStr.slice(contextOldStartIndex, startIndexOld),
       oldStr: oldStr.slice(startIndexOld, startIndexOld + sizeCountOld),
       newContext: newStr.slice(contextNewStartIndex, startIndexNew),

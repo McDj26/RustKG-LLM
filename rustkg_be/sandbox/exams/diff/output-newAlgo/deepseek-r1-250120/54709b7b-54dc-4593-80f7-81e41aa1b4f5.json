@@ -1,0 +1,119 @@
+{
+  "create_time": "2025-03-15T13:34:04.436Z",
+  "id": "54709b7b-54dc-4593-80f7-81e41aa1b4f5",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120\\8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332.json",
+  "relations": [
+    "created by",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [["Stdin", "implements", "Debug"]],
+  "add_triples": [],
+  "delete_links": ["../../std/fmt/trait.Debug.html"],
+  "add_links": [
+    "../../src/std/io/stdio.rs.html",
+    "../index.html",
+    "enum.ErrorKind.html",
+    "enum.SeekFrom.html",
+    "fn.copy.html",
+    "fn.empty.html",
+    "fn.repeat.html",
+    "fn.sink.html",
+    "fn.stderr.html",
+    "fn.stdin.html",
+    "fn.stdout.html",
+    "index.html",
+    "prelude/index.html",
+    "struct.BufReader.html",
+    "struct.BufWriter.html",
+    "struct.Bytes.html",
+    "struct.Chain.html",
+    "struct.Cursor.html",
+    "struct.Empty.html",
+    "struct.Error.html",
+    "struct.Initializer.html",
+    "struct.IntoInnerError.html",
+    "struct.LineWriter.html",
+    "struct.Lines.html",
+    "struct.Repeat.html",
+    "struct.Sink.html",
+    "struct.Split.html",
+    "struct.Stderr.html",
+    "struct.StderrLock.html",
+    "struct.Stdin.html",
+    "struct.StdinLock.html",
+    "struct.Stdout.html",
+    "struct.StdoutLock.html",
+    "struct.Take.html",
+    "trait.BufRead.html",
+    "trait.Read.html",
+    "trait.Seek.html",
+    "trait.Write.html",
+    "type.Result.html"
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 774062,
+    "totalUsage": {
+      "prompt_tokens": 24198,
+      "completion_tokens": 20960,
+      "cached_tokens": 0,
+      "reasoning_tokens": 18215
+    },
+    "chunkLength": 5,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6730,
+        "newContextLength": 527,
+        "newStrLength": 6749,
+        "costTime": 385885
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 2212,
+        "newContextLength": 527,
+        "newStrLength": 505,
+        "costTime": 29998
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 918,
+        "newContextLength": 527,
+        "newStrLength": 918,
+        "costTime": 193200
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 506,
+        "newContextLength": 527,
+        "newStrLength": 2213,
+        "costTime": 77408
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4601,
+        "newContextLength": 527,
+        "newStrLength": 4601,
+        "costTime": 87571
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-15T13:21:09.132Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 7000 },
+    "sourceId": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332"
+  }
+}

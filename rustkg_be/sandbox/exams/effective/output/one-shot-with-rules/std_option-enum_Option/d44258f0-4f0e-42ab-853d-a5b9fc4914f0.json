@@ -1,0 +1,180 @@
+{
+  "create_time": "2025-03-25T17:57:37.048Z",
+  "id": "d44258f0-4f0e-42ab-853d-a5b9fc4914f0",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.10-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "relations": [
+    "converts to",
+    "has associated type",
+    "has description",
+    "has example",
+    "has full name",
+    "has generic parameter",
+    "has method",
+    "has parameter",
+    "has variant",
+    "implements",
+    "is a",
+    "panics with",
+    "returns",
+    "stable since"
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["Option", "is a", "enum"],
+        ["Option", "has full name", "std::option::Option"],
+        ["Option", "stable since", "1.0.0"],
+        ["Option", "has variant", "None"],
+        ["Option", "has variant", "Some"],
+        ["None", "has description", "No value"],
+        ["Some", "has description", "Some value T"],
+        ["Option", "has method", "is_some"],
+        ["is_some", "returns", "bool"],
+        [
+          "is_some",
+          "has description",
+          "Returns true if the option is a Some value"
+        ],
+        ["Option", "has method", "is_none"],
+        ["is_none", "returns", "bool"],
+        [
+          "is_none",
+          "has description",
+          "Returns true if the option is a None value"
+        ],
+        ["Option", "has method", "as_ref"],
+        ["as_ref", "returns", "Option<&T>"],
+        ["as_ref", "has description", "Converts from Option<T> to Option<&T>"],
+        ["Option", "has method", "as_mut"],
+        ["as_mut", "returns", "Option<&mut T>"],
+        [
+          "as_mut",
+          "has description",
+          "Converts from Option<T> to Option<&mut T>"
+        ],
+        ["Option", "has method", "expect"],
+        ["expect", "has parameter", "msg: &str"],
+        [
+          "expect",
+          "has description",
+          "Unwraps an option, yielding the content of a Some"
+        ],
+        ["expect", "panics with", "custom message provided by msg"],
+        ["Option", "has method", "unwrap"],
+        [
+          "unwrap",
+          "has description",
+          "Moves the value v out of the Option<T> if it is Some(v)"
+        ],
+        ["unwrap", "panics with", "None value"],
+        ["Option", "has method", "unwrap_or"],
+        ["unwrap_or", "has parameter", "def: T"],
+        [
+          "unwrap_or",
+          "has description",
+          "Returns the contained value or a default"
+        ],
+        ["Option", "has method", "map"],
+        ["map", "has generic parameter", "U"],
+        ["map", "has generic parameter", "F"],
+        [
+          "map",
+          "has description",
+          "Maps an Option<T> to Option<U> by applying a function"
+        ],
+        ["Option", "has method", "and_then"],
+        [
+          "and_then",
+          "has description",
+          "Returns None if the option is None, otherwise calls f with the wrapped value"
+        ]
+      ],
+      "startIndex": 0,
+      "endIndex": 39000
+    },
+    {
+      "triples": [
+        ["Option", "has method", "or"],
+        ["or", "has parameter", "other: Option<T>"],
+        ["or", "returns", "Option<T>"],
+        [
+          "or",
+          "has description",
+          "Returns the option if it contains a value, otherwise returns other."
+        ],
+        ["Option", "has method", "or_else"],
+        ["or_else", "has generic parameter", "F"],
+        ["or_else", "has parameter", "f: F"],
+        ["or_else", "returns", "Option<T>"],
+        [
+          "or_else",
+          "has description",
+          "Returns the option if it contains a value, otherwise calls f and returns the result."
+        ],
+        ["Option", "has method", "take"],
+        ["take", "returns", "Option<T>"],
+        [
+          "take",
+          "has description",
+          "Takes the value out of the option, leaving a None in its place."
+        ],
+        ["Option<&T>", "has method", "cloned"],
+        ["cloned", "returns", "Option<T>"],
+        [
+          "cloned",
+          "has description",
+          "Maps an Option<&T> to an Option<T> by cloning the contents of the option."
+        ],
+        ["Option<T>", "has method", "unwrap_or_default"],
+        ["unwrap_or_default", "returns", "T"],
+        [
+          "unwrap_or_default",
+          "has description",
+          "Returns the contained value or a default"
+        ],
+        ["Option<T>", "implements", "Default"],
+        ["Option<T>", "implements", "IntoIterator"],
+        ["IntoIterator for Option<T>", "has associated type", "Item = T"],
+        [
+          "IntoIterator for Option<T>",
+          "has associated type",
+          "IntoIter = IntoIter<T>"
+        ],
+        ["Option<T>", "has method", "into_iter"],
+        ["into_iter", "returns", "IntoIter<T>"],
+        [
+          "into_iter",
+          "has description",
+          "Returns a consuming iterator over the possibly contained value."
+        ],
+        ["Option<T>", "implements", "Hash"],
+        ["Option<T>", "implements", "Debug"],
+        ["Option<T>", "implements", "Ord"],
+        ["Option<T>", "implements", "Eq"],
+        ["Option<T>", "implements", "PartialOrd"],
+        ["Option<T>", "implements", "PartialEq"],
+        ["Option<T>", "implements", "Clone"],
+        ["Option<T>", "implements", "Copy"]
+      ],
+      "startIndex": 39000,
+      "endIndex": 78000
+    }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 268199,
+    "totalUsage": {
+      "prompt_tokens": 29496,
+      "completion_tokens": 7474,
+      "cached_tokens": 0,
+      "reasoning_tokens": 6249
+    },
+    "chunkLength": 2,
+    "chunksInfo": [
+      { "contextLength": 0, "contentLength": 39000, "costTime": 65777 },
+      { "contextLength": 200, "contentLength": 31981, "costTime": 202422 }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

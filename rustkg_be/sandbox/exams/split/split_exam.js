@@ -6,8 +6,8 @@ const { exec, stop } = parallelize(require.resolve("./split_process.js"));
 const controller = new TaskManager(16);
 
 const examURLs = require("../examURLs.json");
-const models = ["deepseek-r1-250120", "deepseek-v3-241226"];
-const windowLength = [7000, 15000, 23000, 31000, 39000];
+const models = ["deepseek-r1-250120" /* , "deepseek-v3-241226" */];
+const windowLength = [/* 7000, 15000, 23000, 31000, */ 39000];
 const contextLength = 500;
 
 const tempArgs = models.reduce((arr, model) => {
@@ -25,7 +25,7 @@ const tempArgs = models.reduce((arr, model) => {
   return arr;
 }, []);
 
-const testTimes = 3;
+const testTimes = 1;
 let testArgs = [];
 for (let index = 0; index < testTimes; index++) {
   testArgs = testArgs.concat(tempArgs);
@@ -43,6 +43,7 @@ for (let index = 0; index < testTimes; index++) {
         contextLength,
         windowLength,
         model,
+        savePath: "output-primitives",
         startTime: new Date().toISOString(),
         examGroup: "split",
         examParams: {

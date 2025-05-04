@@ -51,17 +51,11 @@ puppeteer
   });
 
 process.on("message", async (msg) => {
-  const {
-    url: pageUrl,
-    baseUrl,
-    savePath,
-    model = process.env.LLM_MODEL,
-    ...extraInfo
-  } = msg;
+  const { url: pageUrl, baseUrl, savePath, model, ...extraInfo } = msg;
   const defaultSavePath = `./output/${model}`;
 
   if (!model) {
-    informParent.error(-1, "please provide a model");
+    informParent.error(-1, `please provide a model`);
     informParent.ready();
     return;
   } else if (!pageUrl) {
@@ -94,7 +88,9 @@ process.on("message", async (msg) => {
       prompts.relation_extraction_prompt_zh(
         prompts.example_of_relation_extraction,
         input
-      )
+      ),
+      4 * 1024,
+      model
     );
 
     if (typeof result === "string") {

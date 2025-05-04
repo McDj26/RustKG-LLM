@@ -1,0 +1,58 @@
+{
+  "create_time": "2025-03-15T13:12:12.200Z",
+  "id": "0d8e40dc-8d6b-43b2-97b7-8d4cb102ad96",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\output\\deepseek-r1-250120\\8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332.json",
+  "relations": [
+    "created by",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [],
+  "add_triples": [],
+  "delete_links": [],
+  "add_links": ["prelude/index.html"],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 560351,
+    "totalUsage": {
+      "prompt_tokens": 32569,
+      "completion_tokens": 14485,
+      "cached_tokens": 0,
+      "reasoning_tokens": 13495
+    },
+    "chunkLength": 2,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 36729,
+        "newContextLength": 527,
+        "newStrLength": 36748,
+        "costTime": 238174
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4601,
+        "newContextLength": 527,
+        "newStrLength": 4601,
+        "costTime": 322177
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-15T13:02:42.747Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 39000 },
+    "sourceId": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332"
+  }
+}

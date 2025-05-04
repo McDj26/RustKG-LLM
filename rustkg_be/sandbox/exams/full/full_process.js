@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const prompts = require("./prompt.js");
+const prompts = require("./full_prompt.js");
 const chat = require("../../../utils/LLM/parseReply2Json.js");
 const path = require("path");
 const fs = require("fs");

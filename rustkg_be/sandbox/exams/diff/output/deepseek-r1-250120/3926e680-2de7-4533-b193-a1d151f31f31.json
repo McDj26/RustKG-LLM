@@ -1,0 +1,406 @@
+{
+  "create_time": "2025-03-22T18:59:59.397Z",
+  "id": "3926e680-2de7-4533-b193-a1d151f31f31",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output\\deepseek-r1-250120\\3f0f1c81-3846-4b68-93ec-513b95a22e61.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has return type",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "is a enum",
+    "is a primitive type",
+    "is a struct",
+    "is a trait",
+    "requires trait",
+    "stable since"
+  ],
+  "delete_triples": [
+    ["Option::replace", "has stability", "nightly"],
+    ["Option::replace", "requires trait", "option_replace"]
+  ],
+  "add_triples": [
+    ["&'_ mut I", "implements", "Iterator"],
+    ["&'a Option<T>", "has associated type", "IntoIter = Iter<'a, T>"],
+    ["&'a Option<T>", "has associated type", "Item = &'a T"],
+    ["&'a Option<T>", "has method", "into_iter"],
+    ["&'a Option<T>", "implements", "IntoIterator"],
+    ["&'a mut Option<T>", "has associated type", "IntoIter = IterMut<'a, T>"],
+    ["&'a mut Option<T>", "has associated type", "Item = &'a mut T"],
+    ["&'a mut Option<T>", "has method", "into_iter"],
+    ["&'a mut Option<T>", "implements", "IntoIterator"],
+    [
+      "Borrow::borrow",
+      "has description",
+      "Immutably borrows from an owned value."
+    ],
+    ["Borrow::borrow", "has return type", "&T"],
+    ["BorrowMut::borrow_mut", "has return type", "&mut T"],
+    ["I", "implements", "IntoIterator<Item = Option<A>>"],
+    [
+      "IntoIter",
+      "has description",
+      "An iterator over the value in Some variant of an Option."
+    ],
+    [
+      "Iter",
+      "has description",
+      "An iterator over a reference to the Some variant of an Option."
+    ],
+    [
+      "IterMut",
+      "has description",
+      "An iterator over a mutable reference to the Some variant of an Option."
+    ],
+    ["None", "has description", "No value"],
+    [
+      "NoneError",
+      "has description",
+      "The error type that results from applying the try operator (?) to a None value. If you wish to allow x? (where x is an Option<T>) to be converted into your error type, you can implement impl From<NoneError> for YourErrorType. In that case, x? within a function that returns Result<_, YourErrorType> will translate a None value into an Err result."
+    ],
+    ["Option", "has associated type", "IntoIter=IntoIter<T>"],
+    ["Option", "has associated type", "Item=T"],
+    ["Option", "has method", "and"],
+    ["Option", "has method", "and_then"],
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_pin_ref"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "clone_from"],
+    ["Option", "has method", "cloned"],
+    ["Option", "has method", "cmp"],
+    ["Option", "has method", "deref"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "filter"],
+    ["Option", "has method", "fmt"],
+    ["Option", "has method", "get_or_insert"],
+    ["Option", "has method", "get_or_insert_with"],
+    ["Option", "has method", "into_iter"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "iter"],
+    ["Option", "has method", "iter_mut"],
+    ["Option", "has method", "map"],
+    ["Option", "has method", "map_or"],
+    ["Option", "has method", "map_or_else"],
+    ["Option", "has method", "max"],
+    ["Option", "has method", "min"],
+    ["Option", "has method", "ok_or"],
+    ["Option", "has method", "ok_or_else"],
+    ["Option", "has method", "or"],
+    ["Option", "has method", "or_else"],
+    ["Option", "has method", "replace"],
+    ["Option", "has method", "take"],
+    ["Option", "has method", "transpose"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or"],
+    ["Option", "has method", "unwrap_or_default"],
+    ["Option", "has method", "unwrap_or_else"],
+    ["Option", "has method", "xor"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Clone"],
+    ["Option", "implements", "Copy"],
+    ["Option", "implements", "Debug"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "Eq"],
+    ["Option", "implements", "From<&'a Option<T>>"],
+    ["Option", "implements", "From<&'a mut Option<T>>"],
+    ["Option", "implements", "From<T>"],
+    ["Option", "implements", "FromIterator<Option<A>>"],
+    ["Option", "implements", "Hash"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Ord"],
+    ["Option", "implements", "PartialEq<Option<T>>"],
+    ["Option", "implements", "PartialOrd<Option<T>>"],
+    ["Option", "implements", "Try"],
+    ["Option", "stable since", "1.0.0"],
+    ["Option::as_pin_mut", "has return type", "Option<Pin<&'a mut T>>"],
+    ["Option::as_pin_mut", "has stability", "nightly"],
+    ["Option::as_pin_mut", "requires trait", "pin"],
+    ["Option::as_pin_ref", "has return type", "Option<Pin<&'a T>>"],
+    ["Option::as_pin_ref", "has stability", "nightly"],
+    ["Option::as_pin_ref", "requires trait", "pin"],
+    [
+      "Option::clone_from",
+      "has description",
+      "Performs copy-assignment from source."
+    ],
+    ["Option::cmp", "has return type", "Ordering"],
+    ["Option::deref", "has stability", "nightly"],
+    ["Option::eq", "has argument", "other"],
+    [
+      "Option::eq",
+      "has description",
+      "This method tests for self and other values to be equal, and is used by =="
+    ],
+    ["Option::eq", "has return type", "bool"],
+    ["Option::eq", "is a", "method"],
+    [
+      "Option::fmt",
+      "has description",
+      "Formats the value using the given formatter."
+    ],
+    ["Option::fmt", "has return type", "Result<(), Error>"],
+    ["Option::get_or_insert", "has argument", "v"],
+    [
+      "Option::get_or_insert",
+      "has description",
+      "Inserts v into the option if it is None, then returns a mutable reference to the contained value."
+    ],
+    ["Option::get_or_insert", "has return type", "&mut T"],
+    ["Option::get_or_insert", "stable since", "1.20.0"],
+    [
+      "Option::into_iter",
+      "has description",
+      "Returns a consuming iterator over the possibly contained value."
+    ],
+    [
+      "Option::max",
+      "has description",
+      "Compares and returns the maximum of two values."
+    ],
+    [
+      "Option::min",
+      "has description",
+      "Compares and returns the minimum of two values."
+    ],
+    ["Option::ne", "has argument", "other"],
+    ["Option::ne", "has description", "This method tests for !="],
+    ["Option::ne", "has return type", "bool"],
+    ["Option::ne", "is a", "method"],
+    ["Option::replace", "has stability", "1.31.0"],
+    ["Option::replace", "stable since", "1.31.0"],
+    ["Option::transpose", "has stability", "nightly"],
+    ["Some", "has description", "Some value T"],
+    ["T", "implements", "BorrowMut"],
+    ["Try", "has associated type", "Error=NoneError"],
+    ["Try", "has associated type", "Ok=T"],
+    ["from_iter", "has argument", "iter"],
+    [
+      "from_iter",
+      "has description",
+      "Takes each element in the Iterator: if it is None, no further elements are taken, and the None is returned. Should no None occur, a container with the values of each Option is returned."
+    ],
+    ["from_iter", "has return type", "Option<V>"],
+    ["into_iter", "has description", "Creates an iterator from a value."],
+    ["iter", "has type", "I"],
+    ["other", "has type", "&Option<T>"],
+    ["std::option", "contains", "IntoIter"],
+    ["std::option", "contains", "Iter"],
+    ["std::option", "contains", "IterMut"],
+    ["std::option", "contains", "NoneError"],
+    ["std::option", "contains", "Option"],
+    ["v", "has type", "T"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../../src/core/borrow.rs.html",
+    "../../src/core/clone.rs.html",
+    "../../src/core/cmp.rs.html",
+    "../../src/core/option.rs.html",
+    "../../std/borrow/trait.Borrow.html",
+    "../../std/borrow/trait.BorrowMut.html",
+    "../../std/cmp/trait.Eq.html",
+    "../../std/cmp/trait.Ord.html",
+    "../../std/cmp/trait.PartialEq.html",
+    "../../std/fmt/trait.Debug.html",
+    "../../std/iter/trait.IntoIterator.html",
+    "../../std/option/struct.IntoIter.html",
+    "../../std/option/struct.Iter.html",
+    "../../std/option/struct.IterMut.html",
+    "enum.Option.html",
+    "prelude/index.html",
+    "process/index.html",
+    "ptr/index.html",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html",
+    "struct.Pin.html"
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 3158686,
+    "totalUsage": {
+      "prompt_tokens": 156800,
+      "completion_tokens": 96240,
+      "cached_tokens": 0,
+      "reasoning_tokens": 70546
+    },
+    "chunkLength": 22,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6938,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 204467
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4568,
+        "newContextLength": 527,
+        "newStrLength": 6017,
+        "costTime": 249118
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7000,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 284497
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6025,
+        "newContextLength": 527,
+        "newStrLength": 6025,
+        "costTime": 110138
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6137,
+        "newContextLength": 527,
+        "newStrLength": 6137,
+        "costTime": 82432
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7000,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 148086
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 3440,
+        "newContextLength": 527,
+        "newStrLength": 3440,
+        "costTime": 179186
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 5292,
+        "newContextLength": 527,
+        "newStrLength": 5292,
+        "costTime": 149056
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6251,
+        "newContextLength": 527,
+        "newStrLength": 5975,
+        "costTime": 113672
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7000,
+        "newContextLength": 527,
+        "newStrLength": 6941,
+        "costTime": 69788
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6523,
+        "newContextLength": 527,
+        "newStrLength": 6525,
+        "costTime": 69888
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 2707,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 81255
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 5012,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 97356
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4689,
+        "newContextLength": 527,
+        "newStrLength": 5156,
+        "costTime": 81950
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 5759,
+        "newContextLength": 527,
+        "newStrLength": 7000,
+        "costTime": 296657
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 5764,
+        "newContextLength": 527,
+        "newStrLength": 6953,
+        "costTime": 206367
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6547,
+        "newContextLength": 527,
+        "newStrLength": 6993,
+        "costTime": 81634
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7000,
+        "newContextLength": 527,
+        "newStrLength": 6851,
+        "costTime": 58928
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6822,
+        "newContextLength": 527,
+        "newStrLength": 2612,
+        "costTime": 225099
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 6625,
+        "newContextLength": 527,
+        "newStrLength": 3722,
+        "costTime": 89701
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 2862,
+        "newContextLength": 527,
+        "newStrLength": 500,
+        "costTime": 131529
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 4601,
+        "newContextLength": 527,
+        "newStrLength": 4601,
+        "costTime": 147882
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-22T18:05:02.489Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 7000 },
+    "sourceId": "3f0f1c81-3846-4b68-93ec-513b95a22e61"
+  }
+}

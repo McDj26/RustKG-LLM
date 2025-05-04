@@ -1,0 +1,318 @@
+{
+  "create_time": "2025-03-26T13:55:30.882Z",
+  "id": "59ecd04b-e3cf-4878-b641-f770bf3116a7",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\effective\\output\\merged_3235c2a5-82d7-49cb-8973-bb05d953fe81.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has description",
+    "has generic parameter",
+    "has method",
+    "has parameter",
+    "has stability",
+    "implements",
+    "requires feature",
+    "requires trait",
+    "returns"
+  ],
+  "delete_triples": [
+    { "triples": [], "startIndex": 0, "endIndex": 38530 },
+    { "triples": [], "startIndex": 39929, "endIndex": 78929 },
+    { "triples": [], "startIndex": 78988, "endIndex": 117988 },
+    {
+      "triples": [
+        ["Option<T>", "implements", "FromIterator<Option<A>>"],
+        ["Option<T>", "implements", "Default"]
+      ],
+      "startIndex": 118389,
+      "endIndex": 157387
+    },
+    {
+      "triples": [
+        ["Option<T>", "implements", "IntoIterator"],
+        ["Option<T> as IntoIterator", "has associated type", "Item = T"],
+        [
+          "Option<T> as IntoIterator",
+          "has associated type",
+          "IntoIter = IntoIter<T>"
+        ],
+        ["&'a Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "Item = &'a T"
+        ],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "IntoIter = Iter<'a, T>"
+        ],
+        ["&'a Option<T>", "has method", "into_iter"],
+        ["into_iter (for &'a Option<T>)", "has return type", "Iter<'a, T>"],
+        ["&'a mut Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "Item = &'a mut T"
+        ],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "IntoIter = IterMut<'a, T>"
+        ],
+        ["&'a mut Option<T>", "has method", "into_iter"],
+        [
+          "into_iter (for &'a mut Option<T>)",
+          "has return type",
+          "IterMut<'a, T>"
+        ],
+        ["&Option<T>", "implements", "IntoIterator"],
+        ["&Option<T> as IntoIterator", "has associated type", "Item = &T"],
+        [
+          "&Option<T> as IntoIterator",
+          "has associated type",
+          "IntoIter = Iter<T>"
+        ],
+        ["&mut Option<T>", "implements", "IntoIterator"],
+        [
+          "&mut Option<T> as IntoIterator",
+          "has associated type",
+          "Item = &mut T"
+        ],
+        [
+          "&mut Option<T> as IntoIterator",
+          "has associated type",
+          "IntoIter = IterMut<T>"
+        ],
+        ["into_iter", "returns", "Iter<T>"],
+        ["into_iter", "returns", "IterMut<T>"],
+        ["into_iter", "has full name", "std::option::Option::into_iter"],
+        [
+          "into_iter",
+          "has description",
+          "Returns a consuming iterator over the possibly contained value."
+        ]
+      ],
+      "startIndex": 157387,
+      "endIndex": 176900
+    }
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["std::option", "contains", "NoneError"],
+        ["Option", "contains", "as_pin_mut"],
+        [
+          "Option::as_pin_mut",
+          "has description",
+          "Converts from Option<T> to Option<PinMut<'_, T>>"
+        ],
+        ["Option", "contains", "iter"],
+        [
+          "Option::iter",
+          "has description",
+          "An iterator over a reference to the Some variant of an Option."
+        ],
+        ["Option", "contains", "iter_mut"],
+        [
+          "Option::iter_mut",
+          "has description",
+          "An iterator over a mutable reference to the Some variant of an Option."
+        ],
+        ["Option", "contains", "and"],
+        ["Option::and", "has description", "..."],
+        ["Option", "contains", "and_then"],
+        ["Option::and_then", "has description", "..."],
+        ["Option", "contains", "filter"],
+        ["Option::filter", "has description", "..."],
+        ["Option", "contains", "or"],
+        ["Option::or", "has description", "..."],
+        ["Option", "contains", "or_else"],
+        ["Option::or_else", "has description", "..."],
+        ["Option", "contains", "xor"],
+        ["Option::xor", "has description", "..."],
+        ["Option", "contains", "get_or_insert"],
+        ["Option::get_or_insert", "has description", "..."],
+        ["Option", "contains", "get_or_insert_with"],
+        ["Option::get_or_insert_with", "has description", "..."],
+        ["Option", "contains", "take"],
+        ["Option::take", "has description", "..."],
+        ["Option", "contains", "replace"],
+        ["Option::replace", "has description", "..."],
+        ["Option", "contains", "cloned"],
+        ["Option::cloned", "has description", "..."],
+        ["Option", "contains", "unwrap_or_default"],
+        ["Option::unwrap_or_default", "has description", "..."],
+        ["Option", "contains", "deref"],
+        ["Option::deref", "has description", "..."],
+        ["Option", "contains", "transpose"],
+        ["Option::transpose", "has description", "..."],
+        ["Option", "implements", "IntoIterator"],
+        ["Option", "implements", "Hash"],
+        ["Option", "implements", "Clone"],
+        ["Option", "implements", "PartialOrd"],
+        ["Option", "implements", "Ord"],
+        ["Option", "implements", "Debug"],
+        ["Option", "implements", "Eq"],
+        ["Option", "implements", "PartialEq"],
+        ["Option", "implements", "From<&'a mut Option<T>>"],
+        ["Option", "implements", "From<T>"],
+        ["Option", "implements", "From<&'a Option<T>>"],
+        ["Option", "implements", "Copy"],
+        ["Option", "implements", "FromIterator"],
+        ["Option", "implements", "Try"],
+        ["Option", "implements", "Default"],
+        [
+          "NoneError",
+          "has description",
+          "The error type that results from applying the try operator (`?`) to a `None` value. If you wish to allow `x?` (where `x` is an `Option<T>`) to be converted into your error type, you can implement `impl From<NoneError>` for `YourErrorType`. In that case, `x?` within a function that returns `Result<_, YourErrorType>` will translate a `None` value into an `Err` result."
+        ]
+      ],
+      "startIndex": 0,
+      "endIndex": 38530
+    },
+    {
+      "triples": [
+        ["Option", "has method", "filter"],
+        [
+          "Option::filter",
+          "has description",
+          "Returns None if the option is None, otherwise calls predicate with the wrapped value and returns the result."
+        ],
+        ["Option::filter", "has generic parameter", "P"],
+        ["P", "requires trait", "FnOnce(&T) -> bool"],
+        ["Option::filter", "has argument", "predicate"],
+        ["Option::filter::predicate", "has type", "P"],
+        ["Option", "has method", "xor"],
+        [
+          "Option::xor",
+          "has description",
+          "Returns Some if exactly one of self, optb is Some, otherwise returns None."
+        ],
+        ["Option::xor", "requires feature", "option_xor"],
+        ["Option::xor", "has stability", "experimental"],
+        ["Option::xor", "has argument", "optb"],
+        ["Option::xor::optb", "has type", "Option<T>"],
+        ["Option::xor", "returns", "Option<T>"]
+      ],
+      "startIndex": 39929,
+      "endIndex": 78929
+    },
+    {
+      "triples": [
+        ["Option", "has method", "replace"],
+        ["replace", "has full name", "std::option::Option::replace"],
+        ["replace", "has argument", "value"],
+        ["replace::value", "has type", "T"],
+        ["replace", "returns", "Option<T>"],
+        [
+          "replace",
+          "has description",
+          "Replaces the actual value in the option by the value given in parameter, returning the old value if present, leaving a Some in its place without deinitializing either one."
+        ],
+        ["replace", "has stability", "experimental"],
+        ["replace", "requires feature", "option_replace"],
+        ["Option", "has method", "deref"],
+        ["deref", "has full name", "std::option::Option::deref"],
+        ["deref", "returns", "Option<&T::Target>"],
+        [
+          "deref",
+          "has description",
+          "Converts from &Option<T> to Option<&T::Target>. Leaves the original Option in-place, creating a new one with a reference to the original one, additionally coercing the contents via Deref."
+        ],
+        ["deref", "has stability", "experimental"],
+        ["deref", "requires feature", "inner_deref"],
+        ["Option", "has method", "transpose"],
+        ["transpose", "has full name", "std::option::Option::transpose"],
+        ["transpose", "returns", "Result<Option<T>, E>"],
+        [
+          "transpose",
+          "has description",
+          "Transposes an Option of a Result into a Result of an Option. None will be mapped to Ok(None). Some(Ok(_)) and Some(Err(_)) will be mapped to Ok(Some(_)) and Err(_)."
+        ],
+        ["transpose", "has stability", "experimental"],
+        ["transpose", "requires feature", "transpose_result"]
+      ],
+      "startIndex": 78988,
+      "endIndex": 117988
+    },
+    {
+      "triples": [
+        ["Option<T>", "implements", "PartialOrd"],
+        ["Option<T>", "implements", "Debug"],
+        ["Option<T>", "implements", "Eq"],
+        ["Option<T>", "implements", "Copy"],
+        ["Option<T>", "implements", "From<&'a mut Option<T>>"],
+        ["Option<T>", "implements", "From<T>"],
+        ["Option<T>", "implements", "From<&'a Option<T>>"],
+        ["Option<T>", "implements", "Hash"],
+        ["Option<T>", "implements", "Ord"],
+        ["Option<T>", "implements", "PartialEq"],
+        ["Option<T>", "implements", "Try"],
+        ["Option<T> as Try", "has associated type", "Ok = T"],
+        ["Option<T> as Try", "has associated type", "Error = NoneError"],
+        ["Option<T>", "has method", "partial_cmp"],
+        ["partial_cmp", "has argument", "other"],
+        ["partial_cmp", "returns", "Option<Ordering>"],
+        ["Option<T>", "has method", "fmt"],
+        ["fmt", "has argument", "f"],
+        ["fmt", "returns", "Result<(), Error>"]
+      ],
+      "startIndex": 118389,
+      "endIndex": 157387
+    },
+    { "triples": [], "startIndex": 157387, "endIndex": 176900 }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 742903,
+    "totalUsage": {
+      "prompt_tokens": 109633,
+      "completion_tokens": 22755,
+      "cached_tokens": 0,
+      "reasoning_tokens": 20170
+    },
+    "chunkLength": 5,
+    "chunksInfo": [
+      {
+        "oldContextLength": 27,
+        "oldStrLength": 29160,
+        "newContextLength": 27,
+        "newStrLength": 38551,
+        "costTime": 199212
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 22329,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 190460
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 10296,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 82475
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 18273,
+        "newContextLength": 227,
+        "newStrLength": 39019,
+        "costTime": 76453
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 8050,
+        "newContextLength": 227,
+        "newStrLength": 19534,
+        "costTime": 194303
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

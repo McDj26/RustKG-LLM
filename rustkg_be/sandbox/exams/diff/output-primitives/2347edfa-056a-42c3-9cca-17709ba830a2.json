@@ -1,0 +1,343 @@
+{
+  "create_time": "2025-03-23T10:03:50.208Z",
+  "id": "2347edfa-056a-42c3-9cca-17709ba830a2",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/primitive.slice.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output-primitives\\0d6461a4-e124-4575-9e32-2185b3e54aa1.json",
+  "relations": [
+    "deprecated",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has parameter",
+    "has return type",
+    "has source code",
+    "has stability",
+    "has type",
+    "implements",
+    "is a",
+    "related to module",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [
+    ["ptr", "has description", "Raw, unsafe pointers, *const T, and *mut T"]
+  ],
+  "add_triples": [
+    ["&'b [B]", "implements", "PartialEq<[A; 0]>"],
+    ["&'b [B]", "implements", "PartialEq<[A; 12]>"],
+    ["&'b [B]", "implements", "PartialEq<[A; 28]>"],
+    ["&'b [B]", "implements", "PartialEq<[B; 13]>"],
+    ["&'b [B]", "implements", "PartialEq<[B; 24]>"],
+    ["&'b [B]", "implements", "PartialEq<[B; 25]>"],
+    ["&'b [B]", "implements", "PartialEq<[B; 26]>"],
+    ["&'b [B]", "implements", "PartialEq<[B; 30]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[A; 3]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[A; 4]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 13]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 15]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 16]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 1]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 25]>"],
+    ["&'b mut [B]", "implements", "PartialEq<[B; 9]>"],
+    ["[A]", "implements", "PartialEq<[B; 25]>"],
+    ["[A]", "implements", "PartialEq<[B; 29]>"],
+    ["[A]", "implements", "PartialEq<[B; 2]>"],
+    ["[A]", "implements", "PartialEq<[B; 30]>"],
+    ["[A]", "implements", "PartialEq<[B; 32]>"],
+    ["[A]", "implements", "PartialEq<[B; 5]>"],
+    ["[A]", "implements", "PartialEq<[B; 6]>"],
+    ["[A]", "implements", "PartialEq<[B]>"],
+    ["[B]", "implements", "PartialEq<[A; 28]>"],
+    [
+      "chunks_exact",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the beginning of the slice."
+    ],
+    [
+      "chunks_exact",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.chunks_exact(2); assert_eq!(iter.next().unwrap(), &['l', 'o']); assert_eq!(iter.next().unwrap(), &['r', 'e']); assert!(iter.next().is none()); assert_eq!(iter.remainder(), &['m']);"
+    ],
+    [
+      "chunks_exact",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.chunks_exact(2); assert_eq!(iter.next().unwrap(), &['l', 'o']); assert_eq!(iter.next().unwrap(), &['r', 'e']); assert!(iter.next().is_none()); assert_eq!(iter.remainder(), &['m']);"
+    ],
+    ["chunks_exact", "stable since", "1.31.0"],
+    [
+      "chunks_exact_mut",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the beginning of the slice."
+    ],
+    [
+      "chunks_exact_mut",
+      "has example",
+      "let v = &mut [0, 0, 0, 0, 0]; let mut count = 1; for chunk in v.chunks_exact_mut(2) { for elem in chunk.iter_mut() { *elem += count; } count += 1; } assert_eq!(v, &[1, 1, 2, 2, 0]);"
+    ],
+    ["chunks_exact_mut", "stable since", "1.31.0"],
+    [
+      "last",
+      "has description",
+      "Returns the last element of the slice, or None if it is empty."
+    ],
+    [
+      "last",
+      "has example",
+      "let v = [10, 40, 30]; assert_eq!(Some(&30), v.last()); let w: &[i32] = &[]; assert_eq!(None, w.last());"
+    ],
+    [
+      "last_mut",
+      "has description",
+      "Returns a mutable pointer to the last item in the slice."
+    ],
+    [
+      "last_mut",
+      "has example",
+      "let x = &mut [0, 1, 2]; if let Some(last) = x.last_mut() { *last = 10; } assert_eq!(x, &[0, 1, 10]);"
+    ],
+    ["ptr", "has description", "Manually manage memory through raw pointers"],
+    [
+      "rchunks",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the end of the slice."
+    ],
+    [
+      "rchunks",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.rchunks(2); assert_eq!(iter.next().unwrap(), &['e', 'm']); assert_eq!(iter.next().unwrap(), &['o', 'r']); assert_eq!(iter.next().unwrap(), &['l']); assert!(iter.next().is none());"
+    ],
+    [
+      "rchunks",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.rchunks(2); assert_eq!(iter.next().unwrap(), &['e', 'm']); assert_eq!(iter.next().unwrap(), &['o', 'r']); assert_eq!(iter.next().unwrap(), &['l']); assert!(iter.next().is_none());"
+    ],
+    ["rchunks", "stable since", "1.31.0"],
+    [
+      "rchunks_exact",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the end of the slice."
+    ],
+    [
+      "rchunks_exact",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.rchunks_exact(2); assert_eq!(iter.next().unwrap(), &['e', 'm']); assert_eq!(iter.next().unwrap(), &['o', 'r']); assert!(iter.next().is none()); assert_eq!(iter.remainder(), &['l']);"
+    ],
+    [
+      "rchunks_exact",
+      "has example",
+      "let slice = ['l', 'o', 'r', 'e', 'm']; let mut iter = slice.rchunks_exact(2); assert_eq!(iter.next().unwrap(), &['e', 'm']); assert_eq!(iter.next().unwrap(), &['o', 'r']); assert!(iter.next().is_none()); assert_eq!(iter.remainder(), &['l']);"
+    ],
+    ["rchunks_exact", "stable since", "1.31.0"],
+    [
+      "rchunks_exact_mut",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the end of the slice."
+    ],
+    [
+      "rchunks_exact_mut",
+      "has example",
+      "let v = &mut [0, 0, 0, 0, 0]; let mut count = 1; for chunk in v.rchunks_exact_mut(2) { for elem in chunk.iter_mut() { *elem += count; } count += 1; } assert_eq!(v, &[0, 2, 2, 1, 1]);"
+    ],
+    ["rchunks_exact_mut", "stable since", "1.31.0"],
+    [
+      "rchunks_mut",
+      "has description",
+      "Returns an iterator over chunk_size elements of the slice at a time, starting at the end of the slice."
+    ],
+    [
+      "rchunks_mut",
+      "has example",
+      "let v = &mut [0, 0, 0, 0, 0]; let mut count = 1; for chunk in v.rchunks_mut(2) { for elem in chunk.iter_mut() { *elem += count; } count += 1; } assert_eq!(v, &[3, 2, 2, 1, 1]);"
+    ],
+    ["rchunks_mut", "stable since", "1.31.0"],
+    ["slice", "has method", "chunks_exact"],
+    ["slice", "has method", "chunks_exact_mut"],
+    ["slice", "has method", "last"],
+    ["slice", "has method", "last_mut"],
+    ["slice", "has method", "rchunks"],
+    ["slice", "has method", "rchunks_exact"],
+    ["slice", "has method", "rchunks_exact_mut"],
+    ["slice", "has method", "rchunks_mut"],
+    ["slice", "has method", "split_last"],
+    ["slice", "has method", "split_last_mut"],
+    [
+      "split_last",
+      "has description",
+      "Returns the last and all the rest of the elements of the slice, or None if it is empty."
+    ],
+    [
+      "split_last",
+      "has example",
+      "let x = &[0, 1, 2]; if let Some((last, elements)) = x.split_last() { assert_eq!(last, &2); assert_eq!(elements, &[0, 1]); }"
+    ],
+    ["split_last", "stable since", "1.5.0"],
+    [
+      "split_last_mut",
+      "has description",
+      "Returns the last and all the rest of the elements of the slice, or None if it is empty."
+    ],
+    [
+      "split_last_mut",
+      "has example",
+      "let x = &mut [0, 1, 2]; if let Some((last, elements)) = x.split_last_mut() { *last = 3; elements[0] = 4; elements[1] = 5; } assert_eq!(x, &[4, 5, 3]);"
+    ],
+    ["split_last_mut", "stable since", "1.5.0"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../src/core/slice/mod.rs.html",
+    "prelude/index.html",
+    "process/index.html",
+    "ptr/index.html"
+  ],
+  "metrics": {
+    "escapeCount": 2,
+    "costTime": 2902140,
+    "totalUsage": {
+      "prompt_tokens": 527203,
+      "completion_tokens": 78543,
+      "cached_tokens": 0,
+      "reasoning_tokens": 49433
+    },
+    "chunkLength": 18,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 36428,
+        "newContextLength": 527,
+        "newStrLength": 37959,
+        "costTime": 59637
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 36537,
+        "newContextLength": 527,
+        "newStrLength": 36531,
+        "costTime": 185239
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 18147,
+        "newContextLength": 527,
+        "newStrLength": 37345,
+        "costTime": 233821
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 38359,
+        "newContextLength": 527,
+        "newStrLength": 38372,
+        "costTime": 150426
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 37722,
+        "newContextLength": 527,
+        "newStrLength": 38440,
+        "costTime": 208391
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 21126,
+        "newContextLength": 527,
+        "newStrLength": 35586,
+        "costTime": 252052
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 39000,
+        "costTime": 137850
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 23922,
+        "newContextLength": 527,
+        "newStrLength": 39000,
+        "costTime": 121255
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 38945,
+        "costTime": 145619
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 38951,
+        "newContextLength": 527,
+        "newStrLength": 39000,
+        "costTime": 211257
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 38994,
+        "costTime": 188200
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 38854,
+        "newContextLength": 527,
+        "newStrLength": 38898,
+        "costTime": 113706
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 38948,
+        "costTime": 87774
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 38965,
+        "costTime": 278762
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 38829,
+        "newContextLength": 527,
+        "newStrLength": 39000,
+        "costTime": 160558
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 39000,
+        "newContextLength": 527,
+        "newStrLength": 28264,
+        "costTime": 156666
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 38999,
+        "newContextLength": 527,
+        "newStrLength": 33840,
+        "costTime": 108056
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 12951,
+        "newContextLength": 527,
+        "newStrLength": 13652,
+        "costTime": 102871
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-23T09:04:16.647Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 39000 },
+    "sourceId": "0d6461a4-e124-4575-9e32-2185b3e54aa1"
+  }
+}

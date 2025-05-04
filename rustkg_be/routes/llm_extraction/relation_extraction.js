@@ -15,19 +15,29 @@ const visited = new Set(
  * @param {import('koa').Next} next
  */
 async function handler(baseUrl, ctx, next) {
-  const { url, savePath } = ctx.request.body;
-  if (failedSet.has(url) || visited.has(url)) {
+  const {
+    url,
+    savePath,
+    force = false,
+    model = "deepseek-r1-250120",
+  } = ctx.request.body;
+  if (!force && (failedSet.has(url) || visited.has(url))) {
     ctx.status = 200;
     ctx.body = JSON.stringify({ resultId: null, links: [] });
     return;
   }
   try {
-    const { resultId, links, reason } = await exec({ url, baseUrl, savePath });
+    const { resultId, links, reason } = await exec({
+      url,
+      baseUrl,
+      savePath,
+      model,
+    });
     if (!resultId) {
       failed.push({ url, reason });
       failedSet.add(url);
       await fs.promises.writeFile(
-        require.resolve("../assets/failed.json"),
+        require.resolve("../../assets/failed.json"),
         JSON.stringify(failed)
       );
       ctx.status = 200;
@@ -36,7 +46,7 @@ async function handler(baseUrl, ctx, next) {
     }
     visited.add(url);
     await fs.promises.writeFile(
-      require.resolve("../assets/visited.json"),
+      require.resolve("../../assets/visited.json"),
       JSON.stringify(Array.from(visited))
     );
     const resolvedUrls = links.map((link) => new URL(link, url).href);

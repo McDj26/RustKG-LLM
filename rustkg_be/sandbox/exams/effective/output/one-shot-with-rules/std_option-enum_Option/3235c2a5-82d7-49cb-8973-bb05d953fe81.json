@@ -1,0 +1,243 @@
+{
+  "create_time": "2025-03-26T13:35:21.992Z",
+  "id": "3235c2a5-82d7-49cb-8973-bb05d953fe81",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.20-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\effective\\output\\merged_b4be24c6-537d-4081-a85a-d967b0cde3aa.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has generic parameter",
+    "has method",
+    "has parameter",
+    "has return type",
+    "has type",
+    "has variant",
+    "is a",
+    "panics with",
+    "requires trait",
+    "returns",
+    "stable since"
+  ],
+  "delete_triples": [
+    {
+      "triples": [
+        [
+          "IntoIter",
+          "has description",
+          "An iterator over the item contained inside an Option."
+        ],
+        [
+          "Iter",
+          "has description",
+          "An iterator over a reference of the contained item in an Option."
+        ],
+        [
+          "IterMut",
+          "has description",
+          "An iterator over a mutable reference of the contained item in an Option."
+        ]
+      ],
+      "startIndex": 215,
+      "endIndex": 39215
+    },
+    { "triples": [], "startIndex": 39217, "endIndex": 78217 },
+    { "triples": [], "startIndex": 78242, "endIndex": 89034 }
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        [
+          "IntoIter",
+          "has description",
+          "An iterator over the value in [`Some`] variant of an [`Option`]."
+        ],
+        [
+          "Iter",
+          "has description",
+          "An iterator over a reference to the [`Some`] variant of an [`Option`]."
+        ],
+        [
+          "IterMut",
+          "has description",
+          "An iterator over a mutable reference to the [`Some`] variant of an [`Option`]."
+        ],
+        [
+          "Option::expect",
+          "has description",
+          "Unwraps an option, yielding the content of a Some"
+        ],
+        ["Option::expect", "panics with", "custom message provided by msg"],
+        [
+          "Option::unwrap",
+          "has description",
+          "Moves the value v out of the Option<T> if it is Some(v)"
+        ],
+        ["Option::unwrap", "panics with", "None value"],
+        ["Option::unwrap_or", "has parameter", "def: T"],
+        [
+          "Option::unwrap_or",
+          "has description",
+          "Returns the contained value or a default"
+        ],
+        ["Option::map", "has generic parameter", "U"],
+        ["Option::map", "has generic parameter", "F"],
+        [
+          "Option::map",
+          "has description",
+          "Maps an Option<T> to Option<U> by applying a function"
+        ],
+        ["Option", "has method", "unwrap_or_else"],
+        ["Option", "has method", "map_or"],
+        ["Option", "has method", "map_or_else"],
+        ["Option", "has method", "ok_or"],
+        ["Option", "has method", "ok_or_else"],
+        ["Option", "has method", "iter"],
+        ["Option", "has method", "iter_mut"],
+        ["Option", "has method", "and"],
+        ["Option", "has method", "or"]
+      ],
+      "startIndex": 215,
+      "endIndex": 39215
+    },
+    {
+      "triples": [
+        ["Option", "has method", "get_or_insert"],
+        [
+          "get_or_insert",
+          "has full name",
+          "std::option::Option::get_or_insert"
+        ],
+        ["get_or_insert", "has argument", "v"],
+        ["get_or_insert::v", "has type", "T"],
+        ["get_or_insert", "has return type", "&mut T"],
+        [
+          "get_or_insert",
+          "has description",
+          "Inserts v into the option if it is None, then returns a mutable reference to the contained value."
+        ],
+        ["Option", "has method", "get_or_insert_with"],
+        [
+          "get_or_insert_with",
+          "has full name",
+          "std::option::Option::get_or_insert_with"
+        ],
+        ["get_or_insert_with", "has argument", "f"],
+        ["get_or_insert_with::f", "has type", "F"],
+        ["F", "requires trait", "FnOnce() -> T"],
+        ["get_or_insert_with", "has return type", "&mut T"],
+        [
+          "get_or_insert_with",
+          "has description",
+          "Inserts a value computed from f into the option if it is None, then returns a mutable reference to the contained value."
+        ],
+        [
+          "Option::or_else",
+          "has description",
+          "Returns the option if it contains a value, otherwise calls f and returns the result."
+        ],
+        [
+          "Option::take",
+          "has description",
+          "Takes the value out of the option, leaving a None in its place."
+        ]
+      ],
+      "startIndex": 39217,
+      "endIndex": 78217
+    },
+    {
+      "triples": [
+        ["Option<T>", "has method", "max"],
+        ["max", "has full name", "std::option::Option::max"],
+        ["max", "returns", "Self"],
+        ["max", "has argument", "self"],
+        ["max", "has argument", "other: Self"],
+        [
+          "max",
+          "has description",
+          "Compares and returns the maximum of two values."
+        ],
+        ["Option<T>", "has method", "min"],
+        ["min", "has full name", "std::option::Option::min"],
+        ["min", "returns", "Self"],
+        ["min", "has argument", "self"],
+        ["min", "has argument", "other: Self"],
+        [
+          "min",
+          "has description",
+          "Compares and returns the minimum of two values."
+        ],
+        ["&'a Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "Item = &'a T"
+        ],
+        [
+          "IntoIterator for &'a Option<T>",
+          "has associated type",
+          "IntoIter = Iter<'a, T>"
+        ],
+        ["&'a mut Option<T>", "implements", "IntoIterator"],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "Item = &'a mut T"
+        ],
+        [
+          "IntoIterator for &'a mut Option<T>",
+          "has associated type",
+          "IntoIter = IterMut<'a, T>"
+        ],
+        ["&'a Option<T>", "has method", "into_iter"],
+        ["into_iter (for &'a Option<T>)", "has return type", "Iter<'a, T>"],
+        ["&'a mut Option<T>", "has method", "into_iter"],
+        [
+          "into_iter (for &'a mut Option<T>)",
+          "has return type",
+          "IterMut<'a, T>"
+        ]
+      ],
+      "startIndex": 78242,
+      "endIndex": 89034
+    }
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 274520,
+    "totalUsage": {
+      "prompt_tokens": 65866,
+      "completion_tokens": 7897,
+      "cached_tokens": 0,
+      "reasoning_tokens": 6430
+    },
+    "chunkLength": 3,
+    "chunksInfo": [
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 33654,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 38078
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 27288,
+        "newContextLength": 227,
+        "newStrLength": 39021,
+        "costTime": 87120
+      },
+      {
+        "oldContextLength": 227,
+        "oldStrLength": 9032,
+        "newContextLength": 227,
+        "newStrLength": 10813,
+        "costTime": 149322
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

@@ -1,0 +1,311 @@
+{
+  "create_time": "2025-03-25T18:01:51.948Z",
+  "id": "eddf357e-f506-4352-ac3c-5e143f4903c8",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.10-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "relations": [
+    "contains",
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has method",
+    "has return type",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "requires trait",
+    "stable since"
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["std::option", "contains", "IntoIter"],
+        ["std::option", "contains", "Iter"],
+        ["std::option", "contains", "IterMut"],
+        ["std::option", "contains", "Option"],
+        ["IntoIter", "is a", "struct"],
+        ["Iter", "is a", "struct"],
+        ["IterMut", "is a", "struct"],
+        ["Option", "is a", "enum"],
+        ["IntoIter", "has full name", "std::option::IntoIter"],
+        ["Iter", "has full name", "std::option::Iter"],
+        ["IterMut", "has full name", "std::option::IterMut"],
+        ["Option", "has full name", "std::option::Option"],
+        ["Option", "stable since", "1.0.0"],
+        ["Option", "has declaration", "pub enum Option<T> { None, Some(T), }"],
+        [
+          "Option",
+          "has description",
+          "The Option type. See the module level documentation for more."
+        ],
+        ["Option", "has variant", "None"],
+        ["Option", "has variant", "Some"],
+        ["None", "has description", "No value"],
+        ["Some", "has description", "Some value T"],
+        [
+          "IntoIter",
+          "has description",
+          "An iterator over the item contained inside an Option."
+        ],
+        [
+          "Iter",
+          "has description",
+          "An iterator over a reference of the contained item in an Option."
+        ],
+        [
+          "IterMut",
+          "has description",
+          "An iterator over a mutable reference of the contained item in an Option."
+        ],
+        ["Option", "has method", "is_some"],
+        ["Option", "has method", "is_none"],
+        ["Option", "has method", "as_ref"],
+        ["Option", "has method", "as_mut"],
+        ["Option", "has method", "expect"],
+        ["Option", "has method", "unwrap"],
+        ["Option", "has method", "unwrap_or"],
+        ["Option", "has method", "unwrap_or_else"],
+        ["Option", "has method", "map"],
+        ["Option", "has method", "map_or"],
+        ["Option", "has method", "map_or_else"],
+        ["Option", "has method", "ok_or"],
+        ["Option", "has method", "ok_or_else"],
+        ["Option", "has method", "iter"],
+        ["Option", "has method", "iter_mut"],
+        ["Option", "has method", "and"],
+        ["Option", "has method", "and_then"],
+        ["Option", "has method", "or"],
+        ["is_some", "has return type", "bool"],
+        ["is_some", "has argument", "self"],
+        ["self", "has type", "&self"],
+        [
+          "is_some",
+          "has description",
+          "Returns true if the option is a Some value"
+        ],
+        ["is_none", "has return type", "bool"],
+        ["is_none", "has argument", "self"],
+        [
+          "is_none",
+          "has description",
+          "Returns true if the option is a None value"
+        ],
+        ["as_ref", "has return type", "Option<&T>"],
+        ["as_ref", "has argument", "self"],
+        ["as_ref", "has description", "Converts from Option<T> to Option<&T>"],
+        ["as_mut", "has return type", "Option<&mut T>"],
+        ["as_mut", "has argument", "self"],
+        [
+          "as_mut",
+          "has description",
+          "Converts from Option<T> to Option<&mut T>"
+        ],
+        ["expect", "has return type", "T"],
+        ["expect", "has argument", "self"],
+        ["expect", "has argument", "msg"],
+        ["msg", "has type", "&str"],
+        [
+          "expect",
+          "has description",
+          "Unwraps an option, yielding the content of a Some. Panics if the value is a None with a custom panic message provided by msg."
+        ],
+        ["unwrap", "has return type", "T"],
+        ["unwrap", "has argument", "self"],
+        [
+          "unwrap",
+          "has description",
+          "Moves the value v out of the Option<T> if it is Some(v). Panics if the self value equals None."
+        ],
+        ["unwrap_or", "has return type", "T"],
+        ["unwrap_or", "has argument", "self"],
+        ["unwrap_or", "has argument", "def"],
+        ["def", "has type", "T"],
+        [
+          "unwrap_or",
+          "has description",
+          "Returns the contained value or a default."
+        ],
+        ["unwrap_or_else", "has return type", "T"],
+        ["unwrap_or_else", "has argument", "self"],
+        ["unwrap_or_else", "has argument", "f"],
+        ["f", "has type", "F"],
+        ["F", "requires trait", "FnOnce() -> T"],
+        [
+          "unwrap_or_else",
+          "has description",
+          "Returns the contained value or computes it from a closure."
+        ],
+        ["map", "has return type", "Option<U>"],
+        ["map", "has argument", "self"],
+        ["map", "has argument", "f"],
+        ["F", "requires trait", "FnOnce(T) -> U"],
+        [
+          "map",
+          "has description",
+          "Maps an Option<T> to Option<U> by applying a function to a contained value"
+        ],
+        ["map_or", "has return type", "U"],
+        ["map_or", "has argument", "self"],
+        ["map_or", "has argument", "default"],
+        ["map_or", "has argument", "f"],
+        ["default", "has type", "U"],
+        [
+          "map_or",
+          "has description",
+          "Applies a function to the contained value (if any), or returns a default (if not)."
+        ],
+        ["map_or_else", "has return type", "U"],
+        ["map_or_else", "has argument", "self"],
+        ["map_or_else", "has argument", "default"],
+        ["map_or_else", "has argument", "f"],
+        ["default", "has type", "D"],
+        ["D", "requires trait", "FnOnce() -> U"],
+        [
+          "map_or_else",
+          "has description",
+          "Applies a function to the contained value (if any), or computes a default (if not)."
+        ],
+        ["ok_or", "has return type", "Result<T, E>"],
+        ["ok_or", "has argument", "self"],
+        ["ok_or", "has argument", "err"],
+        ["err", "has type", "E"],
+        [
+          "ok_or",
+          "has description",
+          "Transforms the Option<T> into a Result<T, E>, mapping Some(v) to Ok(v) and None to Err(err)."
+        ],
+        ["ok_or_else", "has return type", "Result<T, E>"],
+        ["ok_or_else", "has argument", "self"],
+        ["ok_or_else", "has argument", "err"],
+        ["err", "has type", "F"],
+        ["F", "requires trait", "FnOnce() -> E"],
+        [
+          "ok_or_else",
+          "has description",
+          "Transforms the Option<T> into a Result<T, E>, mapping Some(v) to Ok(v) and None to Err(err())."
+        ],
+        ["iter", "has return type", "Iter<T>"],
+        ["iter", "has argument", "self"],
+        [
+          "iter",
+          "has description",
+          "Returns an iterator over the possibly contained value."
+        ],
+        ["iter_mut", "has return type", "IterMut<T>"],
+        ["iter_mut", "has argument", "self"],
+        [
+          "iter_mut",
+          "has description",
+          "Returns a mutable iterator over the possibly contained value."
+        ],
+        ["and", "has return type", "Option<U>"],
+        ["and", "has argument", "self"],
+        ["and", "has argument", "optb"],
+        ["optb", "has type", "Option<U>"],
+        [
+          "and",
+          "has description",
+          "Returns None if the option is None, otherwise returns optb."
+        ],
+        ["and_then", "has return type", "Option<U>"],
+        ["and_then", "has argument", "self"],
+        ["and_then", "has argument", "f"],
+        ["F", "requires trait", "FnOnce(T) -> Option<U>"],
+        [
+          "and_then",
+          "has description",
+          "Returns None if the option is None, otherwise calls f with the wrapped value and returns the result."
+        ],
+        ["or", "has return type", "Option<T>"],
+        ["or", "has argument", "self"],
+        ["or", "has argument", "optb"],
+        ["optb", "has type", "Option<T>"],
+        [
+          "or",
+          "has description",
+          "Returns the option if it contains a value, otherwise returns optb."
+        ]
+      ],
+      "startIndex": 0,
+      "endIndex": 39000
+    },
+    {
+      "triples": [
+        ["Option", "has method", "or_else"],
+        ["or_else", "has return type", "Option<T>"],
+        ["or_else", "has argument", "self"],
+        ["or_else", "has argument", "f"],
+        ["f", "has type", "F"],
+        ["F", "requires trait", "FnOnce() -> Option<T>"],
+        [
+          "or_else",
+          "has description",
+          "Returns the option if it contains a value, otherwise calls f and returns the result."
+        ],
+        ["Option", "has method", "take"],
+        ["take", "has return type", "Option<T>"],
+        ["take", "has argument", "self"],
+        [
+          "take",
+          "has description",
+          "Takes the value out of the option, leaving a None in its place."
+        ],
+        ["Option", "has method", "cloned"],
+        ["cloned", "has return type", "Option<T>"],
+        ["cloned", "has argument", "self"],
+        [
+          "cloned",
+          "has description",
+          "Maps an Option<&T> to an Option<T> by cloning the contents of the option."
+        ],
+        ["Option", "has method", "unwrap_or_default"],
+        ["unwrap_or_default", "has return type", "T"],
+        ["unwrap_or_default", "has argument", "self"],
+        [
+          "unwrap_or_default",
+          "has description",
+          "Returns the contained value or a default"
+        ],
+        ["Option", "implements", "Default"],
+        ["Option", "implements", "IntoIterator"],
+        ["Option", "implements", "FromIterator"],
+        ["Option", "implements", "Hash"],
+        ["Option", "implements", "Debug"],
+        ["Option", "implements", "Ord"],
+        ["Option", "implements", "Eq"],
+        ["Option", "implements", "PartialOrd"],
+        ["Option", "implements", "PartialEq"],
+        ["Option", "implements", "Copy"],
+        ["Option", "implements", "Clone"],
+        ["Option", "has method", "into_iter"],
+        ["into_iter", "has return type", "IntoIter<T>"],
+        ["into_iter", "has argument", "self"],
+        [
+          "into_iter",
+          "has description",
+          "Returns a consuming iterator over the possibly contained value."
+        ]
+      ],
+      "startIndex": 39000,
+      "endIndex": 78000
+    }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 523036,
+    "totalUsage": {
+      "prompt_tokens": 30596,
+      "completion_tokens": 15092,
+      "cached_tokens": 0,
+      "reasoning_tokens": 12506
+    },
+    "chunkLength": 2,
+    "chunksInfo": [
+      { "contextLength": 0, "contentLength": 39000, "costTime": 373945 },
+      { "contextLength": 200, "contentLength": 31981, "costTime": 149091 }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

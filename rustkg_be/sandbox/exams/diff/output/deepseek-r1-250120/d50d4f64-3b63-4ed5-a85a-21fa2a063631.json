@@ -1,0 +1,267 @@
+{
+  "create_time": "2025-03-22T18:45:28.817Z",
+  "id": "d50d4f64-3b63-4ed5-a85a-21fa2a063631",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.31-x86_64-pc-windows-msvc/share/doc/rust/html/std/option/enum.Option.html",
+  "previous_url": "D:\\Lessons\\projects\\rustKG\\rustkg_be\\sandbox\\exams\\split\\output\\deepseek-r1-250120\\3f0f1c81-3846-4b68-93ec-513b95a22e61.json",
+  "relations": [
+    "contains",
+    "has argument",
+    "has associated type",
+    "has declaration",
+    "has description",
+    "has example",
+    "has full name",
+    "has method",
+    "has return type",
+    "has stability",
+    "has type",
+    "has variant",
+    "implements",
+    "is a",
+    "is a enum",
+    "is a primitive type",
+    "is a struct",
+    "is a trait",
+    "requires trait",
+    "stable since"
+  ],
+  "delete_triples": [
+    ["I", "implements", "IntoIterator"],
+    ["IntoIterator", "has associated type", "IntoIter"],
+    ["IntoIterator", "has associated type", "Item"],
+    ["IntoIterator", "has method", "into_iter"]
+  ],
+  "add_triples": [
+    ["&mut I", "implements", "Iterator"],
+    [
+      "IntoIter",
+      "has description",
+      "An iterator over the value in Some variant of an Option."
+    ],
+    ["IntoIter", "is a struct", "struct"],
+    [
+      "Iter",
+      "has description",
+      "An iterator over a reference to the Some variant of an Option."
+    ],
+    ["Iter", "is a struct", "struct"],
+    [
+      "IterMut",
+      "has description",
+      "An iterator over a mutable reference to the Some variant of an Option."
+    ],
+    ["IterMut", "is a struct", "struct"],
+    ["Iterator", "has associated type", "Item"],
+    ["Iterator", "has method", "next"],
+    ["None", "has description", "No value"],
+    [
+      "NoneError",
+      "has description",
+      "The error type that results from applying the try operator (?) to a None value. If you wish to allow x? (where x is an Option<T>) to be converted into your error type, you can implement impl From<NoneError> for YourErrorType. In that case, x? within a function that returns Result<_, YourErrorType> will translate a None value into an Err result."
+    ],
+    ["NoneError", "is a struct", "struct"],
+    ["Option", "has associated type", "IntoIter"],
+    ["Option", "has associated type", "Item"],
+    [
+      "Option",
+      "has description",
+      "The Option type. See the module level documentation for more."
+    ],
+    ["Option", "has method", "and"],
+    ["Option", "has method", "and_then"],
+    ["Option", "has method", "as_mut"],
+    ["Option", "has method", "as_pin_mut"],
+    ["Option", "has method", "as_pin_ref"],
+    ["Option", "has method", "as_ref"],
+    ["Option", "has method", "cloned"],
+    ["Option", "has method", "deref"],
+    ["Option", "has method", "expect"],
+    ["Option", "has method", "filter"],
+    ["Option", "has method", "get_or_insert"],
+    ["Option", "has method", "get_or_insert_with"],
+    ["Option", "has method", "into_iter"],
+    ["Option", "has method", "is_none"],
+    ["Option", "has method", "is_some"],
+    ["Option", "has method", "iter"],
+    ["Option", "has method", "iter_mut"],
+    ["Option", "has method", "map"],
+    ["Option", "has method", "map_or"],
+    ["Option", "has method", "map_or_else"],
+    ["Option", "has method", "ok_or"],
+    ["Option", "has method", "ok_or_else"],
+    ["Option", "has method", "or"],
+    ["Option", "has method", "or_else"],
+    ["Option", "has method", "replace"],
+    ["Option", "has method", "take"],
+    ["Option", "has method", "transpose"],
+    ["Option", "has method", "unwrap"],
+    ["Option", "has method", "unwrap_or"],
+    ["Option", "has method", "unwrap_or_default"],
+    ["Option", "has method", "unwrap_or_else"],
+    ["Option", "has method", "xor"],
+    ["Option", "has variant", "None"],
+    ["Option", "has variant", "Some"],
+    ["Option", "implements", "Clone"],
+    ["Option", "implements", "Copy"],
+    ["Option", "implements", "Debug"],
+    ["Option", "implements", "Default"],
+    ["Option", "implements", "Eq"],
+    ["Option", "implements", "From<&'a Option<T>>"],
+    ["Option", "implements", "From<&'a mut Option<T>>"],
+    ["Option", "implements", "From<T>"],
+    ["Option", "implements", "FromIterator<Option<A>>"],
+    ["Option", "implements", "Hash"],
+    ["Option", "implements", "IntoIterator"],
+    ["Option", "implements", "Ord"],
+    ["Option", "implements", "PartialEq<Option<T>>"],
+    ["Option", "implements", "PartialOrd<Option<T>>"],
+    ["Option", "implements", "Try"],
+    ["Option", "is a enum", "enum"],
+    ["Option", "stable since", "1.0.0"],
+    ["Option::as_pin_mut", "has argument", "self: Pin<&'a mut Option<T>>"],
+    ["Option::as_pin_mut", "has return type", "Option<Pin<&'a mut T>>"],
+    [
+      "Option::as_pin_mut",
+      "has stability",
+      "nightly-only experimental (pin #49150)"
+    ],
+    ["Option::as_pin_ref", "has argument", "self: Pin<&'a Option<T>>"],
+    ["Option::as_pin_ref", "has return type", "Option<Pin<&'a T>>"],
+    [
+      "Option::as_pin_ref",
+      "has stability",
+      "nightly-only experimental (pin #49150)"
+    ],
+    ["Option::cloned", "has return type", "Option<T>"],
+    ["Option::cloned", "has stability", "1.26.0"],
+    ["Option::from", "has stability", "1.12.0"],
+    ["Option::from", "has stability", "1.30.0"],
+    ["Option::replace", "stable since", "1.31.0"],
+    ["Some", "has description", "Some value T"],
+    ["Try", "has associated type", "Error"],
+    ["Try", "has associated type", "Ok"],
+    ["next", "has return type", "Option<Self::Item>"],
+    ["std::option", "contains", "IntoIter"],
+    ["std::option", "contains", "Iter"],
+    ["std::option", "contains", "IterMut"],
+    ["std::option", "contains", "NoneError"],
+    ["std::option", "contains", "Option"]
+  ],
+  "delete_links": [],
+  "add_links": [
+    "../../src/core/borrow.rs.html",
+    "../../src/core/convert.rs.html",
+    "../../src/core/iter/traits.rs.html",
+    "../../src/core/option.rs.html",
+    "enum.Option.html",
+    "struct.IntoIter.html",
+    "struct.Iter.html",
+    "struct.IterMut.html",
+    "struct.NoneError.html",
+    "struct.Pin.html"
+  ],
+  "metrics": {
+    "escapeCount": 1,
+    "costTime": 1629405,
+    "totalUsage": {
+      "prompt_tokens": 135715,
+      "completion_tokens": 51364,
+      "cached_tokens": 0,
+      "reasoning_tokens": 40048
+    },
+    "chunkLength": 12,
+    "chunksInfo": [
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 7395,
+        "newContextLength": 527,
+        "newStrLength": 7457,
+        "costTime": 171068
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13545,
+        "newContextLength": 527,
+        "newStrLength": 14994,
+        "costTime": 198532
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 15000,
+        "costTime": 165973
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14323,
+        "newContextLength": 527,
+        "newStrLength": 14323,
+        "costTime": 116764
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 14665,
+        "costTime": 106966
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 12963,
+        "newContextLength": 527,
+        "newStrLength": 12965,
+        "costTime": 67873
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 8386,
+        "newContextLength": 527,
+        "newStrLength": 15000,
+        "costTime": 280060
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13548,
+        "newContextLength": 527,
+        "newStrLength": 14993,
+        "costTime": 96231
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 13606,
+        "newContextLength": 527,
+        "newStrLength": 14906,
+        "costTime": 175579
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 15000,
+        "newContextLength": 527,
+        "newStrLength": 9896,
+        "costTime": 124436
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 14778,
+        "newContextLength": 527,
+        "newStrLength": 10523,
+        "costTime": 59739
+      },
+      {
+        "oldContextLength": 527,
+        "oldStrLength": 918,
+        "newContextLength": 527,
+        "newStrLength": 918,
+        "costTime": 66184
+      }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {
+    "startTime": "2025-03-22T18:17:41.343Z",
+    "examGroup": "diff",
+    "examParams": { "windowLength": 15000 },
+    "sourceId": "3f0f1c81-3846-4b68-93ec-513b95a22e61"
+  }
+}

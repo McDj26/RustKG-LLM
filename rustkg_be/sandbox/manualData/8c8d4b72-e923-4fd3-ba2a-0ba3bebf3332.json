@@ -1,19 +1,5 @@
 {
-  "relations": [
-    "is a",
-    "has full name",
-    "stable since",
-    "has declaration",
-    "has description",
-    "has method",
-    "returns",
-    "has argument",
-    "has type",
-    "has return type",
-    "implements",
-    "created by"
-  ],
-  "relation_pairs": [
+  "relation_triples": [
     ["Stdin", "is a", "struct"],
     ["Stdin", "has full name", "std::io::Stdin"],
     ["Stdin", "stable since", "1.0.0"],
@@ -58,24 +44,6 @@
   ],
   "add_triples": [],
   "delete_triples": [],
-  "add_links": [],
-  "delete_links": [],
-  "links": [
-    "../../src/std/io/stdio.rs.html",
-    "../index.html",
-    "index.html",
-    "../../std/io/struct.StdinLock.html",
-    "trait.BufRead.html",
-    "fn.stdin.html",
-    "../../std/process/struct.Command.html",
-    "../../std/fmt/trait.Debug.html",
-    "../../std/io/trait.Read.html",
-    "../../std/os/windows/io/trait.AsRawHandle.html",
-    "../../std/os/unix/io/trait.AsRawFd.html",
-    "../../std/string/struct.String.html",
-    "../../std/primitive.usize.html",
-    "../../std/vec/struct.Vec.html"
-  ],
   "create_time": "2025-03-02T03:58:00.908Z",
   "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.30-x86_64-pc-windows-msvc/share/doc/rust/html/std/io/struct.Stdin.html",
   "id": "8c8d4b72-e923-4fd3-ba2a-0ba3bebf3332",

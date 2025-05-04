@@ -1,0 +1,98 @@
+{
+  "create_time": "2025-03-29T04:57:55.581Z",
+  "id": "349c2be5-144e-434b-8cf6-d2873cd5cb6c",
+  "source_url": "file:///C:/Users/Dj/.rustup/toolchains/1.10-x86_64-pc-windows-msvc/share/doc/rust/html/std/rc/struct.Weak.html",
+  "relations": [
+    "has argument",
+    "has declaration",
+    "has description",
+    "has full name",
+    "has generic parameter",
+    "has method",
+    "has return type",
+    "has trait constraint",
+    "has where clause",
+    "implements",
+    "is a",
+    "returns",
+    "stable since"
+  ],
+  "add_triples": [
+    {
+      "triples": [
+        ["Weak", "is a", "struct"],
+        ["Weak", "has full name", "std::rc::Weak"],
+        ["Weak", "stable since", "1.4.0"],
+        [
+          "Weak",
+          "has description",
+          "A weak version of Rc<T>. Weak references do not count when determining if the inner value should be dropped. See the module level documentation for more."
+        ],
+        [
+          "Weak",
+          "has declaration",
+          "pub struct Weak<T> where T: ?Sized { // some fields omitted }"
+        ],
+        ["Weak::new", "is a", "function"],
+        ["Weak::new", "stable since", "1.10.0"],
+        [
+          "Weak::new",
+          "has description",
+          "Constructs a new Weak<T> without an accompanying instance of T. This allocates memory for T, but does not initialize it. Calling Weak<T>::upgrade() on the return value always gives None."
+        ],
+        ["Weak::new", "returns", "Weak<T>"],
+        ["Weak::upgrade", "is a", "function"],
+        [
+          "Weak::upgrade",
+          "has description",
+          "Upgrades a weak reference to a strong reference. Upgrades the Weak<T> reference to an Rc<T>, if possible. Returns None if there were no strong references and the data was destroyed."
+        ],
+        ["Weak::upgrade", "returns", "Option<Rc<T>>"],
+        ["Weak", "implements", "Drop"],
+        ["Weak", "implements", "Clone"],
+        ["Weak", "implements", "Debug"],
+        ["Weak", "implements", "Default"],
+        [
+          "Weak::drop",
+          "has description",
+          "Drops the Weak<T>. This will decrement the weak reference count."
+        ],
+        [
+          "Weak::clone",
+          "has description",
+          "Makes a clone of the Weak<T>. This increases the weak reference count."
+        ],
+        [
+          "Weak::default",
+          "has description",
+          "Returns the 'default value' for a type."
+        ],
+        [
+          "Weak::fmt",
+          "has description",
+          "Formats the value using the given formatter."
+        ],
+        ["Weak", "has generic parameter", "T"],
+        ["Weak", "has where clause", "T: ?Sized"]
+      ],
+      "startIndex": 0,
+      "endIndex": 39000
+    }
+  ],
+  "metrics": {
+    "escapeCount": 0,
+    "costTime": 101622,
+    "totalUsage": {
+      "prompt_tokens": 7772,
+      "completion_tokens": 2940,
+      "cached_tokens": 0,
+      "reasoning_tokens": 2404
+    },
+    "chunkLength": 1,
+    "chunksInfo": [
+      { "contextLength": 0, "contentLength": 15291, "costTime": 101622 }
+    ]
+  },
+  "model": "deepseek-r1-250120",
+  "extraInfo": {}
+}

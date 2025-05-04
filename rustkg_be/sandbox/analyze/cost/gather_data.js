@@ -6,16 +6,16 @@ const controller = new TaskManager(16);
 // const TaskManager = require("../../../utils/TaskManager");
 // const controller = new TaskManager();
 
-// const diffDataPath = path.join(__dirname, "../../exams/diff/output");
+const diffDataPath = path.join(__dirname, "../../exams/diff/output");
 // const fullDataPath = path.join(__dirname, "../../exams/full/output");
-const splitDataPath = path.join(__dirname, "../../exams/split/output");
+// const splitDataPath = path.join(__dirname, "../../exams/split/output");
 
-// const diffDataOutput = path.join(__dirname, "diff_data.csv");
+const diffDataOutput = path.join(__dirname, "diff_data_split.csv");
 // const fullDataOutput = path.join(__dirname, "full_data.csv");
-const splitDataOutput = path.join(__dirname, "split_data.csv");
+// const splitDataOutput = path.join(__dirname, "split_data.csv");
 
-const inputPaths = [splitDataPath];
-const outputPaths = [splitDataOutput];
+const inputPaths = [diffDataPath];
+const outputPaths = [diffDataOutput];
 
 function findJson(root) {
   if (!fs.existsSync(root)) {
